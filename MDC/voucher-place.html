@@ -1,0 +1,146 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <link type="text/css" rel="stylesheet" href="css/custom.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <div class="container">
+        <div class="row">
+          <h1>Voucher Place</h1>
+        </div>
+        <div class="row">        
+          <div class="col s6">
+            <label>BetterDoc's Patners</label>
+            <select class="browser-default" id="select_insurance">
+              <option value="1" ><span>Find all vouchers of a partner<span></option>
+              <option selected value="Allianz">Allianz</option>
+              <option value="AOK Hessen">AOK Hessen</option>
+              <option value="Assura">Assura</option>
+              <option value="AXA bKV">AXA bKV</option>
+              <option value="AXA PKV">AXA PKV</option>
+              <option value="Barmenia">Barmenia</option>
+              <option value="BIG Direkt">BIG Direkt</option>
+              <option value="BKK Melitta Plus">BKK Melitta Plus</option>
+              <option value="BKK Werra-Meissner">BKK Werra-Meissner</option>
+              <option value="Central">Central</option>
+              <option value="G+/GHS">G+/GHS</option>
+              <option value="Gothaer">Gothaer</option>
+              <option value="Hallesche">Hallesche</option>
+              <option value="HanseMerkur">HanseMerkur</option>
+              <option value="IKK Südwest">IKK Südwest</option>
+              <option value="Inter">Inter</option>
+              <option value="Novitas">Novitas</option>
+              <option value="R+V BKK">R+V BKK</option>
+              <option value="Signal Iduna">Signal Iduna</option>
+              <option value="Stadt Lindlar">Stadt Lindlar</option>
+              <option value="Stadt Niederkassel">Stadt Niederkassel</option>
+              <option value="Stadt Siegburg">Stadt Siegburg</option>
+              <option value="Universa">Universa</option>
+              <option value="Württembergische">Württembergische</option>
+            </select>
+          </div>
+          <div class="input-field col s6">
+              <input id="voucher_code" type="text" value="AX11-GA3F">
+              <label for="voucher_code">Specific Voucher Code</label>            
+          </div>
+
+          <div class="col s12">
+            <button class="right light-green darken-2 btn waves-effect waves-light search_voucher_cta hoverable" type="submit" name="search_voucher_cta">Find Voucher
+              <i class="material-icons right">search</i>
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Search results -->
+          <div class="col s12" id="table">
+            <ul class="collection">
+              <li class="collection-item"> <div class="row">
+                <table class="col s12">
+                  <tbody class="size">
+                    <form>
+                      <tr>
+                        <td><em>Code</em></td>
+                        <td><em>Description</em></td>
+                        <td><em>Creation Date</em></td>
+                        <td class="right-align"><em>Aktion</em></td>
+                      </tr>
+                      <tr class="lighten-2">
+                        <td>AX11-GA3F</td>
+                        <td>Gutscheincode für 6.700 Direktanschreiben. Versand KW03/2018. Selektion Gonarthrose.</td>
+                        <td>25.05.2019</td>
+                        <td class="right-align">
+                          <div>
+                            <a href="#" class="hoverable secondary-button z-depth-1 valign-wrapper"><i class="material-icons">edit</i> <span>Edit</span>
+                            </a>
+                          </div>
+                        </td>
+                      </tr>
+                    </form>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+          </ul>
+          </div>
+        </div>
+
+      </span>
+      
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+      <script type="text/javascript">
+        // $(".size tr").click(function(){
+          // $('.size tr.checked').not(this).removeClass('checked');
+          // $(this).toggleClass('checked');
+        // })
+
+        var voucher_code_list = '<ul class="collection"> <li class="collection-item"> <div class="row"> <table class="col s12"> <tbody class="size"> <form> <tr> <td><em>Code</em></td><td><em>Description</em></td><td><em>Creation Date</em></td><td class="right-align"><em>Selected</em></td></tr><tr class="hoverable light-green lighten-2"> <td>AX11-GA3F</td><td>Gutscheincode für 6.700 Direktanschreiben. Versand KW03/2018. Selektion Gonarthrose.</td><td>25.05.2019</td><td class="right-align"> <label> <input name="voucher_selection" type="radio" checked/> <span></span> </label> </td></tr></form> </tbody> </table> </div></li></ul>';
+
+        var voucher_code_list_intro = '<p class="col s12"> <b>1 voucher</b> found for <b><span>'
+        var intro2 = '</span></b> </p>';
+
+        $( "#voucher_code" )
+          .keyup(function() {
+            var value = $( this ).val();
+            $( ".voucher_code_output" ).text( value );
+          }) 
+
+        $(".search_voucher_cta").click(function(){
+          $( "#select_insurance" ).val("1")
+          let voucher_code_input = $( "#voucher_code" ).val();
+          $("#table").empty( "#table" ).append(voucher_code_list_intro + voucher_code_input + intro2 + voucher_code_list);
+        })
+
+        // select
+
+        var voucher_insurance_list = '<ul class="collection"> <li class="collection-item"> <div class="row"> <table class="col s12"> <tbody class="size"> <form> <tr> <td><em>Code</em></td><td><em>Description</em></td><td><em>Creation Date</em></td><td class="right-align"><em>Selected</em></td></tr><tr class="hoverable"> <td>AXHT-P37H</td><td><b>Voucher für Patienten ohne Code</b> und das AXA Gesundheitstelefon</td><td>01.05.2018</td><td class="right-align"> <label> <input name="voucher_selection" type="radio" checked/> <span></span> </label> </td></tr><tr class="hoverable"> <td>AX11-GA3F</td><td>Gutscheincode für 6.700 Direktanschreiben. Versand KW03/2018. Selektion Gonarthrose.</td><td>25.05.2019</td><td class="right-align"> <label> <input name="voucher_selection" type="radio"/> <span></span> </label> </td></tr><tr class="hoverable"> <td>AX11-CA4L </td><td>Gutscheincode für 3.300 Direktanschreiben. Versand KW03/2018. Selektion Coxarthrose </td><td>12.02.2019</td><td class="right-align"> <label> <input name="voucher_selection" type="radio"/> <span></span> </label> </td></tr><tr class="hoverable"> <td>AX91-FLA3</td><td>Gutscheincode für 3.300 Direktanschreiben. Versand KW03/2018. Selektion Coxarthrose </td><td>25.03.2018</td><td class="right-align"> <label> <input name="voucher_selection" type="radio"/> <span></span> </label> </td></tr></form> </tbody> </table> </div></li></ul>';
+
+        var voucher_insurance_list_intro = '<p class="col s12"> <b>4 vouchers</b> found for <b><span> AXA PKV </span></b></p>'
+
+        $( "#select_insurance" ).change(function () {
+            $( "#voucher_code" ).val('')
+            $( "#table" ).empty( "#table" ).append(voucher_insurance_list_intro + voucher_insurance_list);      
+          })
+
+        $(document).ready(function(){
+          $('.fixed-action-btn').floatingActionButton();
+        });
+
+ 
+
+      </script>
+    </body>
+  </html>
+        

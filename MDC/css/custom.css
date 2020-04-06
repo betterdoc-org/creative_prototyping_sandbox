@@ -1,0 +1,46 @@
+.bold, h1, h2, h3, h4, h5, h6 {
+    font-weight: 700 !important;
+}
+
+.checked {
+	background-color: #fff;
+}
+
+.light {
+	font-weight: 200 !important;
+}
+
+
+
+.secondary-button {
+	height: 36px;
+	border: 1px solid #689f38;
+	color: #689f38 !important;
+	padding: 5px;
+	padding-left: 10px;
+	letter-spacing: 0.5px;
+	font-size: 14px;
+	border-radius: 2px;
+}
+
+.secondary-button span {
+	margin-left: 10px;
+}
+
+.phase-box {
+	text-align: center;
+}
+
+.selected {
+	border: 6px solid #689f38;
+	border-radius: 4px;
+	margin: -5px 0 -4px 0; 
+}
+
+a {
+	color: #689f38 !important;
+}
+
+.middle-valign {
+	vertical-align: middle;
+}

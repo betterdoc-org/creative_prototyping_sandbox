@@ -1,0 +1,337 @@
+x  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <link type="text/css" rel="stylesheet" href="css/custom.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <div class="container">
+        <div class="row">
+          <h1>Case Creator</h1>
+        </div>
+        <div class="row">
+          <h4>Voucher</h4>
+        </div>
+        <div class="row">        
+          <div class="col s6">
+            <label>BetterDoc's Patners</label>
+            <select class="browser-default" id="select_insurance">
+              <option value="1" disabled selected><span>Find all vouchers of a partner<span></option>
+              <option value="Allianz">Allianz</option>
+              <option value="AOK Hessen">AOK Hessen</option>
+              <option value="Assura">Assura</option>
+              <option value="AXA bKV">AXA bKV</option>
+              <option value="AXA PKV">AXA PKV</option>
+              <option value="Barmenia">Barmenia</option>
+              <option value="BIG Direkt">BIG Direkt</option>
+              <option value="BKK Melitta Plus">BKK Melitta Plus</option>
+              <option value="BKK Werra-Meissner">BKK Werra-Meissner</option>
+              <option value="Central">Central</option>
+              <option value="G+/GHS">G+/GHS</option>
+              <option value="Gothaer">Gothaer</option>
+              <option value="Hallesche">Hallesche</option>
+              <option value="HanseMerkur">HanseMerkur</option>
+              <option value="IKK Südwest">IKK Südwest</option>
+              <option value="Inter">Inter</option>
+              <option value="Novitas">Novitas</option>
+              <option value="R+V BKK">R+V BKK</option>
+              <option value="Signal Iduna">Signal Iduna</option>
+              <option value="Stadt Lindlar">Stadt Lindlar</option>
+              <option value="Stadt Niederkassel">Stadt Niederkassel</option>
+              <option value="Stadt Siegburg">Stadt Siegburg</option>
+              <option value="Universa">Universa</option>
+              <option value="Württembergische">Württembergische</option>
+            </select>
+          </div>
+          <div class="input-field col s6">
+              <input id="voucher_code" type="text">
+              <label for="voucher_code">Specific Voucher Code</label>            
+          </div>
+
+          <div class="col s12">
+            <button class="right light-green darken-2 btn waves-effect waves-light search_voucher_cta" type="submit" name="search_voucher_cta">Find Voucher
+              <i class="material-icons right">search</i>
+            </button>
+          </div>
+          
+        
+          <!-- Search results -->
+          <div class="col s12 row" id="table">
+          </div>
+        </div>
+
+        <div class="row">
+          <p>If the patient is not insured with a partner, please <a href="#" class="light-green-text text-darken-2">introduce the patient club</a> </p>
+        </div>
+
+        <div class="row">
+          <h4>Patient
+            <div class="switch right" >
+              <label class="grey-text text-darken-4">
+                Patient = Voucher Owner
+                <input type="checkbox" checked>
+                <span class="lever"></span>
+              </label>
+            </div>
+          </h4>
+          <!-- <span class="flow-text">Find & select the patients voucher either with the code or via the patents isurance/employer</span> -->
+        </div>
+        <div class="row">
+          <div class="col s6">
+            <ul class="collection">
+              <li class="collection-item">
+                <div class="row">
+                  <h6 class="col s12">Kontaktdaten
+                  </h6>
+                    <p>
+                      <div class="input-field col s12">
+                        <input id="first-name-input" type="text">
+                        <label for="first-name-input">Vorname</label>            
+                      </div>
+                      <div class="input-field col s12">
+                        <input id="last-name-input" type="text">
+                        <label for="last-name-input">Nachname</label>            
+                      </div>
+                      <div class="input-field col s12">
+                        <input id="email_address" type="text">
+                        <label for="email_address">Email Adresse (Optional)</label>
+                        <span class="helper-text" data-error="wrong" data-success="right"></span>
+                      </div>
+                      <div class="col s2">
+                        <label>Vorwahl</label>
+                        <select class="browser-default">
+                          <option value="+49" selected>+49</option>
+                          <option value="+whatever">implement current list</option>
+                        </select>
+                      </div>
+                      <div class="col s6 input-field ">
+                        <input id="phone_number" type="text">
+                        <label for="phone_number">Bevorzugte Telefonnummer</label>            
+                      </div>
+                      <div class="col s4" style="margin-top: 30px;">
+                        <label>
+                          <input type="checkbox" class="filled-in"/>
+                          <span>Telefon Anamnese</span>
+                        </label>
+                      </div>
+                      <div class="col s12"></div>
+                      <div class="col s2">
+                        <label>Vorwahl</label>
+                        <select class="browser-default">
+                          <option value="+49" selected>+49</option>
+                          <option value="+whatever">implement current list</option>
+                        </select>
+                      </div>
+                      <div class="input-field col s6">
+                        <input id="phone_number" type="text">
+                        <label for="phone_number">Zweite Telefonnummer</label>            
+                      </div>
+                      <div class="col s12"><br><label>Patient*in ist einverstanden mit:</label></div>
+                      <div class="col s12"><br></div>
+
+                      <label class="col s5">
+                        <input type="checkbox" class="filled-in" checked/>
+                        <span>Email Kommunikation</span>
+                      </label>
+                      <label class="col s6">
+                        <input type="checkbox" class="filled-in" checked/>
+                        <span>Datenschutzbestimmungen</span>
+                      </label>
+                    </p>
+                  </div>
+                </li>
+              </ul>
+          </div>
+          <div class="col s6">
+            <ul class="collection">
+              <li class="collection-item">
+                <div class="row">
+                  <h6 class="col s12">Medizinische Informationen</h6>
+                  <p>
+                    <div class="input-field col s12">
+                      <textarea id="medical_diagnosis" class="materialize-textarea"></textarea>
+                      <label for="medical_diagnosis">Diagnose</label>
+                    </div>
+                    <label class="col s3">
+                      <input type="checkbox" class="filled-in"/>
+                      <span>Konservativ</span>
+                    </label>
+                    <label class="col s3">
+                      <input type="checkbox" class="filled-in"/>
+                      <span>Beratung</span>
+                    </label>
+                    <label class="col s2">
+                      <input type="checkbox" class="filled-in"/>
+                      <span>OP</span>
+                    </label>
+                    <label class="col s2">
+                      <input type="checkbox" class="filled-in"/>
+                      <span>Unklar</span>
+                    </label>
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <ul class="collection">
+              <li class="collection-item">
+                <div class="row">
+                  <h6 class="col s12">Beschreibung</h6>
+                  <p>
+                    <div class="col s12">
+                      <label><br></label>
+                      <select class="browser-default" id="select_differentiation">
+                        <option value="normal_differentiated" selected>differenziert</option>
+                        <option value="moderately_differentiated" >mäßig differenziert</option>
+                        <option value="undifferentiated">undifferenziert</option>
+                      </select>
+                      <div class="col s12"><br></div>
+                      <label class="col s3">
+                        <input type="checkbox" class="filled-in"/>
+                        <span>Fordernd</span>
+                      </label>
+                      <label class="col s3">
+                        <input type="checkbox" class="filled-in"/>
+                        <span>Skeptisch</span>
+                      </label>
+                      <label class="col s3">
+                        <input type="checkbox" class="filled-in"/>
+                        <span>Redselig</span>
+                      </label>    
+                      <label class="col s3">
+                        <input type="checkbox" class="filled-in"/>
+                        <span>Emotional</span>
+                      </label>
+                      <div class="col s12"><br></div>
+                      <label class="col s3">
+                        <input type="checkbox" class="filled-in"/>
+                        <span>Unfreundlich</span>
+                      </label> 
+                      <label class="col s6">
+                        <input type="checkbox" class="filled-in"/>
+                        <span>Abschweifend</span>
+                      </label> 
+                    </div>
+                  </p>
+                  </div>
+                </li>
+                <li class="collection-item">
+                  <div class="row">
+                    <h6 class="col s12 light">Zusatzinformationen</h6>
+                    <p>
+<!--                       <div class="col s12">
+                        <label><br></label>
+                        <select class="browser-default" id="select_other">
+                          <option value="1" selected>Ohne spezielle Charakteristiken</option>
+                          <option value="2">sprachliche Barriere</option>
+                          <option value="3">ärztliche*r Kollege*in</option>
+                          <option value="4">Person stellt viele Zwischenfragen aus dem Hintergrund</option>
+                        </select>
+                      </div> -->
+                      <div class="input-field col s12">
+                        <textarea id="additional_information" class="materialize-textarea"></textarea>
+                        <label for="additional_information">Weitere Informationen</label>
+                      </div>
+                      <div class="input-field col s12">
+                        <textarea id="additional_information" class="materialize-textarea"></textarea>
+                        <label for="additional_information">IDs anderer Anfragen</label>
+                      </div>
+                    </p>
+                  </div>
+                </li>
+              </ul>            
+          </div>
+        </div>
+      <div class="row">
+        <h4 class="col s12">Admission Appointment</h4>
+        <div class="col s12">
+          <div class="row valign-wrapper">
+          <div class="col s8">
+            <p class="flow-text col s12">Currently Selected: DD-MONTH-YY | XX - XX h</p>
+          </div>
+          <div class="col s2">
+          </div>
+          <div class="col s1 white z-depth-2 center">
+            <label class="">relaxed</label>
+          </div>
+          <div class="col s1 red accent-4 z-depth-2 center">
+            <label class="red-text text-lighten-5 center">stressfull</label>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="fixed-action-btn">
+        <a class="btn-floating btn-large light-green darken-2">
+          <i class="large material-icons">send</i>
+        </a>
+      </div>
+      
+
+<!--       <div class="row">
+            <button class="col s12 right btn-large waves-effect waves-light" type="submit" name="submit">Submit Lead
+              <i class="material-icons right">search</i>
+            </button>
+      </div>
+ -->
+
+
+
+
+      </div >
+      
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+      <script type="text/javascript">
+        // $(".size tr").click(function(){
+          // $('.size tr.checked').not(this).removeClass('checked');
+          // $(this).toggleClass('checked');
+        // })
+
+        var voucher_code_list = '<ul class="collection"> <li class="collection-item"> <div class="row"> <table class="col s12"> <tbody class="size"> <form> <tr> <td><em>Code</em></td><td><em>Description</em></td><td><em>Creation Date</em></td><td class="right-align"><em>Selected</em></td></tr><tr class="hoverable light-green lighten-2"> <td>AX11-GA3F</td><td>Gutscheincode für 6.700 Direktanschreiben. Versand KW03/2018. Selektion Gonarthrose.</td><td>25.05.2019</td><td class="right-align"> <label> <input name="voucher_selection" type="radio" checked/> <span></span> </label> </td></tr></form> </tbody> </table> </div></li></ul>';
+
+        var voucher_code_list_intro = '<p class="col s12"> <b>1 voucher</b> found for <b><span>'
+        var intro2 = '</span></b> </p>';
+
+        $( "#voucher_code" )
+          .keyup(function() {
+            var value = $( this ).val();
+            $( ".voucher_code_output" ).text( value );
+          }) 
+
+        $(".search_voucher_cta").click(function(){
+          $( "#select_insurance" ).val("1")
+          let voucher_code_input = $( "#voucher_code" ).val();
+          $("#table").empty( "#table" ).append(voucher_code_list_intro + voucher_code_input + intro2 + voucher_code_list);
+        })
+
+        // select
+
+        var voucher_insurance_list = '<ul class="collection"> <li class="collection-item"> <div class="row"> <table class="col s12"> <tbody class="size"> <form> <tr> <td><em>Code</em></td><td><em>Description</em></td><td><em>Creation Date</em></td><td class="right-align"><em>Selected</em></td></tr><tr class="hoverable"> <td>AXHT-P37H</td><td><b>Voucher für Patienten ohne Code</b> und das AXA Gesundheitstelefon</td><td>01.05.2018</td><td class="right-align"> <label> <input name="voucher_selection" type="radio" checked/> <span></span> </label> </td></tr><tr class="hoverable"> <td>AX11-GA3F</td><td>Gutscheincode für 6.700 Direktanschreiben. Versand KW03/2018. Selektion Gonarthrose.</td><td>25.05.2019</td><td class="right-align"> <label> <input name="voucher_selection" type="radio"/> <span></span> </label> </td></tr><tr class="hoverable"> <td>AX11-CA4L </td><td>Gutscheincode für 3.300 Direktanschreiben. Versand KW03/2018. Selektion Coxarthrose </td><td>12.02.2019</td><td class="right-align"> <label> <input name="voucher_selection" type="radio"/> <span></span> </label> </td></tr><tr class="hoverable"> <td>AX91-FLA3</td><td>Gutscheincode für 3.300 Direktanschreiben. Versand KW03/2018. Selektion Coxarthrose </td><td>25.03.2018</td><td class="right-align"> <label> <input name="voucher_selection" type="radio"/> <span></span> </label> </td></tr></form> </tbody> </table> </div></li></ul>';
+
+        var voucher_insurance_list_intro = '<p class="col s12"> <b>4 vouchers</b> found for <b><span> AXA PKV </span></b></p>'
+
+        $( "#select_insurance" ).change(function () {
+            $( "#voucher_code" ).val('')
+            $( "#table" ).empty( "#table" ).append(voucher_insurance_list_intro + voucher_insurance_list);      
+          })
+
+        $(document).ready(function(){
+          $('.fixed-action-btn').floatingActionButton();
+        });
+
+ 
+
+      </script>
+    </body>
+  </html>
+        
