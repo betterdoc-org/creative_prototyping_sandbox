@@ -1,0 +1,47 @@
+CTN: showcase-numbers
+label: An Patienten versendete Gutachten
+number: 234
+---
+
+
+
+CTN: overview-numbers
+title: Overview Numbers
+items:
+  -
+    label: Rücken
+    number: 9
+  -
+    label: Knie
+    number: 12
+---
+
+
+
+CTN: compareable-numbers-large
+title: Compareable Numbers (L)
+items:
+  -
+    label: Rücken
+    number: 9
+    second_number: 99,9%
+  -
+    label: Knie
+    number: 12
+---
+
+
+
+CTN: compareable-numbers-medium
+title: Compareable Numbers (M)
+items:
+  -
+    label: Rücken
+    number: 9
+    second_number: 99,9%
+  -
+    label: Knie
+    number: 12
+---
+
+

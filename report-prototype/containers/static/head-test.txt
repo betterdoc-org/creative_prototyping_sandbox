@@ -1,0 +1,10 @@
+CTN: header
+image_payer: /images/dak.png
+---
+
+
+
+CTN: stage
+title: Zweitmeinung per Gutachten
+date: Mai 2020
+---
