@@ -3,13 +3,13 @@
         <div class="container">
             <div class="columns is-multiline">
                 <div class="column is-12">
-                    <div class="title is-size-1">{{title}}</div>
+                    <div class="title {{title_size}}">{{title}}</div>
                 </div>
                 {{#items}}
-                <div class="column is-2">
+                <div class="column">
                     <div class="box">
                         <p class="is-size-6 is-uppercase" style="">{{label}}</p>
-                        <p class="is-size-2 has-text-weight-bold has-text-black">{{number}}<span class="is-size-6">📄</span></p>
+                        <p class="is-size-2 has-text-weight-bold has-text-black">{{number}}<span class="is-size-6">{{unit}}</span></p>
                     </div>
                 </div>
                 {{/items}}

@@ -1,47 +1,335 @@
 CTN: showcase-numbers
-label: An Patienten versendete Gutachten
-number: 234
+label: An Patienten versendete Gutachten im März 2020
+number: 9
 ---
 
 
 
 CTN: overview-numbers
-title: Overview Numbers
+title: Gutachten je Indikationsbereich
+title_size: is-size-2
 items:
   -
     label: Rücken
-    number: 9
+    number: 2
+    unit: 📄
+  -
+    label: Schulter
+    number: 1
+    unit: 📄
+  -
+    label: Hüfte
+    number: 2
+    unit: 📄
   -
     label: Knie
-    number: 12
+    number: 1
+    unit: 📄
+  -
+    label: Fuß
+    number: 1
+    unit: 📄
+  -
+    label: Hand
+    number: 2
+    unit: 📄
 ---
 
 
 
 CTN: compareable-numbers-large
-title: Compareable Numbers (L)
+title: OP- zu Nicht-OP-Empfehlung Quote
+title_size: is-size-2
 items:
   -
-    label: Rücken
-    number: 9
-    second_number: 99,9%
+    label: Nicht-OP-Empfehlungen
+    number: 100
+    unit: %
+    second_number: 9
+    second_unit: 📄 
   -
-    label: Knie
-    number: 12
+    label: OP-Empfehlungen
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 📄 
 ---
 
 
 
 CTN: compareable-numbers-medium
-title: Compareable Numbers (M)
+title: Nicht-OP-Quote nach Indikation
+title_size: is-size-3
 items:
   -
     label: Rücken
-    number: 9
-    second_number: 99,9%
+    number: 100,00
+    unit: %
+    second_number: 2
+    second_unit: 📄 
+  -
+    label: Schulter
+    number: 100,00
+    unit: %
+    second_number: 1
+    second_unit: 📄 
+  -
+    label: Hüfte
+    number: 100,00
+    unit: %
+    second_number: 2
+    second_unit: 📄 
   -
     label: Knie
-    number: 12
+    number: 100,00
+    unit: %
+    second_number: 1
+    second_unit: 📄 
+  -
+    label: Fuß
+    number: 100,00
+    unit: %
+    second_number: 1
+    second_unit: 📄 
+  -
+    label: Hand
+    number: 100,00
+    unit: %
+    second_number: 2
+    second_unit: 📄 
+---
+
+
+
+CTN: compareable-numbers-large
+title: Quote geplante OP zu andere operative Therapie
+title_size: is-size-2
+items:
+  -
+    label: Andere Operation empfohlen
+    number: 0
+    unit: %
+    second_number: 9
+    second_unit: 📄 
+  -
+    label: Geplante Operation verifiziert
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 📄 
+  -
+    label: Operation ganz verhindert
+    number: 100
+    unit: %
+    second_number: 9
+    second_unit: 📄 
+---
+
+
+
+CTN: categorized_details
+title: Quote geplante OP zu andere operative Therapie je Indikationsbereich
+title_size: is-size-3
+categories:
+  - category: Rücken
+    items:
+      -
+        label: Andere Operation empfohlen
+        number: 0
+        unit: %
+        second_number: 0
+        second_unit: 📄 
+      -
+        label: Geplante Operation verifiziert
+        number: 0
+        unit: %
+        second_number: 0
+        second_unit: 📄 
+      -
+        label: Operation ganz verhindert
+        number: 100
+        unit: %
+        second_number: 2
+        second_unit: 📄 
+  - category: Schulter
+    items:
+      -
+        label: Andere Operation empfohlen
+        number: 0
+        unit: %
+        second_number: 0
+        second_unit: 📄 
+      -
+        label: Geplante Operation verifiziert
+        number: 0
+        unit: %
+        second_number: 0
+        second_unit: 📄 
+      -
+        label: Operation ganz verhindert
+        number: 100
+        unit: %
+        second_number: 1
+        second_unit: 📄 
+  - category: Hüfte
+    items:
+      -
+        label: Andere Operation empfohlen
+        number: 0
+        unit: %
+        second_number: 0
+        second_unit: 📄 
+      -
+        label: Geplante Operation verifiziert
+        number: 0
+        unit: %
+        second_number: 0
+        second_unit: 📄 
+      -
+        label: Operation ganz verhindert
+        number: 100
+        unit: %
+        second_number: 2
+        second_unit: 📄 
+  - category: Knie
+    items:
+      -
+        label: Andere Operation empfohlen
+        number: 0
+        unit: %
+        second_number: 0
+        second_unit: 📄 
+      -
+        label: Geplante Operation verifiziert
+        number: 0
+        unit: %
+        second_number: 0
+        second_unit: 📄 
+      -
+        label: Operation ganz verhindert
+        number: 100
+        unit: %
+        second_number: 1
+        second_unit: 📄 
+  - category: Fuß
+    items:
+      -
+        label: Andere Operation empfohlen
+        number: 0
+        unit: %
+        second_number: 0
+        second_unit: 📄 
+      -
+        label: Geplante Operation verifiziert
+        number: 0
+        unit: %
+        second_number: 0
+        second_unit: 📄 
+      -
+        label: Operation ganz verhindert
+        number: 100
+        unit: %
+        second_number: 1
+        second_unit: 📄 
+  - category: Hand
+    items:
+      -
+        label: Andere Operation empfohlen
+        number: 0
+        unit: %
+        second_number: 0
+        second_unit: 📄 
+      -
+        label: Geplante Operation verifiziert
+        number: 0
+        unit: %
+        second_number: 0
+        second_unit: 📄 
+      -
+        label: Operation ganz verhindert
+        number: 100
+        unit: %
+        second_number: 2
+        second_unit: 📄 
+
+---
+
+CTN: categorized_enum
+title: ICD10 Codes je Indikationsbereich
+title_size: is-size-2
+categories:
+  - category: Rücken
+    items:
+      -
+        label: M54
+        number: 1
+        unit: 📄  
+      -
+        label: M54
+        number: 1
+        unit: 📄
+  - category: Schulter
+    items:
+      -
+        label: M75
+        number: 1
+        unit: 📄  
+      -
+        label: M43
+        number: 0
+        unit: 📄
+  - category: Hüfte
+    items:
+      -
+        label: M16
+        number: 2
+        unit: 📄  
+      -
+        label: S70
+        number: 0
+        unit: 📄
+  - category: Knie
+    items:
+      -
+        label: M17
+        number: 1
+        unit: 📄  
+      -
+        label: M23
+        number: 0
+        unit: 📄 
+      -
+        label: S83
+        number: 0
+        unit: 📄  
+  - category: Fuß
+    items:
+      -
+        label: Q66
+        number: 1
+        unit: 📄  
+      -
+        label: S92
+        number: 0
+        unit: 📄
+      -
+        label: M67
+        number: 0
+        unit: 📄  
+  - category: Hand
+    items:
+      -
+        label: S62
+        number: 1
+        unit: 📄  
+      -
+        label: S63
+        number: 0
+        unit: 📄
+      -
+        label: M72
+        number: 1
+        unit: 📄  
 ---
 
 
