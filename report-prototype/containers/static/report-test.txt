@@ -1,11 +1,58 @@
 CTN: showcase-numbers
-label: An Patienten versendete Gutachten im März 2020
-number: 9
+items:
+  -
+    label: Gutachten seit Vertragsbeginn
+    number: 9
+---
+
+
+
+CTN: compareable-numbers-large
+title: Conversion
+title_size: is-size-3
+items:
+  -
+    label: Eingegangene Anrufe
+    number: 20
+    unit: 📞
+  -
+    label: Aufgenommene Patienten
+    number: 8
+    unit: 👤
+  -
+    label: Versendete Gutachten
+    number: 9
+    unit: 📄
+  -
+    label: Abgebrochene Gutachten
+    number: 0
+    unit: 📄
+  -
+    label: Vollständiges Vorliegen Unterlagen bis GA-Erstellung
+    number: 2,3
+    unit: Tage
+
 ---
 
 
 
 CTN: overview-numbers
+title: Gutachten im März 2020
+title_size: is-size-1
+---
+
+
+
+CTN: showcase-numbers
+items:
+  -
+    label: Insgesamt an Patienten Versendete Gutachten
+    number: 9
+---
+
+
+
+CTN: compareable-numbers-large
 title: Gutachten je Indikationsbereich
 title_size: is-size-2
 items:
@@ -13,26 +60,38 @@ items:
     label: Rücken
     number: 2
     unit: 📄
+    second_number: 11
+    second_unit: %
   -
     label: Schulter
     number: 1
     unit: 📄
+    second_number: 22
+    second_unit: % 
   -
     label: Hüfte
     number: 2
     unit: 📄
+    second_number: 11
+    second_unit: % 
   -
     label: Knie
     number: 1
     unit: 📄
+    second_number: 11
+    second_unit: % 
   -
     label: Fuß
     number: 1
     unit: 📄
+    second_number: 11
+    second_unit: % 
   -
     label: Hand
     number: 2
     unit: 📄
+    second_number: 22
+    second_unit: % 
 ---
 
 
@@ -109,7 +168,7 @@ items:
     label: Andere Operation empfohlen
     number: 0
     unit: %
-    second_number: 9
+    second_number: 0
     second_unit: 📄 
   -
     label: Geplante Operation verifiziert
@@ -333,3 +392,261 @@ categories:
 ---
 
 
+
+CTN: compareable-numbers-large
+title: Therapieempfehlung im Gutachten
+title_size: is-size-2
+items:
+  -
+    label: Bildgebende Diagnostik
+    number: 2 
+    unit: 📄
+    second_number: 22,22
+    second_label: %
+  - 
+    label: Diagnostische Maßnahmen
+    number: 2 
+    unit: 📄
+    second_number: 22,22
+    second_label: %
+  - 
+    label: Ergänzende Maßnahmen
+    number: 1 
+    unit: 📄
+    second_number: 11,11
+    second_label: %
+  - 
+    label: Medikamente
+    number: 2 
+    unit: 📄
+    second_number: 22,22
+    second_label: %
+  - 
+    label: Nicht-operative therapeutische Maßnahmen
+    number: 2 
+    unit: 📄
+    second_number: 22,22
+    second_label: %
+  - 
+    label: Operation
+    number: 0 
+    unit: 📄
+    second_number: 0,00
+    second_label: 
+---
+
+
+
+CTN: compareable-numbers-large
+title: Abgebrochene Zweitmeinungsanfragen
+title_size: is-size-2
+items:
+  -
+    label: Rücken
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 📄 
+  -
+    label: Schulter
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 📄 
+  -
+    label: Hüfte
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 📄 
+  -
+    label: Knie
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 📄 
+  -
+    label: Fuß
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 📄 
+  -
+    label: Hand
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 📄 
+---
+
+
+
+CTN: overview-numbers
+title: NutzerInnen des Angebots
+title_size: is-size-1
+---
+
+
+
+CTN: compareable-numbers-medium
+title: Alter (in Jahren)
+title_size: is-size-2
+items:
+  -
+    label: 0-9
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 👤 
+  -
+    label: 10-19
+    number: 11
+    unit: %
+    second_number: 1
+    second_unit: 👤
+  -
+    label: 20-29
+    number: 22
+    unit: %
+    second_number: 2
+    second_unit: 👤 
+  -
+    label: 30-39
+    number: 22
+    unit: %
+    second_number: 2
+    second_unit: 👤 
+  -
+    label: 40-49
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 👤 
+  -
+    label: 50-59
+    number: 22
+    unit: %
+    second_number: 2
+    second_unit: 👤 
+  -
+    label: 60-69
+    number: 22
+    unit: %
+    second_number: 2
+    second_unit: 👤 
+  -
+    label: 70-79
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 👤
+  -
+    label: 80+
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 👤 
+---
+
+
+
+CTN: compareable-numbers-medium
+title: Regionale Inanspruchnahme
+title_size: is-size-2
+items:
+  -
+    label: Baden-Würrttenberg
+    number: 22
+    unit: %
+    second_number: 2
+    second_unit: 👤 
+  -
+    label: Bayern
+    number: 11
+    unit: %
+    second_number: 1
+    second_unit: 👤
+  -
+    label: Berlin
+    number: 0
+    unit: %
+    second_number: 2
+    second_unit: 👤 
+  -
+    label: Brandenburg
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 👤 
+  -
+    label: Bremen
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 👤 
+  -
+    label: Hamburg
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 👤 
+  -
+    label: Hessen
+    number: 11
+    unit: %
+    second_number: 1
+    second_unit: 👤 
+  -
+    label: Mecklenburg- Vorpommern
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 👤
+  -
+    label: Niedersachsen
+    number: 33
+    unit: %
+    second_number: 3
+    second_unit: 👤
+  -
+    label: Nordrhein- Westfalen
+    number: 11
+    unit: %
+    second_number: 1
+    second_unit: 👤
+  -
+    label: Rheinland-Pfalz
+    number: 11
+    unit: %
+    second_number: 1
+    second_unit: 👤 
+  -
+    label: Saarland
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 👤
+  -
+    label: Sachsen
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 👤
+  -
+    label: Sachsen-Anhalt
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 👤
+  -
+    label: Schleswig-Holstein
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 👤
+  -
+    label: Thüringen
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 👤
