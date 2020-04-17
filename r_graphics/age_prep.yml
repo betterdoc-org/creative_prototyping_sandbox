@@ -1,0 +1,41 @@
+CTN: compareable-numbers-medium-flexi
+title: Alter der Nutzerinnen und Nutzer
+dak_title: Alter der Nutzer
+title_size: is-size-3
+items:
+  -
+    label: "0-9"
+    number: 0
+    unit: %
+  -
+    label: "10-19"
+    number: 11
+    unit: %
+  -
+    label: "20-29"
+    number: 22
+    unit: %
+  -
+    label: "30-39"
+    number: 22
+    unit: % 
+  -
+    label: "40-49"
+    number: 0
+    unit: %
+  -
+    label: "50-59"
+    number: 22
+    unit: %
+  -
+    label: "60-69"
+    number: 22
+    unit: % 
+  -
+    label: "70-79"
+    number: 0
+    unit: %
+  -
+    label: "80+"
+    number: 0
+    unit: %

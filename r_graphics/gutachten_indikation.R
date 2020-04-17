@@ -15,9 +15,17 @@ fig <- fig %>% layout(title = "Gutachten je Indikationsbereich",
                       yaxis = list(title = "An Patienten versendete Gutachten", scaleanchor = 1),
                       paper_bgcolor='#f5f5f5',
                       plot_bgcolor='#f5f5f5',
-                      margin='15px')
+                      margin='15px',
+                      images = list(
+                        list(source = "https://www.betterdoc.org/assets/gfx/logo_square-f39fedc6477536ae4f318c10220953414c18560c6bdb82a00c9ba3937ce735ed.png",
+                             xref = "paper",
+                             yref = "paper",
+                             x= 1,
+                             y= 1.2,
+                             sizex = 1,
+                             sizey = 1,
+                             opacity = 0.8
+                        )
+                      ))
 
 fig
-
-
-
