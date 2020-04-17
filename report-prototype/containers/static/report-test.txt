@@ -3,17 +3,17 @@ bd-title-not-displayed: Key Numbers
 dak_title: Anzahl der Gutachten
 items:
   -
-    label: Gutachten im März 2020
+    label: Versendete Gutachten im März 2020
     number: 9
   -
-    label: Gutachten seit Vertragsbeginn
+    label: Versendete Gutachten seit Vertragsbeginn
     number: 9
 ---
 
 
 CTN: section_headline
 id: reports_march
-title: Gutachten im März 2020
+title: Versendete Gutachten im März 2020
 dak_title: 
 title_size: is-size-1
 ---
@@ -203,7 +203,7 @@ items:
 
 
 CTN: compareable-numbers-large
-title: Indikation
+title: Indikationsbereiche
 dak_title: Gutachten je Indikationsbereich
 title_size: is-size-2
 items:
@@ -256,8 +256,8 @@ items:
 
 
 CTN: categorized_enum
-title: ICD10 Codes je Indikation
-dak_title: ICD-10-Codes je Indikationsbereich
+title: ICD-10-Codes
+dak_title: ICD-10-Codes
 title_size: is-size-3
 categories:
   - category: Fuß
@@ -413,7 +413,7 @@ items:
 
 
 CTN: compareable-numbers-medium
-title: Nicht-OP-Empfehlung – Quote je Indikation
+title: Nicht-OP-Empfehlung – Quote je Indikationsbereich
 dak_title: OP zu Nicht-OP-Quote
 title_size: is-size-3
 items:
@@ -530,7 +530,7 @@ items:
 
 
 CTN: categorized_details
-title: Änderung der OP-Empfehlung je Indikation
+title: Änderung der OP-Empfehlung je Indikationsbereich
 dak_title: Quote geplante OP zu andere operative Therapie
 title_size: is-size-3
 categories:
@@ -696,7 +696,7 @@ items:
 
 
 CTN: compareable-numbers-medium
-title: Anzahl abgelehnter Zweitmeinungsanfragen
+title: Anzahl telefonisch abgelehnter Zweitmeinungsanfragen
 dak_title: Anzahl abgelehnter Zweitmeinungsanfragen
 title_size: is-size-3
 items:
@@ -750,7 +750,7 @@ items:
 
 
 CTN: compareable-numbers-large
-title: Gutachten je Indikationsbereich
+title: Indikationsbereiche
 dak_title: Gutachten je Indikationsbereich
 title_size: is-size-2
 items:
