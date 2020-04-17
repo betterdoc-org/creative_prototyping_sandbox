@@ -1,49 +1,746 @@
 CTN: showcase-numbers
+bd-title-not-displayed: Key Numbers
+dak_title: Anzahl der Gutachten
 items:
+  -
+    label: Gutachten im März 2020
+    number: 9
   -
     label: Gutachten seit Vertragsbeginn
     number: 9
 ---
 
 
+CTN: overview-numbers
+id: reports_march
+title: Gutachten im März 2020
+dak_title: 
+title_size: is-size-1
+---
 
 CTN: compareable-numbers-large
-title: Conversion
+id: 
+title: Demografie
+dak_title: 
+title_size: is-size-2
+---
+
+
+CTN: compareable-numbers-medium-flexi
+title: Alter der Nutzerinnen und Nutzer
+dak_title: Alter der Nutzer
 title_size: is-size-3
 items:
   -
-    label: Eingegangene Anrufe
-    number: 20
-    unit: 📞
-  -
-    label: Aufgenommene Patienten
-    number: 8
-    unit: 👤
-  -
-    label: Versendete Gutachten
-    number: 9
-    unit: 📄
-  -
-    label: Abgebrochene Gutachten
+    label: 0-9
     number: 0
-    unit: 📄
+    unit: %
+    second_number: 0
+    second_unit: 📄 
   -
-    label: Vollständiges Vorliegen Unterlagen bis GA-Erstellung
-    number: 2,3
-    unit: Tage
+    label: 10-19
+    number: 11
+    unit: %
+    second_number: 1
+    second_unit: 📄
+  -
+    label: 20-29
+    number: 22
+    unit: %
+    second_number: 2
+    second_unit: 📄 
+  -
+    label: 30-39
+    number: 22
+    unit: %
+    second_number: 2
+    second_unit: 📄 
+  -
+    label: 40-49
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 📄 
+  -
+    label: 50-59
+    number: 22
+    unit: %
+    second_number: 2
+    second_unit: 📄 
+  -
+    label: 60-69
+    number: 22
+    unit: %
+    second_number: 2
+    second_unit: 📄 
+  -
+    label: 70-79
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 📄
+  -
+    label: 80+
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 📄 
+---
 
+
+
+CTN: graphic
+items:
+  - 
+    img: /images/rplot_age_border.png
+---
+
+
+
+CTN: many-numbers
+title: Regionale Inanspruchnahme
+dak_title: Regionale Inanspruchnahme
+title_size: is-size-3
+items:
+  -
+    label: Baden-Württenberg
+    number: 22
+    unit: %
+    second_number: 2
+    second_unit: 📄 
+  -
+    label: Bayern
+    number: 11
+    unit: %
+    second_number: 1
+    second_unit: 📄
+  -
+    label: Berlin
+    number: 0
+    unit: %
+    second_number: 2
+    second_unit: 📄 
+  -
+    label: Brandenburg
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 📄 
+  -
+    label: Bremen
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 📄 
+  -
+    label: Hamburg
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 📄 
+  -
+    label: Hessen
+    number: 11
+    unit: %
+    second_number: 1
+    second_unit: 📄 
+  -
+    label: Mecklenburg-Vorpommern
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 📄
+  -
+    label: Niedersachsen
+    number: 33
+    unit: %
+    second_number: 3
+    second_unit: 📄
+  -
+    label: Nordrhein-Westfalen
+    number: 11
+    unit: %
+    second_number: 1
+    second_unit: 📄
+  -
+    label: Rheinland-Pfalz
+    number: 11
+    unit: %
+    second_number: 1
+    second_unit: 📄 
+  -
+    label: Saarland
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 📄
+  -
+    label: Sachsen
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 📄
+  -
+    label: Sachsen-Anhalt
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 📄
+  -
+    label: Schleswig-Holstein
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 📄
+  -
+    label: Thüringen
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 📄
+---
+
+
+
+CTN: compareable-numbers-large
+title: Indikation
+dak_title: Gutachten je Indikationsbereich
+title_size: is-size-2
+items:
+  -
+    label: Fuß
+    number: 1
+    unit: 📄
+    second_number: 11
+    second_unit: % 
+  -
+    label: Hand
+    number: 2
+    unit: 📄
+    second_number: 22
+    second_unit: % 
+  -
+    label: Hüfte
+    number: 2
+    unit: 📄
+    second_number: 11
+    second_unit: % 
+  -
+    label: Knie
+    number: 1
+    unit: 📄
+    second_number: 11
+    second_unit: % 
+  -
+    label: Rücken
+    number: 2
+    unit: 📄
+    second_number: 11
+    second_unit: %
+  -
+    label: Schulter
+    number: 1
+    unit: 📄
+    second_number: 22
+    second_unit: % 
+---
+
+
+
+CTN: graphic
+items:
+  - 
+    img: /images/rplot_indication_border.png
+---
+
+
+
+CTN: categorized_enum
+title: ICD10 Codes je Indikation
+dak_title: ICD-10-Codes je Indikationsbereich
+title_size: is-size-3
+categories:
+  - category: Fuß
+    items:
+      -
+        label: Q66
+        number: 1
+        unit: 📄  
+      -
+        label: S92
+        number: 0
+        unit: 📄
+      -
+        label: M67
+        number: 0
+        unit: 📄  
+  - category: Hand
+    items:
+      -
+        label: S62
+        number: 1
+        unit: 📄  
+      -
+        label: S63
+        number: 0
+        unit: 📄
+      -
+        label: M72
+        number: 1
+        unit: 📄  
+  - category: Hüfte
+    items:
+      -
+        label: M16
+        number: 2
+        unit: 📄  
+      -
+        label: S70
+        number: 0
+        unit: 📄
+  - category: Knie
+    items:
+      -
+        label: M17
+        number: 1
+        unit: 📄  
+      -
+        label: M23
+        number: 0
+        unit: 📄 
+      -
+        label: S83
+        number: 0
+        unit: 📄
+  - category: Rücken
+    items:
+      -
+        label: M54
+        number: 2
+        unit: 📄  
+  - category: Schulter
+    items:
+      -
+        label: M75
+        number: 1
+        unit: 📄  
+      -
+        label: M43
+        number: 0
+        unit: 📄
+---
+
+
+
+CTN: categorized_details
+title: Einseitig / beidseitig erstelltes Gutachten
+dak_title: n/a
+title_size: is-size-3
+categories:
+  - category: Fuß
+    items:
+      -
+        label: Einseitig
+        number: 0
+        unit: 📄
+      -
+        label: Beidseitig
+        number: 1
+        unit: 📄
+  - category: Hand
+    items:
+      -
+        label: Einseitig
+        number: 1
+        unit: 📄
+      -
+        label: Beidseitig
+        number: 1
+        unit: 📄
+  - category: Hüfte
+    items:
+      -
+        label: Einseitig
+        number: 0
+        unit: 📄
+      -
+        label: Beidseitig
+        number: 1
+        unit: 📄 
+  - category: Knie
+    items:
+      -
+        label: Einseitig
+        number: 0
+        unit: 📄
+      -
+        label: Beidseitig
+        number: 1
+        unit: 📄
+  - category: Schulter
+    items:
+      -
+        label: Einseitig
+        number: 1
+        unit: 📄
+      -
+        label: Beidseitig
+        number: 0
+        unit: 📄
+---
+
+
+
+CTN: compareable-numbers-large
+title: Nicht-OP-Empfehlung zu Op-Empfehlung
+dak_title: OP zu Nicht-OP-Quote
+title_size: is-size-2
+items:
+  -
+    label: Nicht-OP-Empfehlungen
+    number: 100
+    unit: %
+    second_number: 9
+    second_unit: 📄 
+  -
+    label: OP-Empfehlungen
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 📄 
+---
+
+
+
+CTN: compareable-numbers-medium
+title: Nicht-OP-Empfehlung – Quote je Indikation
+dak_title: OP zu Nicht-OP-Quote
+title_size: is-size-3
+items:
+  -
+    label: Fuß
+    number: 100,00
+    unit: %
+    second_number: 1
+    second_unit: 📄 
+  -
+    label: Hand
+    number: 100,00
+    unit: %
+    second_number: 2
+    second_unit: 📄
+  -
+    label: Hüfte
+    number: 100,00
+    unit: %
+    second_number: 2
+    second_unit: 📄 
+  -
+    label: Knie
+    number: 100,00
+    unit: %
+    second_number: 1
+    second_unit: 📄
+  -
+    label: Rücken
+    number: 100,00
+    unit: %
+    second_number: 2
+    second_unit: 📄 
+  -
+    label: Schulter
+    number: 100,00
+    unit: %
+    second_number: 1
+    second_unit: 📄 
+---
+
+
+
+CTN: compareable-numbers-large
+title: Therapieempfehlung
+dak_title: Therapieempfehlung
+title_size: is-size-2
+items:
+  -
+    label: Bildgebende Diagnostik
+    number: 22
+    unit: %
+    second_number: 2
+    second_unit: 📄
+  - 
+    label: Diagnostische Maßnahmen
+    number: 22
+    unit: %
+    second_number: 2
+    second_unit: 📄
+  - 
+    label: Ergänzende Maßnahmen
+    number: 11
+    unit: %
+    second_number: 1
+    second_unit: 📄
+  - 
+    label: Medikamente
+    number: 22
+    unit: %
+    second_number: 2
+    second_unit: 📄
+  - 
+    label: Nicht-operative therapeutische Maßnahmen
+    number: 22
+    unit: %
+    second_number: 2
+    second_unit: 📄
+  - 
+    label: Operation
+    number: 0 
+    unit: %
+    second_number: 0
+    second_unit: %
+---
+
+
+
+CTN: compareable-numbers-large
+title: Änderung der OP-Empfehlung
+dak_title: Quote geplante OP zu andere operative Therapie
+title_size: is-size-2
+items:
+  -
+    label: Andere Operation empfohlen
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 📄 
+  -
+    label: Geplante Operation verifiziert
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 📄 
+  -
+    label: Operation ganz verhindert
+    number: 100
+    unit: %
+    second_number: 9
+    second_unit: 📄 
+---
+
+
+
+CTN: categorized_details
+title: Änderung der OP-Empfehlung nach Indikation
+dak_title: Quote geplante OP zu andere operative Therapie
+title_size: is-size-3
+categories:
+  - category: Fuß
+    items:
+      -
+        label: Andere Operation empfohlen
+        number: 0
+        unit: %
+        second_number: 0
+        second_unit: 📄 
+      -
+        label: Geplante Operation verifiziert
+        number: 0
+        unit: %
+        second_number: 0
+        second_unit: 📄 
+      -
+        label: Operation ganz verhindert
+        number: 100
+        unit: %
+        second_number: 1
+        second_unit: 📄 
+  - category: Hand
+    items:
+      -
+        label: Andere Operation empfohlen
+        number: 0
+        unit: %
+        second_number: 0
+        second_unit: 📄 
+      -
+        label: Geplante Operation verifiziert
+        number: 0
+        unit: %
+        second_number: 0
+        second_unit: 📄 
+      -
+        label: Operation ganz verhindert
+        number: 100
+        unit: %
+        second_number: 2
+        second_unit: 📄
+  - category: Hüfte
+    items:
+      -
+        label: Andere Operation empfohlen
+        number: 0
+        unit: %
+        second_number: 0
+        second_unit: 📄 
+      -
+        label: Geplante Operation verifiziert
+        number: 0
+        unit: %
+        second_number: 0
+        second_unit: 📄 
+      -
+        label: Operation ganz verhindert
+        number: 100
+        unit: %
+        second_number: 2
+        second_unit: 📄 
+  - category: Knie
+    items:
+      -
+        label: Andere Operation empfohlen
+        number: 0
+        unit: %
+        second_number: 0
+        second_unit: 📄 
+      -
+        label: Geplante Operation verifiziert
+        number: 0
+        unit: %
+        second_number: 0
+        second_unit: 📄 
+      -
+        label: Operation ganz verhindert
+        number: 100
+        unit: %
+        second_number: 1
+        second_unit: 📄 
+  - category: Rücken
+    items:
+      -
+        label: Andere Operation empfohlen
+        number: 0
+        unit: %
+        second_number: 0
+        second_unit: 📄 
+      -
+        label: Geplante Operation verifiziert
+        number: 0
+        unit: %
+        second_number: 0
+        second_unit: 📄 
+      -
+        label: Operation ganz verhindert
+        number: 100
+        unit: %
+        second_number: 2
+        second_unit: 📄 
+  - category: Schulter
+    items:
+      -
+        label: Andere Operation empfohlen
+        number: 0
+        unit: %
+        second_number: 0
+        second_unit: 📄 
+      -
+        label: Geplante Operation verifiziert
+        number: 0
+        unit: %
+        second_number: 0
+        second_unit: 📄 
+      -
+        label: Operation ganz verhindert
+        number: 100
+        unit: %
+        second_number: 1
+        second_unit: 📄 
+---
+
+
+
+CTN: compareable-numbers-large
+title: Ø Dauer der Gutachtenerstellung
+dak_title: Tage Vollständiges Vorliegen der Unterlagen bis GA-Erstellung
+title_size: is-size-2
+items:
+  -
+    label: Vollständiges Vorliegen der Unterlagen bis GA-Erstellung
+    number: 2
+    unit:   Werktage 🗓
 ---
 
 
 
 CTN: overview-numbers
-title: Gutachten im März 2020
+id: calls_march
+title: Telefongespräche im März 2020
+dak_title: 
+title_size: is-size-1
+---
+
+
+CTN: compareable-numbers-large
+dak_title: 
+title_size: is-size-5
+items:
+  -
+    label: Erfolgreich (Angenommen)
+    number: 9
+    unit: 📞
+  -
+    label: Nicht Erfolgreich (Abgelehnt)
+    number: 25
+    unit: 📞
+---
+
+
+
+CTN: compareable-numbers-medium
+title: Anzahl abgelehnter Zweitmeinungsanfragen
+dak_title: Anzahl abgelehnter Zweitmeinungsanfragen
+title_size: is-size-3
+items:
+  -
+    label: Akute Krankheit, keine Diagnose
+    number: 3
+    unit: 📞
+  -
+    label: Anliegen an Versicherung
+    number: 4
+    unit: 📞
+  -
+    label: Bedarf an Bedenkzeit
+    number: 5
+    unit: 📞
+  -
+    label: Falsche Erwartung (direkt med. Beratung)
+    number: 7
+    unit: 📞
+  -
+    label: Teilnehmer- Voraussetzungen nicht erfüllt (keine OP-Indikation)
+    number: 4
+    unit: 📞
+  -
+    label: Verweis auf andere Angebote
+    number: 2
+    unit: 📞
+---
+
+
+
+CTN: overview-numbers
+id: reports_4ever
+title: Gutachten seit Vertragsbeginn
+dak_title: 
 title_size: is-size-1
 ---
 
 
 
 CTN: showcase-numbers
+bd-title-not-displayed: Gutachten seit Vertragsbeginn
+dak_title: Anzahl der Gutachten
+title_size: is-size-1
 items:
   -
     label: Insgesamt an Patienten Versendete Gutachten
@@ -54,6 +751,7 @@ items:
 
 CTN: compareable-numbers-large
 title: Gutachten je Indikationsbereich
+dak_title: Gutachten je Indikationsbereich
 title_size: is-size-2
 items:
   -
@@ -96,557 +794,4 @@ items:
 
 
 
-CTN: compareable-numbers-large
-title: OP- zu Nicht-OP-Empfehlung Quote
-title_size: is-size-2
-items:
-  -
-    label: Nicht-OP-Empfehlungen
-    number: 100
-    unit: %
-    second_number: 9
-    second_unit: 📄 
-  -
-    label: OP-Empfehlungen
-    number: 0
-    unit: %
-    second_number: 0
-    second_unit: 📄 
----
 
-
-
-CTN: compareable-numbers-medium
-title: Nicht-OP-Quote nach Indikation
-title_size: is-size-3
-items:
-  -
-    label: Rücken
-    number: 100,00
-    unit: %
-    second_number: 2
-    second_unit: 📄 
-  -
-    label: Schulter
-    number: 100,00
-    unit: %
-    second_number: 1
-    second_unit: 📄 
-  -
-    label: Hüfte
-    number: 100,00
-    unit: %
-    second_number: 2
-    second_unit: 📄 
-  -
-    label: Knie
-    number: 100,00
-    unit: %
-    second_number: 1
-    second_unit: 📄 
-  -
-    label: Fuß
-    number: 100,00
-    unit: %
-    second_number: 1
-    second_unit: 📄 
-  -
-    label: Hand
-    number: 100,00
-    unit: %
-    second_number: 2
-    second_unit: 📄 
----
-
-
-
-CTN: compareable-numbers-large
-title: Quote geplante OP zu andere operative Therapie
-title_size: is-size-2
-items:
-  -
-    label: Andere Operation empfohlen
-    number: 0
-    unit: %
-    second_number: 0
-    second_unit: 📄 
-  -
-    label: Geplante Operation verifiziert
-    number: 0
-    unit: %
-    second_number: 0
-    second_unit: 📄 
-  -
-    label: Operation ganz verhindert
-    number: 100
-    unit: %
-    second_number: 9
-    second_unit: 📄 
----
-
-
-
-CTN: categorized_details
-title: Quote geplante OP zu andere operative Therapie je Indikationsbereich
-title_size: is-size-3
-categories:
-  - category: Rücken
-    items:
-      -
-        label: Andere Operation empfohlen
-        number: 0
-        unit: %
-        second_number: 0
-        second_unit: 📄 
-      -
-        label: Geplante Operation verifiziert
-        number: 0
-        unit: %
-        second_number: 0
-        second_unit: 📄 
-      -
-        label: Operation ganz verhindert
-        number: 100
-        unit: %
-        second_number: 2
-        second_unit: 📄 
-  - category: Schulter
-    items:
-      -
-        label: Andere Operation empfohlen
-        number: 0
-        unit: %
-        second_number: 0
-        second_unit: 📄 
-      -
-        label: Geplante Operation verifiziert
-        number: 0
-        unit: %
-        second_number: 0
-        second_unit: 📄 
-      -
-        label: Operation ganz verhindert
-        number: 100
-        unit: %
-        second_number: 1
-        second_unit: 📄 
-  - category: Hüfte
-    items:
-      -
-        label: Andere Operation empfohlen
-        number: 0
-        unit: %
-        second_number: 0
-        second_unit: 📄 
-      -
-        label: Geplante Operation verifiziert
-        number: 0
-        unit: %
-        second_number: 0
-        second_unit: 📄 
-      -
-        label: Operation ganz verhindert
-        number: 100
-        unit: %
-        second_number: 2
-        second_unit: 📄 
-  - category: Knie
-    items:
-      -
-        label: Andere Operation empfohlen
-        number: 0
-        unit: %
-        second_number: 0
-        second_unit: 📄 
-      -
-        label: Geplante Operation verifiziert
-        number: 0
-        unit: %
-        second_number: 0
-        second_unit: 📄 
-      -
-        label: Operation ganz verhindert
-        number: 100
-        unit: %
-        second_number: 1
-        second_unit: 📄 
-  - category: Fuß
-    items:
-      -
-        label: Andere Operation empfohlen
-        number: 0
-        unit: %
-        second_number: 0
-        second_unit: 📄 
-      -
-        label: Geplante Operation verifiziert
-        number: 0
-        unit: %
-        second_number: 0
-        second_unit: 📄 
-      -
-        label: Operation ganz verhindert
-        number: 100
-        unit: %
-        second_number: 1
-        second_unit: 📄 
-  - category: Hand
-    items:
-      -
-        label: Andere Operation empfohlen
-        number: 0
-        unit: %
-        second_number: 0
-        second_unit: 📄 
-      -
-        label: Geplante Operation verifiziert
-        number: 0
-        unit: %
-        second_number: 0
-        second_unit: 📄 
-      -
-        label: Operation ganz verhindert
-        number: 100
-        unit: %
-        second_number: 2
-        second_unit: 📄 
-
----
-
-CTN: categorized_enum
-title: ICD10 Codes je Indikationsbereich
-title_size: is-size-2
-categories:
-  - category: Rücken
-    items:
-      -
-        label: M54
-        number: 1
-        unit: 📄  
-      -
-        label: M54
-        number: 1
-        unit: 📄
-  - category: Schulter
-    items:
-      -
-        label: M75
-        number: 1
-        unit: 📄  
-      -
-        label: M43
-        number: 0
-        unit: 📄
-  - category: Hüfte
-    items:
-      -
-        label: M16
-        number: 2
-        unit: 📄  
-      -
-        label: S70
-        number: 0
-        unit: 📄
-  - category: Knie
-    items:
-      -
-        label: M17
-        number: 1
-        unit: 📄  
-      -
-        label: M23
-        number: 0
-        unit: 📄 
-      -
-        label: S83
-        number: 0
-        unit: 📄  
-  - category: Fuß
-    items:
-      -
-        label: Q66
-        number: 1
-        unit: 📄  
-      -
-        label: S92
-        number: 0
-        unit: 📄
-      -
-        label: M67
-        number: 0
-        unit: 📄  
-  - category: Hand
-    items:
-      -
-        label: S62
-        number: 1
-        unit: 📄  
-      -
-        label: S63
-        number: 0
-        unit: 📄
-      -
-        label: M72
-        number: 1
-        unit: 📄  
----
-
-
-
-CTN: compareable-numbers-large
-title: Therapieempfehlung im Gutachten
-title_size: is-size-2
-items:
-  -
-    label: Bildgebende Diagnostik
-    number: 2 
-    unit: 📄
-    second_number: 22,22
-    second_label: %
-  - 
-    label: Diagnostische Maßnahmen
-    number: 2 
-    unit: 📄
-    second_number: 22,22
-    second_label: %
-  - 
-    label: Ergänzende Maßnahmen
-    number: 1 
-    unit: 📄
-    second_number: 11,11
-    second_label: %
-  - 
-    label: Medikamente
-    number: 2 
-    unit: 📄
-    second_number: 22,22
-    second_label: %
-  - 
-    label: Nicht-operative therapeutische Maßnahmen
-    number: 2 
-    unit: 📄
-    second_number: 22,22
-    second_label: %
-  - 
-    label: Operation
-    number: 0 
-    unit: 📄
-    second_number: 0,00
-    second_label: 
----
-
-
-
-CTN: compareable-numbers-large
-title: Abgebrochene Zweitmeinungsanfragen
-title_size: is-size-2
-items:
-  -
-    label: Rücken
-    number: 0
-    unit: %
-    second_number: 0
-    second_unit: 📄 
-  -
-    label: Schulter
-    number: 0
-    unit: %
-    second_number: 0
-    second_unit: 📄 
-  -
-    label: Hüfte
-    number: 0
-    unit: %
-    second_number: 0
-    second_unit: 📄 
-  -
-    label: Knie
-    number: 0
-    unit: %
-    second_number: 0
-    second_unit: 📄 
-  -
-    label: Fuß
-    number: 0
-    unit: %
-    second_number: 0
-    second_unit: 📄 
-  -
-    label: Hand
-    number: 0
-    unit: %
-    second_number: 0
-    second_unit: 📄 
----
-
-
-
-CTN: overview-numbers
-title: NutzerInnen des Angebots
-title_size: is-size-1
----
-
-
-
-CTN: compareable-numbers-medium
-title: Alter (in Jahren)
-title_size: is-size-2
-items:
-  -
-    label: 0-9
-    number: 0
-    unit: %
-    second_number: 0
-    second_unit: 👤 
-  -
-    label: 10-19
-    number: 11
-    unit: %
-    second_number: 1
-    second_unit: 👤
-  -
-    label: 20-29
-    number: 22
-    unit: %
-    second_number: 2
-    second_unit: 👤 
-  -
-    label: 30-39
-    number: 22
-    unit: %
-    second_number: 2
-    second_unit: 👤 
-  -
-    label: 40-49
-    number: 0
-    unit: %
-    second_number: 0
-    second_unit: 👤 
-  -
-    label: 50-59
-    number: 22
-    unit: %
-    second_number: 2
-    second_unit: 👤 
-  -
-    label: 60-69
-    number: 22
-    unit: %
-    second_number: 2
-    second_unit: 👤 
-  -
-    label: 70-79
-    number: 0
-    unit: %
-    second_number: 0
-    second_unit: 👤
-  -
-    label: 80+
-    number: 0
-    unit: %
-    second_number: 0
-    second_unit: 👤 
----
-
-
-
-CTN: compareable-numbers-medium
-title: Regionale Inanspruchnahme
-title_size: is-size-2
-items:
-  -
-    label: Baden-Würrttenberg
-    number: 22
-    unit: %
-    second_number: 2
-    second_unit: 👤 
-  -
-    label: Bayern
-    number: 11
-    unit: %
-    second_number: 1
-    second_unit: 👤
-  -
-    label: Berlin
-    number: 0
-    unit: %
-    second_number: 2
-    second_unit: 👤 
-  -
-    label: Brandenburg
-    number: 0
-    unit: %
-    second_number: 0
-    second_unit: 👤 
-  -
-    label: Bremen
-    number: 0
-    unit: %
-    second_number: 0
-    second_unit: 👤 
-  -
-    label: Hamburg
-    number: 0
-    unit: %
-    second_number: 0
-    second_unit: 👤 
-  -
-    label: Hessen
-    number: 11
-    unit: %
-    second_number: 1
-    second_unit: 👤 
-  -
-    label: Mecklenburg- Vorpommern
-    number: 0
-    unit: %
-    second_number: 0
-    second_unit: 👤
-  -
-    label: Niedersachsen
-    number: 33
-    unit: %
-    second_number: 3
-    second_unit: 👤
-  -
-    label: Nordrhein- Westfalen
-    number: 11
-    unit: %
-    second_number: 1
-    second_unit: 👤
-  -
-    label: Rheinland-Pfalz
-    number: 11
-    unit: %
-    second_number: 1
-    second_unit: 👤 
-  -
-    label: Saarland
-    number: 0
-    unit: %
-    second_number: 0
-    second_unit: 👤
-  -
-    label: Sachsen
-    number: 0
-    unit: %
-    second_number: 0
-    second_unit: 👤
-  -
-    label: Sachsen-Anhalt
-    number: 0
-    unit: %
-    second_number: 0
-    second_unit: 👤
-  -
-    label: Schleswig-Holstein
-    number: 0
-    unit: %
-    second_number: 0
-    second_unit: 👤
-  -
-    label: Thüringen
-    number: 0
-    unit: %
-    second_number: 0
-    second_unit: 👤

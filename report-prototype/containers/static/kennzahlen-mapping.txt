@@ -1,0 +1,158 @@
+CTN: showcase-numbers
+bd-title-not-displayed: Key Numbers
+dak_title: Anzahl der Gutachten
+---
+
+
+CTN: overview-numbers
+id: reports_march
+title: Gutachten im März 2020
+dak_title: 
+title_size: is-size-1
+---
+
+CTN: compareable-numbers-large
+id: 
+title: Demografie
+dak_title: 
+title_size: is-size-2
+---
+
+
+CTN: compareable-numbers-medium-flexi
+title: Alter der Nutzerinnen und Nutzer
+dak_title: Alter der Nutzer
+title_size: is-size-3
+---
+
+
+
+CTN: many-numbers
+title: Regionale Inanspruchnahme
+dak_title: Regionale Inanspruchnahme
+title_size: is-size-3
+---
+
+
+
+CTN: compareable-numbers-large
+title: Indikation
+dak_title: Gutachten je Indikationsbereich
+title_size: is-size-2
+---
+
+
+
+CTN: categorized_enum
+title: ICD10 Codes je Indikation
+dak_title: ICD-10-Codes je Indikationsbereich
+title_size: is-size-3
+
+---
+
+
+
+CTN: categorized_details
+title: Einseitig / beidseitig erstelltes Gutachten
+dak_title: n/a
+title_size: is-size-3
+---
+
+
+
+CTN: compareable-numbers-large
+title: Nicht-OP-Empfehlung zu Op-Empfehlung
+dak_title: OP zu Nicht-OP-Quote
+title_size: is-size-2
+---
+
+
+
+CTN: compareable-numbers-medium
+title: Nicht-OP-Empfehlung – Quote je Indikation
+dak_title: OP zu Nicht-OP-Quote
+title_size: is-size-3
+---
+
+
+
+CTN: compareable-numbers-large
+title: Therapieempfehlung
+dak_title: Therapieempfehlung
+title_size: is-size-2
+---
+
+
+
+CTN: compareable-numbers-large
+title: Änderung der OP-Empfehlung
+dak_title: Quote geplante OP zu andere operative Therapie
+title_size: is-size-2
+---
+
+
+
+CTN: categorized_details
+title: Änderung der OP-Empfehlung nach Indikation
+dak_title: Quote geplante OP zu andere operative Therapie
+title_size: is-size-3
+---
+
+
+
+CTN: compareable-numbers-large
+title: Ø Dauer der Gutachtenerstellung
+dak_title: Tage Vollständiges Vorliegen der Unterlagen bis GA-Erstellung
+title_size: is-size-2
+---
+
+
+
+CTN: overview-numbers
+id: calls_march
+title: Telefongespräche im März 2020
+dak_title: 
+title_size: is-size-1
+---
+
+
+CTN: compareable-numbers-large
+dak_title: 
+title_size: is-size-5
+---
+
+
+
+CTN: compareable-numbers-medium
+title: Anzahl abgelehnter Zweitmeinungsanfragen
+dak_title: Anzahl abgelehnter Zweitmeinungsanfragen
+title_size: is-size-3
+---
+
+
+
+CTN: overview-numbers
+id: reports_4ever
+title: Gutachten seit Vertragsbeginn
+dak_title: 
+title_size: is-size-1
+---
+
+
+
+CTN: showcase-numbers
+bd-title-not-displayed: Gutachten seit Vertragsbeginn
+dak_title: Anzahl der Gutachten
+---
+
+
+
+CTN: compareable-numbers-large
+title: Gutachten je Indikationsbereich
+dak_title: Gutachten je Indikationsbereich
+title_size: is-size-2
+---
+
+
+
+

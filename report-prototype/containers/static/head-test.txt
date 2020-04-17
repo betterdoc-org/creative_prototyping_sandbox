@@ -5,6 +5,15 @@ image_payer: /images/dak.png
 
 
 CTN: stage
-title: Zweitmeinung per Gutachten
-date: März 2020
----
+title: Zweitmeinung per Gutachten – Monatlicher Report
+items:
+  -
+  	label: Gutachten im März 2020
+  	id: reports_march
+  -	
+    label: Telefongespräche im März 2020
+    id: calls_march
+  -
+  	label: Gutachten seit Vertragsbeginn
+  	id: reports_4ever
+ ---
