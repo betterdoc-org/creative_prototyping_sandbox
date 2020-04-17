@@ -11,7 +11,7 @@ items:
 ---
 
 
-CTN: overview-numbers
+CTN: section_headline
 id: reports_march
 title: Gutachten im März 2020
 dak_title: 
@@ -530,7 +530,7 @@ items:
 
 
 CTN: categorized_details
-title: Änderung der OP-Empfehlung nach Indikation
+title: Änderung der OP-Empfehlung je Indikation
 dak_title: Quote geplante OP zu andere operative Therapie
 title_size: is-size-3
 categories:
@@ -671,7 +671,7 @@ items:
 
 
 
-CTN: overview-numbers
+CTN: section_headline
 id: calls_march
 title: Telefongespräche im März 2020
 dak_title: 
@@ -728,7 +728,7 @@ items:
 
 
 
-CTN: overview-numbers
+CTN: section_headline
 id: reports_4ever
 title: Gutachten seit Vertragsbeginn
 dak_title: 

@@ -1,14 +1,13 @@
 <!-- stage start -->
-    <section class="hero is-primary">
+    <section class="hero is-success">
         <div class="hero-body">
             <div class="container">
                 <h1 class="title is-size-1">
-                    {{title}}<br>
-                    {{date}}
+                    {{title}}
                 </h1>
-                <h2 class="subtitle">
-                    📄 an Patienten versendete Gutachten | 👤 Individuen |  📞 Anrufe
-                </h2>
+                {{#items}}
+                <a href="#{{id}}"><button class="button is-primary is-inverted is-outlined is-success">{{label}}</button></a>
+                {{/items}}
             </div>
         </div>
     </section>
