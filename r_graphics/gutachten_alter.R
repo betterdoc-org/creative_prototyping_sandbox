@@ -1,7 +1,7 @@
 library(plotly)
 
 x <- c("0-9", "10-19", "20-29", "30-39", "40-49", "50-59", "60-69", "70-79", "80+")
-y <- c(0, 1, 2, 2, 0, 2, 2, 0, 0)
+y <- c(0, 11, 22, 22, 0, 22, 22, 0, 0)
 data <- data.frame(x, y)
 
 fig <- plot_ly(data, x = ~x, y = ~y, type = 'bar',
@@ -12,7 +12,7 @@ fig <- plot_ly(data, x = ~x, y = ~y, type = 'bar',
                ))
 fig <- fig %>% layout(title = "Gutachten je Altersgruppe",
                       xaxis = list(title = "Altersgruppe"),
-                      yaxis = list(title = "An Patienten versendete Gutachten", scaleanchor = 1),
+                      yaxis = list(title = "An Patienten versendete Gutachten (%)"),
                       paper_bgcolor='#f5f5f5',
                       plot_bgcolor='#f5f5f5',
                       margin='15px',
