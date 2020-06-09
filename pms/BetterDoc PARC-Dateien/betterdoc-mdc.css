@@ -1,0 +1,183 @@
+:root {
+  --mdc-layout-grid-margin-desktop: 0;
+
+  --mdc-theme-primary: #1faa00;
+  --mdc-theme-on-primary: #ffffff;
+
+  --mdc-theme-secondary: #1faa00;
+  --mdc-theme-on-secondary: #ffffff;
+
+  --mdc-theme-background: #fff;
+
+  --mdc-theme-surface: #FCFCFA;
+  --mdc-theme-error: #b00020;
+  --mdc-theme-on-surface: #000;
+  --mdc-theme-on-error: #fff;
+
+  --mdc-theme-text-primary-on-background: rgba(0, 0, 0, 0.87);
+  --mdc-theme-text-primary-on-dark: white;
+  --mdc-theme-text-primary-on-light: rgba(0, 0, 0, 0.87);
+
+  --mdc-theme-text-secondary-on-background: rgba(0, 0, 0, 0.54);
+  --mdc-theme-text-secondary-on-dark: rgba(255, 255, 255, 0.7);
+  --mdc-theme-text-secondary-on-light: rgba(0, 0, 0, 0.54);
+
+  --mdc-theme-text-hint-on-background: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-hint-on-light: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-hint-on-dark: rgba(255, 255, 255, 0.5);
+
+  --mdc-theme-text-icon-on-background: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-icon-on-light: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-icon-on-dark: rgba(255, 255, 255, 0.5);
+
+  --mdc-theme-text-disabled-on-background: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-disabled-on-light: rgba(0, 0, 0, 0.38);
+  --mdc-theme-text-disabled-on-dark: rgba(255, 255, 255, 0.5);
+}
+
+html {
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+@media only screen and (min-width: 0) {
+  html {
+      font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  html {
+      font-size: 14.5px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+      font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .container {
+      width: 85%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .container {
+      width: 70%;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.bd-typopgraphy .bd-padded {
+  padding: 16px;
+}
+
+.bd-typopgraphy .bd-padded-vertical {
+  padding: 1rem 0rem 1rem 0rem;
+}
+
+.bd-typopgraphy h3 {
+  margin: 0.8em 0 0.8em 0;
+}
+
+.bd-typopgraphy h4 {
+  margin: 0.7em 0 0.7em 0;
+}
+
+.bd-typopgraphy h5 {
+  margin: 0.6em 0 0.6em 0;
+}
+
+.mdc-typography--headline1, .mdc-typography--headline2, .mdc-typography--headline3, .mdc-typography--headline4, .mdc-typography--headline5, .mdc-typography--headline6 {
+  font-weight: 700 !important;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif !important;
+}
+
+/*COLORS*/
+.background-color--primary {
+  background-color: #1faa00;
+}
+
+.font-color--white {
+  color: white;
+}
+
+.text-alignment--center {
+  text-align: center;
+}
+
+/*ICONS*/
+/* Rules for sizing the icon. */
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light {
+  color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.bd-mdc-layout-grid {
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
+}
+
+.bd-mdc-card {
+  padding: 15px 20px;
+}
+
+.bd-mdc-card-error {
+  background-color: #ffd2da;
+}
+
+/*
+Text color for Label of outlined inputs must be overridden by hand because currently
+MDC doesn't use CSS variable for its coloring. Rather it's hardcoded in CDN build.
+*/
+.mdc-text-field--focused.mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-floating-label,
+.mdc-select:not(.mdc-select--disabled).mdc-select--focused .mdc-floating-label {
+  color: var(--mdc-theme-primary) !important;
+}
+
+/*
+  The color of the dropdown icon in a focused select field is hardcoded in MDC's
+  CDN and can't be changed by CSS. This sets it to our `--mdc-theme-primary`'s
+  colour value of `1faa00`.
+  */
+.mdc-select--focused .mdc-select__dropdown-icon {
+  background: url("data:image/svg+xml,%3Csvg%20width%3D%2210px%22%20height%3D%225px%22%20viewBox%3D%227%2010%2010%205%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%20%20%20%20%3Cpolygon%20id%3D%22Shape%22%20stroke%3D%22none%22%20fill%3D%22%231faa00%22%20fill-rule%3D%22evenodd%22%20opacity%3D%220.54%22%20points%3D%227%2010%2012%2015%2017%2010%22%3E%3C%2Fpolygon%3E%0A%3C%2Fsvg%3E") no-repeat center;
+}
