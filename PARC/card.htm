@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)https://parc-staging.betterdoc.org/stack/clinics?case_id=194-248-501 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css" data-tag-name="trix-editor">trix-editor {
+  display: block;
+}
+
+trix-editor:empty:not(:focus)::before {
+  content: attr(placeholder);
+  color: graytext;
+  cursor: text;
+}
+
+trix-editor a[contenteditable=false] {
+  cursor: text;
+}
+
+trix-editor img {
+  max-width: 100%;
+  height: auto;
+}
+
+trix-editor [data-trix-attachment] figcaption textarea {
+  resize: none;
+}
+
+trix-editor [data-trix-attachment] figcaption textarea.trix-autoresize-clone {
+  position: absolute;
+  left: -9999px;
+  max-height: 0px;
+}
+
+trix-editor [data-trix-attachment] figcaption[data-trix-placeholder]:empty::before {
+  content: attr(data-trix-placeholder);
+  color: graytext;
+}
+
+trix-editor [data-trix-cursor-target] {
+  display: inline-block !important;
+  width: 1px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+}
+
+trix-editor [data-trix-cursor-target=left] {
+  vertical-align: top !important;
+  margin-left: -1px !important;
+}
+
+trix-editor [data-trix-cursor-target=right] {
+  vertical-align: bottom !important;
+  margin-right: -1px !important;
+}</style><style type="text/css" data-tag-name="trix-toolbar">trix-toolbar {
+  display: block;
+}
+
+trix-toolbar {
+  white-space: nowrap;
+}
+
+trix-toolbar [data-trix-dialog] {
+  display: none;
+}
+
+trix-toolbar [data-trix-dialog][data-trix-active] {
+  display: block;
+}
+
+trix-toolbar [data-trix-dialog] [data-trix-validate]:invalid {
+  background-color: #ffdddd;
+}</style>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BetterDoc PARC</title>
+    <link href="./BetterDoc PARC_files/icon" rel="stylesheet">
+    <script src="./BetterDoc PARC_files/jquery.min.js"></script>
+    <script src="./BetterDoc PARC_files/trix.js" integrity="sha256-ZnHiEOG1mQVIQHeVGc+lHPvZjtCC8cWqNI7W1GpkN3I=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./BetterDoc PARC_files/trix.css" integrity="sha256-vu9SAWhYz3+PNEdy/FtYE0QBaAS2e/cB7OcSWV28WcM=" crossorigin="anonymous">
+    <link rel="stylesheet" href="./BetterDoc PARC_files/material-components-web.min.css">
+    <link rel="stylesheet" href="./BetterDoc PARC_files/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./BetterDoc PARC_files/app-b18310a0e9602340b72b5ba7e10ad666.css">
+  </head>
+  <body>
+    <main role="main">
+  <div id="3C3B543174CECB52BC45A416B1C1293C" class="container-wrapper skeleton-navbar" data-host="http://containerist-cs-renderer/main_nav/as/nav/">  <nav class="bd-nav">
+    <header class="mdc-top-app-bar mdc-theme--background">
+      <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+            <a href="https://parc-staging.betterdoc.org/stack/index" data-stacker-no-hijack="" class="mdc-button ">
+              
+              <strong class="mdc-theme--on-primary">PARC</strong>
+            </a>
+            <a href="https://parc-staging.betterdoc.org/stack/casesearch" data-stacker-no-hijack="" class="mdc-button ">
+              <i class="material-icons font-color--white md-24">folder_shared</i>
+              <strong class="mdc-theme--on-primary">Case Finder</strong>
+            </a>
+            <a href="https://parc-staging.betterdoc.org/stack/caseeditor" data-stacker-no-hijack="" class="mdc-button ">
+              <i class="material-icons font-color--white md-24">create_new_folder</i>
+              <strong class="mdc-theme--on-primary">New Case</strong>
+            </a>
+            <a href="https://parc-staging.betterdoc.org/stack/leads" data-stacker-no-hijack="" class="mdc-button ">
+              <i class="material-icons font-color--white md-24">folder_special</i>
+              <strong class="mdc-theme--on-primary">Admission Overview</strong>
+            </a>
+            <a href="https://parc-staging.betterdoc.org/stack/eventsreporting" data-stacker-no-hijack="" class="mdc-button ">
+              <i class="material-icons font-color--white md-24">dvr</i>
+              <strong class="mdc-theme--on-primary">Event Reports</strong>
+            </a>
+            <a href="https://parc-staging.betterdoc.org/stack/vouchersearch" data-stacker-no-hijack="" class="mdc-button ">
+              <i class="material-icons font-color--white md-24">local_play</i>
+              <strong class="mdc-theme--on-primary">Voucher</strong>
+            </a>
+        </section>
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+          <a class="mdc-button mdc-theme--on-primary btn-logout" data-stacker-no-hijack="" href="https://parc-staging.betterdoc.org/session/logout">Logout&nbsp;&nbsp;&nbsp;</a>
+        </section>
+      </div>
+    </header>
+  </nav>
+
+  <style type="text/css">
+    .bd-nav section {
+      padding: 0;
+    }
+
+    .bd-nav a {
+      height: 64px;
+    }
+
+    .bd-nav a:hover {
+      background-color: #219207;
+    }
+
+    .bd-nav a > i{
+      margin-right: 9px;
+    }
+
+    @media (max-width: 1065px) {
+      .bd-nav a:not(.btn-logout) {
+        display: none;
+      }
+    }
+  </style>
+</div>
+  <div id="2826D7F344EB9F6843B5562905AE495A" class="container-wrapper skeleton-title" data-host="http://containerist-cs-renderer/_Clinics%20Finder_/as/place_title/"><section class="mdc-layout-grid bd-mdc-layout-grid">
+  <div class="mdc-layout-grid__inner">
+    <div class="mdc-layout-grid__cell--span-12">
+      <h1 class="mdc-typography--headline1">Clinics Finder</h1>
+    </div>
+  </div>
+</section>
+</div>
+  <div id="03A2205342F000F858E38378963E2A4B" class="container-wrapper skeleton-1" data-host="https://t-general-cs-addressfinder.herokuapp.com/search/"><div></div></div>
+  <div id="0B66BD42FA75065EA05769B176939EDA" class="container-wrapper skeleton-4" data-host="https://t-case-cs-details.herokuapp.com/facts/"><div id="case-facts" class="mdc-layout-grid bd-mdc-layout-grid container">
+  <div class="mdc-layout-grid__inner">
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+          <table>
+            <tbody><tr>
+              <td width="18%"><em>Top Facts</em></td>
+              <td class="chips-column">
+                <div class="mdc-chip-set" data-mdc-auto-init="MDCChipSet" data-mdc-auto-init-state="initialized">
+                    <div class="mdc-chip mdc-ripple-upgraded" id="mdc-chip-1">
+                      <span class="mdc-chip__text">ortho</span>
+                    </div>
+                    <div class="mdc-chip mdc-ripple-upgraded" id="mdc-chip-2">
+                      <span class="mdc-chip__text">zur Abgabe einer kompetenten Zweitmeinung
+                    </span></div>
+                    <div class="mdc-chip mdc-ripple-upgraded" id="mdc-chip-3">
+                      <span class="mdc-chip__text">PKV</span>
+                    </div>
+                </div>
+              </td>
+            </tr></tbody>
+          </table>
+    </div>
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-7 table-body">
+          <table>
+            <tbody>
+            <tr>
+              <td width="28%" colspan="1"><em>Voucher code</em></td>
+              <td colspan="1">
+                  n/a
+              </td>
+            </tr>
+              <tr>
+                <td width="28%" colspan="1"><em>Phone</em></td>
+                <td colspan="1">
+                    +49 0800 / 444 6 999
+                </td>
+              </tr>
+              <tr>
+                <td colspan="1"><em>Email</em></td>
+                <td colspan="2">
+                    n/a
+                </td>
+              </tr>
+              <tr>
+                <td colspan="1"><em>Address</em></td>
+                <td colspan="2">
+                      Geibelstr. 9 42a |
+                      47621 Ehmannburg
+                      (DE)
+                </td>
+              </tr>
+              <tr>
+                <td colspan="1"><em>Travel Radius</em></td>
+                  <td colspan="2">200</td>
+              </tr>
+              <tr>
+                <td colspan="1"><em>Insurance</em></td>
+                <td colspan="2">
+                  Inter Krankenversicherung
+                </td>
+              </tr>
+              <tr>
+                <td colspan="1" style="vertical-align: top"><em>Behaviour</em></td>
+                <td colspan="2">Responsible ambassador change: Dr. Daniela Heidelberg (before: -)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-5 table-body">
+          <table>
+            <tbody>
+              <tr>
+                <td><em>Ambassador</em></td>
+                  <td>Dr. Daniela Heidelberg</td>
+              </tr>
+              <tr>
+                <td><em>Researcher</em></td>
+                  <td>Jacqueline Elbern</td>
+              </tr>
+              <tr>
+                <td><em>Admission</em></td>
+                  <td>
+                    14.07.2017
+                  </td>
+              </tr>
+              <tr>
+                <td><em>Specialisation</em></td>
+                <td>Orthopädie und Unfallchirurgie</td>
+              </tr>
+              <tr>
+                <td><em>Case ID</em></td>
+                <td>194-248-501</td>
+              </tr>
+              <tr>
+                <td style="vertical-align: top"><em>Recommended<br>Physicians</em></td>
+                <td style="vertical-align: top">
+                        Prof. Dr. med. Markus Scheibel, Berlin<br>
+                        Priv.- Doz. Dr. med. Olaf Lorbach, Berlin<br>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+  </div>
+</div>
+
+<style type="text/css">
+  #case-facts td {
+    vertical-align: top;
+    padding: 15px 5px;
+    display: table-cell;
+    text-align: left;
+    border-radius: 2px;
+  }
+  #case-facts tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  #case-facts table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  #case-facts .table-body {
+    margin-top: -20px;
+  }
+  #case-facts .chips-column {
+    padding: 0;
+  }
+</style>
+</div>
+  <div id="8881A0EA2737700B80B75E392CB9E1F0" class="container-wrapper skeleton-1" data-host="https://t-case-cs-details.herokuapp.com/description/">
+<div id="case-description" class="container">
+  <div class="bd-accordion mdc-card">
+  <input type="checkbox" class="accordion-switch" name="accordion-switch-8881A0EA2737700B80B75E392CB9E1F0" id="accordion-switch-8881A0EA2737700B80B75E392CB9E1F0">
+  <label class="accordion-heading" for="accordion-switch-8881A0EA2737700B80B75E392CB9E1F0">
+    <h4 class="mdc-typography--headline4">
+      Description <span class="light">(Schulterschmerzen)</span>
+      <i class="material-icons mdc-theme--primary expand-icon">add</i>
+    </h4>
+    <span>Hauptdiagnose: Subluxation des Humeruskopfes bei Z...</span>
+    <div class="separator"></div>
+  </label>
+  <div class="accordion-content">
+    
+      <table>
+        <tbody>
+            <tr>
+              <td width="33%">
+                <em>Description for Experts / TVB Fax:</em>
+              </td>
+              <td>
+                Hauptdiagnose: Subluxation des Humeruskopfes bei Z. n. Reposition und Osteosynthese einer initial nach ventral luxierten subkapitalen Humerusmehrfragmentfraktur (ED 11.06.2017)<br>Nebendiagnosen: Fersensporn, Sakroileitis, degenerative Veränderungen v. a. HWS und LWS, Z. n. OP bei Tibifraktur li, Z. n. OP bei fibulare Bandruptur re<br>Z n. offener Reposition, winkelstabiler PHILOS-Platten-Osteosynthese unter Implantation von Bankspongiosa am 19.06.2017<br>Z. n. OP bei Kalkschulter li 2014<br>Klinik: am 11.06.2017 Sturz im Urlaub, postoperativ weiterhin Schmerzen der ventralen Schulter (VAS: 6), Gilchrist-Verband seit einer Woche abgelegt, Anteversion und Retroversion nur bis 20° möglich, deutliche Kraftminderung, Sensibilitätsstörungen über M. deltoideus, Körpergröße: 168 cm, Körpergewicht: 74 kg, Beruf: Kinderärztin<br>ENG/EMG 07.07.2017: stark ausgeprägte, inkomplette, axonale Schädigung des N. axillaris li<br>CT  obere Extremität li 04.07.2017: Im Vergleich zur Aufnahme vom 13.07.2017 aktuell Zustand nach osteosynthetischer Versorgung einer luxierten subcapitalen Oberarmkopfmehrfragmentfraktur. Die Plattenosteosynthese fixiert die Fragmente anatomiegerecht. Ventral des Humerus finden sich noch einzelne isolierte Fragmente. Desweiteren findet sich eine umschriebene Verkalkung innerhalb des Gelenkspaltes. Kein Hinweis auf Materialbruch oder Materiallockerung. Im Verlauf des N. axillaris infraklavikulär und am M. deltoideus kein Hinweis auf Fragmente, die den Nerv alterieren könnten. <br>Rö-Kontrolle Schulter li postoperativ 04.07.2017: Im Vergleich zur Aufnahme vom 21.06.2017 ist der Oberarm weiter nach kaudal abgerutscht und befindet sich jetzt mit direktem Kontakt zur Unterkante des Labrum glenoidale.  <br>CT obere Extremität li 14.06.2017: 4-Segment-Fraktur des proximalen Humerus li mit geringer Dislocatio cum contractione um ca. 1cm. <br><br>Bisherige Therapie: Geschlossene Reposition am Unfallort am 11.06.2017, postoperativ Gilchrist-Verbandfür drei Wochen, passive Physiotherapie seit einer Woche, Ibu 800 2x/d<br>Aktuelle Therapieempfehlung des vorbehandelnden Arztes: Wiedervorstellung in einer Woche, wenn die Schulter weiterhin subluxiert ist, ggf. erneute operative Versorgung ("Muskelraffung")
+              </td>
+            </tr>
+            <tr>
+              <td width="33%">
+                <em>Internal Notes (only visible for BetterDoc):</em>
+              </td>
+              <td>
+                 Gesucht wird ein Spezialist und versierter Operateur zur Abgabe einer kompetenten Zweitmeinung bei Subluxation des Humeruskopfes bei Z. n. Reposition und Osteosynthese einer initial nach ventral luxierten subkapitalen Humerusmehrfragmentfraktur mit Läsion des N. axillaris li vor evtl. erneutem operativem Eingriff. <br><br>Anlass für die Zweitmeinung: Pat. ist grundsätzlich mit ihrem Vorbehandler zufrieden und würde sich konservativ dort auch weiterbehandeln lassen. Vor einem evtl. erneuten operativen Eingriff wünscht sie sich jedoch eine Zweitmeinung aufgrund der Tragweite eines funktionellen Defizits des Armes bei suboptimaler Therapie. <br><br>PATIENT: freundlich, sachlich, differenziert<br><br>Was erwartet Pat.: ZM und Operateur in einer Person, traumatologischer Schulterspezialist<br>Welche Ärzte kommen in Frage: Schulterspezialist/ Traumatologe<br>Was will Pat. nicht: konservativen Arzt für die Zweitmeinung<br><br>Idealer Arzt aus meiner Sicht:<br>☐ konservative Behandler gesamt (PRM/kons. Orthopäde) idealerweise mit neurologischer Anbindung<br>☐ konservative Behandler mit SP Schmerztherapie<br>☐ Schmerztherapie (Anästhesiologie)<br>☐ ANOA-Klinik<br>☐ orthopädische Rheumatologie<br><br>☐ Schulterendoprothetik<br>1 Schulterspezialist<br><br>ANMERKUNG: <br>1) Es wurde bislang noch nicht geklärt, wer evtl. die Zweit-OP durchführen würde. <br>2) Es gilt grundsätzlich eine Reiseumkreis von 200km, bei relevanten Qualitätsunterschieden wünscht die Pat. jedoch auch eine deutschlandweite Empfehlung. <br>3) Sollte eine Umfrage gestartet werden, möchte die Pat. nicht, dass ihr Vorbehandler Priv. Doz. Dr. med. Andreas Domagk miteinbezogen wird (soweit ich erkennen kann, ist er aber nicht in unserem Expertenbeirat). 
+              </td>
+            </tr>
+        </tbody>
+      </table>
+
+  </div>
+</div>
+
+
+<style type="text/css">
+  .bd-accordion .accordion-content {
+    display:none;
+  }
+
+  .bd-accordion label .separator {
+    display: none;
+  }
+
+  .bd-accordion .separator,
+  .bd-accordion .accordion-content .separator {
+    margin-bottom: 25px;
+    margin-top: 25px;
+    border-top: 1px rgba(0, 0, 0, 0.12) solid;
+  }
+
+  .bd-accordion .accordion-content {
+    padding: 0;
+  }
+
+  .bd-accordion .accordion-switch {
+    opacity: 0;
+    position: absolute;
+  }
+
+  .bd-accordion .accordion-switch:checked ~ .accordion-content,
+  .bd-accordion .accordion-switch:checked ~ label .separator {
+    display: block;
+  }
+
+  .bd-accordion {
+    padding: 15px 20px;
+  }
+
+  .bd-accordion .expand-icon {
+    float: right;
+    font-size: 2rem;
+    margin-right: 25px;
+  }
+
+  .bd-accordion .accordion-heading {
+    cursor: pointer;
+  }
+
+  .bd-accordion .mdc-typography--headline4 {
+    margin: 20px 0 15px 0;
+  }
+</style>
+</div>
+
+<style type="text/css">
+  #case-description .light {
+    font-weight: 300;
+  }
+
+  #case-description table {
+    border-collapse: collapse;
+  }
+
+  #case-description td {
+    vertical-align: top
+  }
+
+  #case-description td {
+    padding-top: 25px;
+  }
+</style></div>
+  <div id="74AA06A86A915E77BD337767F6B0B51A" class="container-wrapper skeleton-3" data-host="https://t-medic-cs-clinics.herokuapp.com/sites/search/"><div class="cs-clinics-sites-search container">
+  <form action="https://parc-staging.betterdoc.org/sites/search" accept-charset="UTF-8" method="get">
+    <input type="hidden" name="case_id" id="case_id" value="194-248-501">
+    <input type="hidden" name="clinic_id" id="clinic_id">
+    <input type="hidden" name="lat" id="lat" value="50.9438245" data-set-from-event="select Location.lat">
+    <input type="hidden" name="lng" id="lng" value="6.9400448" data-set-from-event="select Location.lng">
+
+    <div class="cs-clinics-sites-search-clinic-info mdc-layout-grid bd-mdc-layout-grid">
+      <div class="mdc-layout-grid__inner">
+        <div class="mdc-layout-grid__cell--span-2"></div>
+        <div class="mdc-layout-grid__cell--span-8">
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell--span-6">
+              <div class="mdc-text-field mdc-text-field--outlined" data-mdc-auto-init="MDCTextField" data-mdc-auto-init-state="initialized">
+                <input type="text" name="q" id="q" class="mdc-text-field__input">
+                <div class="mdc-notched-outline mdc-notched-outline--upgraded">
+                  <div class="mdc-notched-outline__leading"></div>
+                  <div class="mdc-notched-outline__notch">
+                    <label class="mdc-floating-label" for="q" style="">Search for one ICD/OPS code</label>
+                  </div>
+                  <div class="mdc-notched-outline__trailing"></div>
+                </div>
+              </div>
+            </div>
+            <div class="mdc-layout-grid__cell--span-6">
+              <div class="mdc-text-field mdc-text-field--outlined" data-mdc-auto-init="MDCTextField" data-mdc-auto-init-state="initialized">
+                <input type="text" name="radius" id="radius" value="100" class="mdc-text-field__input" data-set-from-event="select Radius.distance">
+                <div class="mdc-notched-outline mdc-notched-outline--upgraded mdc-notched-outline--notched">
+                  <div class="mdc-notched-outline__leading"></div>
+                  <div class="mdc-notched-outline__notch" style="width: 108.5px;">
+                    <label class="mdc-floating-label mdc-floating-label--float-above" for="radius" style="">Search radius in km</label>
+                  </div>
+                  <div class="mdc-notched-outline__trailing"></div>
+                </div>
+              </div>
+              <div class="mdc-text-field-helper-line" style="width: 100%">
+                <div><span data-set-from-event="select Location.googlemapsLink"><a class="mdc-button mdc-typography--body1" href="http://www.google.com/maps/place/50.9438245,6.9400448">around 50.9438245:6.9400448</a></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mdc-layout-grid__cell--span-2"></div>
+      </div>
+      <div class="mdc-layout-grid__inner">
+        <div class="mdc-layout-grid__cell--span-4"></div>
+        <div class="mdc-layout-grid__cell--span-4 submit-btn">
+          <button type="submit" class="mdc-button mdc-button--raised">
+            <span class="mdc-button__label">Find department sites</span>
+            <i class="material-icons mdc-button__icon" aria-hidden="true">search</i>
+          </button>
+        </div>
+        <div class="mdc-layout-grid__cell--span-4"></div>
+      </div>
+    </div>
+</form></div>
+
+<style type="text/css">
+  .cs-clinics-sites-search .mdc-text-field {
+    width: 100%;
+  }
+  .cs-clinics-sites-search .submit-btn {
+    text-align:center;
+  }
+  .cs-clinics-sites-search .around-indicator .mdc-button {
+    padding: 0 2px;
+  }
+</style>
+</div>
+  <div id="690E1193BB6AEA59DCC9C9AD45F3EEE9" class="container-wrapper skeleton-5" data-host="https://t-medic-cs-clinics.herokuapp.com//sites/selections/overview/">
+
+  
+    <title>MedicCsClinics</title>
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="vj+SL+g3ee4uqVqlvhp0DFQANJJtnocXOZCLggtXPZ5OL6ktjWUmGD1zG67tngi9SezJa+DMhS916My3RZwiOw==">
+    
+
+    <link href="./BetterDoc PARC_files/icon" rel="stylesheet">
+    <link rel="stylesheet" href="./BetterDoc PARC_files/material-components-web.min.css">
+    <link rel="stylesheet" href="./BetterDoc PARC_files/css">
+    <link rel="stylesheet" href="./BetterDoc PARC_files/betterdoc-mdc.css">
+  
+
+  
+      <div id="selection-overview-topcard" class="topcard" style="display: block;">
+    <div class="mdc-card">
+      <div class="mdc-card__primary-action">
+        <h6 class="mdc-typography--headline6">Selection</h6>
+        <p class="mdc-typography--overline">Clinic-<br>Sites</p>
+        <p class="mdc-typography--body1">3</p>
+        <p class="mdc-typography--overline">Department-<br>Sites</p>
+        <p class="mdc-typography--body1">7</p>
+        <p class="mdc-typography--overline">Codes</p>
+        <p class="mdc-typography--body1">M15<br>M17</p>
+        <div class="mdc-card__action-buttons">
+          <a class="mdc-button mdc-card__action mdc-card__action--button" href="https://parc-staging.betterdoc.org/stack/clinics?case_id=194-248-501#selection-preview">
+            <i class="material-icons">keyboard_arrow_up</i>
+            <span>Selection Preview</span>
+</a>        <div>
+      </div>
+    </div>
+  </div>
+
+<style type="text/css">
+  #selection-overview-topcard {
+    position: fixed;
+    display: none;
+    right: 23px;
+    top: 80px;
+    padding-top: 15px;
+    margin-bottom: 0;
+    z-index: 997;
+    height: 150px;
+    max-width: 15%;
+  }
+
+  #selection-overview-topcard h6 {
+    line-height: 1.3;
+  }
+
+  #selection-overview-topcard .mdc-typography--overline {
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+
+  #selection-overview-topcard .mdc-typography--body1 {
+    margin-top: 3px;
+    margin-bottom: 20px;
+  }
+
+  #selection-overview-topcard .mdc-card__primary-action {
+    padding: 15px;
+  }
+</style>
+
+
+
+
+    <script src="./BetterDoc PARC_files/material-components-web.min.js"></script>
+
+     <script>
+        if (window.mdc) {
+          window.mdc.autoInit();
+        }
+    </script>
+  
+
+</div></div></div>
+  <div id="5AD84FE7E6A89E2DE285B394DDF8A090" class="container-wrapper skeleton-1" data-host="https://t-medic-cs-clinics.herokuapp.com/sites/results_for_clinic/"><div></div></div>
+  <div id="AD9274EFB0C87B2038FBE7D94B9410F1" class="container-wrapper skeleton-3" data-host="https://t-medic-cs-clinics.herokuapp.com/sites/stats/"><div></div></div>
+  <div id="0EC56D2A25CB0F49415A7ECE61569668" class="container-wrapper skeleton-1" data-host="https://t-medic-cs-clinics.herokuapp.com/sites/selections/">
+
+  
+    <title>MedicCsClinics</title>
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="KNApPjJHBldLf6c+BXBPHq1pp6rBxiKHggBhpXXbit91M1muYCbLE0t8myLjUmMW2T8lDUezvXt2DGTTkkyxew==">
+    
+
+    <link href="./BetterDoc PARC_files/icon" rel="stylesheet">
+    <link rel="stylesheet" href="./BetterDoc PARC_files/material-components-web.min.css">
+    <link rel="stylesheet" href="./BetterDoc PARC_files/css">
+    <link rel="stylesheet" href="./BetterDoc PARC_files/betterdoc-mdc.css">
+  
+<div id="selection-preview" class="container">
+      <h3 id="selection" class="mdc-typography--headline3">Ausgewählte ÄrztInnen</h3>
+      <div class="mdc-layout-grid">
+        <div class="mdc-layout-grid_cell--span-12 mdc-card" style="padding: 15px 20px">
+        <div class="mdc-layout-grid__inner">
+
+          <div class="mdc-layout-grid__cell--span-8">
+              
+          </div>
+          <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid--align-right">
+            
+          </div>
+          <div class="mdc-layout-grid__cell--span-12">
+            <div class="mdc-data-table" style="width:100%">
+              <table id="selection-table" class="mdc-data-table__table" aria-label="Codes and sites selection" style="white-space:normal">
+                <thead>
+                  <tr class="mdc-data-table__header-row">
+                    <th class="mdc-data-table__header-cell" role="columnheader" scope="col"></th>
+                    <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Code</th>
+                    <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Selected department</th>
+                    <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Clinic/Site</th>
+                    <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Distance to patient</th>
+                  </tr>
+                </thead>
+                <tbody class="mdc-data-table__content">
+                    <tr class="mdc-data-table__row site-selection-row">
+                      <td class="mdc-data-table__cell">
+                        <button class="mdc-button" style="color:grey; opacity: 50%">
+                          <i class="material-icons">highlight_off</i>
+                        </button>
+                      </td>
+                      <td class="mdc-data-table__cell"><b>M15</b></td>
+                      <td class="mdc-data-table__cell"><b>n/a</b></td>
+                      <td class="mdc-data-table__cell"><b>St. Josef-Hospital</b><br>Im Vogelsang 5-11, 45527 Hattingen</td>
+                      <td class="mdc-data-table__cell mdc-data-table__cell--numeric">55 km</td>
+                    </tr>
+                    <tr class="mdc-data-table__row site-selection-row">
+                      <td class="mdc-data-table__cell">
+                        <button class="mdc-button" style="color:grey; opacity: 50%">
+                          <i class="material-icons">highlight_off</i>
+                        </button>
+                      </td>
+                      <td class="mdc-data-table__cell"><b>M15</b></td>
+                      <td class="mdc-data-table__cell"><b>Rheumatologie</b></td>
+                      <td class="mdc-data-table__cell"><b>Rheumazentrum Ruhrgebiet</b><br>Claudiusstr. 45, 44649 Herne</td>
+                      <td class="mdc-data-table__cell mdc-data-table__cell--numeric">68 km</td>
+                    </tr>
+                    <tr class="mdc-data-table__row site-selection-row">
+                      <td class="mdc-data-table__cell">
+                        <button class="mdc-button" style="color:grey; opacity: 50%">
+                          <i class="material-icons">highlight_off</i>
+                        </button>
+                      </td>
+                      <td class="mdc-data-table__cell"><b>M15</b></td>
+                      <td class="mdc-data-table__cell"><b>Innere Medizin/Schwerpunkt Rheumatologie</b></td>
+                      <td class="mdc-data-table__cell"><b>Immanuel Krankenhaus Berlin - Standort Berlin Wannsee</b><br>Königstr. 63, 14109 Berlin</td>
+                      <td class="mdc-data-table__cell mdc-data-table__cell--numeric">460 km</td>
+                    </tr>
+                    <tr class="mdc-data-table__row site-selection-row">
+                      <td class="mdc-data-table__cell">
+                        <button class="mdc-button" style="color:grey; opacity: 50%">
+                          <i class="material-icons">highlight_off</i>
+                        </button>
+                      </td>
+                      <td class="mdc-data-table__cell"><b>M15</b></td>
+                      <td class="mdc-data-table__cell"><b>Innere Medizin/Schwerpunkt Naturheilkunde</b></td>
+                      <td class="mdc-data-table__cell"><b>Immanuel Krankenhaus Berlin - Standort Berlin Wannsee</b><br>Königstr. 63, 14109 Berlin</td>
+                      <td class="mdc-data-table__cell mdc-data-table__cell--numeric">460 km</td>
+                    </tr>
+                    <tr class="mdc-data-table__row site-selection-row">
+                      <td class="mdc-data-table__cell">
+                        <button class="mdc-button" style="color:grey; opacity: 50%">
+                          <i class="material-icons">highlight_off</i>
+                        </button>
+                      </td>
+                      <td class="mdc-data-table__cell"><b>M15</b></td>
+                      <td class="mdc-data-table__cell"><b>Obere Extremität, Hand- und Mikrochirurgie</b></td>
+                      <td class="mdc-data-table__cell"><b>Immanuel Krankenhaus Berlin - Standort Berlin Wannsee</b><br>Königstr. 63, 14109 Berlin</td>
+                      <td class="mdc-data-table__cell mdc-data-table__cell--numeric">460 km</td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="mdc-layout-grid__cell--span-4">
+              <button class="mdc-button"; type="submit" style="color: #b00020" value="Delete Table" style="float:left">
+                <i class="material-icons">delete</i>
+                Delete Selection
+              </button>
+          </div>
+          <div class="mdc-layout-grid__cell--span-4" style="text-align:center">
+            <a class="mdc-button" href="BetterDoc PARC selection_expanded.htm#selection">
+              <i class="material-icons mdc-theme--primary expand-icon">expand_more</i>
+                Show all
+            </a>
+        </div>
+        <div class="mdc-layout-grid__cell--span-4">
+          <button class="mdc-button mdc-button--raised" target="_blank" data-stacker-no-hijack="true" href="https://parc-staging.betterdoc.org/stack/clinics-research-table?case_id=194-248-501" style="float: right;">
+              <i class="material-icons">launch</i>
+              Generate table
+          </button>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div id="selection-preview" class="container">
+      <h3 id="selection" class="mdc-typography--headline3">Suchergebnisse</h3>
+      <div class="mdc-layout-grid">
+      	<div class="mdc-layout-grid_cell--span-12 mdc-card" style="padding: 15px 20px">
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell--span-12">
+              
+                <h5 class="mdc-typography--headline5" style="margin: 10px 0px 5px 0px">
+                  <a href="lalala" style="color: var(--mdc-theme-primary); text-decoration: none;">
+                    <span>Herr Dr. med. Drews</span> 
+                    <i class="material-icons mdc-theme--primary expand-icon" style="vertical-align: middle;">language</i>
+                  </a>
+                  <span class="mdc-typography--caption" style="padding-left: 10px">Korndorf</span>
+                </h5>
+            </div>
+  <!--           <div class="mdc-layout-grid__cell--span-12 mdc-layout-grid--align-right">
+              
+            </div> -->
+            <div class="mdc-layout-grid__cell--span-2">
+              <span class="mdc-typography--overline">Distanz</span><br>
+              <span class="mdc-typography--body1">12 km</span>
+            </div>
+            <div class="mdc-layout-grid__cell--span-2">
+              <span class="mdc-typography--overline">Versicherung</span><br>
+              <span class="mdc-typography--body1">PKV</span>
+            </div>
+            <div class="mdc-layout-grid__cell--span-2">
+              <span class="mdc-typography--overline">NPS/Bewertungen</span><br>
+              <span class="mdc-typography--body1">12/3<span>
+            </div>
+            <div class="mdc-layout-grid__cell--span-6">
+              <span class="mdc-typography--overline">Spezialisierung</span><br>
+              <span class="mdc-typography--body1">Allgemeinmedizin<span>
+            </div>
+            <div class="mdc-layout-grid__cell--span-6">
+              <span class="mdc-typography--overline">Tags</span><br>
+<!-- tags start -->
+              <div class="mdc-chip-set" role="grid">
+                <div class="mdc-chip" role="row">
+                  <div class="mdc-chip__ripple"></div>
+                  <span role="gridcell">
+                    <span role="button" tabindex="0" class="mdc-chip__primary-action">
+                      <span class="mdc-chip__text">Short tag</span>
+                    </span>
+                  </span>
+                </div>
+                <div class="mdc-chip" role="row">
+                  <div class="mdc-chip__ripple"></div>
+                  <span role="gridcell">
+                    <span role="button" tabindex="-1" class="mdc-chip__primary-action">
+                      <span class="mdc-chip__text">Average Length lorem ipsum dolor sit ame </span>
+                    </span>
+                  </span>
+                </div>
+                <div class="mdc-chip" role="row">
+                  <div class="mdc-chip__ripple"></div>
+                  <span role="gridcell">
+                    <span role="button" tabindex="-1" class="mdc-chip__primary-action">
+                      <span class="mdc-chip__text">longer than 39 char lorem ipsum dolo...</span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+<!-- tags ende -->
+            </div>
+            <div class="mdc-layout-grid__cell--span-6">
+              <span class="mdc-typography--overline">Notizen aus BORG</span><br>
+              <span class="mdc-typography--body2">✍️ <i>12.3.2020:</i> Jodler abfieseln gwiss do legst di nieda Brezn ded i hob di narrisch gean. Zidern etza hoid Kaiwe pfundig Wurscht<span><br>
+              <span class="mdc-typography--body2">✍️ <i>14.1.2020: </i>
+                Biaschdal, du Ams’l, du bleede, Grantlhuaba, Fettl, Hoibschaariga, Oasch, Flegel, Kreizdeifi
+              <span>
+            </div>
+            <div class="mdc-layout-grid__cell--span-12">
+              <h6 class="mdc-typography--headline6" style="margin: 10px 0px 5px 0px">Kontakt</h6>
+            </div>
+            <div class="mdc-layout-grid__cell--span-4 ">
+               <span class="mdc-typography--overline">Adresse</span><br>
+               <span class="mdc-typography--body2">Herr Dr. med. Jürgen Drews</span><br>
+               <span class="mdc-typography--body2">Gemeinschaftspraxis</span><br>
+               <span class="mdc-typography--body2">Kornfeldstraße 11</span><br>
+               <span class="mdc-typography--body2">71649 Korndorf</span><br>
+            </div>
+            <div class="mdc-layout-grid__cell--span-2 ">
+              <span class="mdc-typography--overline">Telefon</span><br>
+              <span class="mdc-typography--body2">12345678</span>
+            </div>
+            <div class="mdc-layout-grid__cell--span-2 ">
+              <span class="mdc-typography--overline">Email</span><br>
+              <span class="mdc-typography--body2">drews@korn.de</span>
+            </div>
+            <div class="mdc-layout-grid__cell--span-4 ">
+            </div>
+            <div class="mdc-layout-grid__cell--span-4 ">
+            </div>
+            <div class="mdc-layout-grid__cell--span-4" style="text-align:center">
+              <a class="mdc-button" href="BetterDoc PARC selection_expanded.htm#selection">
+              	<i class="material-icons mdc-theme--primary expand-icon">expand_less</i>
+                	Kontakt einklappen
+              </a>
+            </div>
+            <div class="mdc-layout-grid__cell--span-4">
+              <button class="mdc-button mdc-button--outlined" style="float: right;">
+                <div class="mdc-button__ripple"></div>
+                <i class="material-icons mdc-button__icon" aria-hidden="true">star_border</i>
+                <span class="mdc-button__label">Merken</span>
+              </button>
+              <button class="mdc-button mdc-button--outlined" style="float: right; margin-right: 10px">
+                <div class="mdc-button__ripple"></div>
+                <span class="mdc-button__label">in GMaps finden</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+    <script src="./BetterDoc PARC_files/material-components-web.min.js"></script>
+
+     <script>
+        if (window.mdc) {
+          window.mdc.autoInit();
+        }
+    </script>
+  
+
+</div>
+  <div id="9FAC71F4398D38481059F0E26332E093" class="container-wrapper skeleton-3" data-host="https://t-medic-cs-clinics.herokuapp.com/sites/selections/overview/">
+
+  
+    <title>MedicCsClinics</title>
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="9gtkLoUoGJ/9Z59W8ut9iNVR9N/KEZhbAm5LeapcS/ppHJZvirAFIBvRYivxzJkThRMvd7pn/E2Wl2wj67+RZw==">
+    
+
+    <link href="./BetterDoc PARC_files/icon" rel="stylesheet">
+    <link rel="stylesheet" href="./BetterDoc PARC_files/material-components-web.min.css">
+    <link rel="stylesheet" href="./BetterDoc PARC_files/css">
+    <link rel="stylesheet" href="./BetterDoc PARC_files/betterdoc-mdc.css">
+  
+
+  
+      <div id="selection-overview-topcard" class="topcard" style="display: block;">
+    <div class="mdc-card">
+      <div class="mdc-card__primary-action">
+        <h6 class="mdc-typography--headline6">Selection</h6>
+        <p class="mdc-typography--overline">Clinic-<br>Sites</p>
+        <p class="mdc-typography--body1">3</p>
+        <p class="mdc-typography--overline">Department-<br>Sites</p>
+        <p class="mdc-typography--body1">7</p>
+        <p class="mdc-typography--overline">Codes</p>
+        <p class="mdc-typography--body1">M15<br>M17</p>
+        <div class="mdc-card__action-buttons">
+          <a class="mdc-button mdc-card__action mdc-card__action--button" href="https://parc-staging.betterdoc.org/stack/clinics?case_id=194-248-501#selection-preview">
+            <i class="material-icons">keyboard_arrow_up</i>
+            <span>Selection Preview</span>
+</a>        <div>
+      </div>
+    </div>
+  </div>
+
+<style type="text/css">
+  #selection-overview-topcard {
+    position: fixed;
+    display: none;
+    right: 23px;
+    top: 80px;
+    padding-top: 15px;
+    margin-bottom: 0;
+    z-index: 997;
+    height: 150px;
+    max-width: 15%;
+  }
+
+  #selection-overview-topcard h6 {
+    line-height: 1.3;
+  }
+
+  #selection-overview-topcard .mdc-typography--overline {
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+
+  #selection-overview-topcard .mdc-typography--body1 {
+    margin-top: 3px;
+    margin-bottom: 20px;
+  }
+
+  #selection-overview-topcard .mdc-card__primary-action {
+    padding: 15px;
+  }
+</style>
+
+
+
+
+    <script src="./BetterDoc PARC_files/material-components-web.min.js"></script>
+
+     <script>
+        if (window.mdc) {
+          window.mdc.autoInit();
+        }
+    </script>
+  
+
+</div></div></div>
+  <div id="47DAFCBA1D9492F5C8CEA53D1C21AD2B" class="container-wrapper skeleton-4" data-host="https://t-medic-cs-clinics.herokuapp.com/sites/results/"><div></div></div>
+
+
+      <div class="mdc-layout-grid">
+        <div class="mdc-layout-grid__inner">
+          <div class="mdc-layout-grid__cell--span-6">
+            <span class="mdc-theme--text-disabled-on-background stacker-version">Stacker version release-3-9-gde3cf02</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="mdc-snackbar" data-mdc-auto-init="MDCSnackbar" data-mdc-auto-init-state="initialized">
+      <div class="mdc-snackbar__surface">
+        <div class="mdc-snackbar__label" role="status" aria-live="polite">
+        </div>
+      </div>
+    </div>
+
+</body></html>
