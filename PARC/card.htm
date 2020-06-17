@@ -471,24 +471,7 @@ trix-toolbar [data-trix-dialog] [data-trix-validate]:invalid {
   
 
   
-      <div id="selection-overview-topcard" class="topcard" style="display: block;">
-    <div class="mdc-card">
-      <div class="mdc-card__primary-action">
-        <h6 class="mdc-typography--headline6">Selection</h6>
-        <p class="mdc-typography--overline">Clinic-<br>Sites</p>
-        <p class="mdc-typography--body1">3</p>
-        <p class="mdc-typography--overline">Department-<br>Sites</p>
-        <p class="mdc-typography--body1">7</p>
-        <p class="mdc-typography--overline">Codes</p>
-        <p class="mdc-typography--body1">M15<br>M17</p>
-        <div class="mdc-card__action-buttons">
-          <a class="mdc-button mdc-card__action mdc-card__action--button" href="https://parc-staging.betterdoc.org/stack/clinics?case_id=194-248-501#selection-preview">
-            <i class="material-icons">keyboard_arrow_up</i>
-            <span>Selection Preview</span>
-</a>        <div>
-      </div>
-    </div>
-  </div>
+
 
 <style type="text/css">
   #selection-overview-topcard {
@@ -551,111 +534,59 @@ trix-toolbar [data-trix-dialog] [data-trix-validate]:invalid {
     <link rel="stylesheet" href="./BetterDoc PARC_files/betterdoc-mdc.css">
   
 <div id="selection-preview" class="container">
-      <h3 id="selection" class="mdc-typography--headline3">Ausgewählte ÄrztInnen</h3>
-      <div class="mdc-layout-grid">
-        <div class="mdc-layout-grid_cell--span-12 mdc-card" style="padding: 15px 20px">
-        <div class="mdc-layout-grid__inner">
-
-          <div class="mdc-layout-grid__cell--span-8">
-              
-          </div>
-          <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid--align-right">
-            
-          </div>
-          <div class="mdc-layout-grid__cell--span-12">
-            <div class="mdc-data-table" style="width:100%">
-              <table id="selection-table" class="mdc-data-table__table" aria-label="Codes and sites selection" style="white-space:normal">
-                <thead>
-                  <tr class="mdc-data-table__header-row">
-                    <th class="mdc-data-table__header-cell" role="columnheader" scope="col"></th>
-                    <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Code</th>
-                    <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Selected department</th>
-                    <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Clinic/Site</th>
-                    <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Distance to patient</th>
-                  </tr>
-                </thead>
-                <tbody class="mdc-data-table__content">
-                    <tr class="mdc-data-table__row site-selection-row">
-                      <td class="mdc-data-table__cell">
-                        <button class="mdc-button" style="color:grey; opacity: 50%">
-                          <i class="material-icons">highlight_off</i>
-                        </button>
-                      </td>
-                      <td class="mdc-data-table__cell"><b>M15</b></td>
-                      <td class="mdc-data-table__cell"><b>n/a</b></td>
-                      <td class="mdc-data-table__cell"><b>St. Josef-Hospital</b><br>Im Vogelsang 5-11, 45527 Hattingen</td>
-                      <td class="mdc-data-table__cell mdc-data-table__cell--numeric">55 km</td>
-                    </tr>
-                    <tr class="mdc-data-table__row site-selection-row">
-                      <td class="mdc-data-table__cell">
-                        <button class="mdc-button" style="color:grey; opacity: 50%">
-                          <i class="material-icons">highlight_off</i>
-                        </button>
-                      </td>
-                      <td class="mdc-data-table__cell"><b>M15</b></td>
-                      <td class="mdc-data-table__cell"><b>Rheumatologie</b></td>
-                      <td class="mdc-data-table__cell"><b>Rheumazentrum Ruhrgebiet</b><br>Claudiusstr. 45, 44649 Herne</td>
-                      <td class="mdc-data-table__cell mdc-data-table__cell--numeric">68 km</td>
-                    </tr>
-                    <tr class="mdc-data-table__row site-selection-row">
-                      <td class="mdc-data-table__cell">
-                        <button class="mdc-button" style="color:grey; opacity: 50%">
-                          <i class="material-icons">highlight_off</i>
-                        </button>
-                      </td>
-                      <td class="mdc-data-table__cell"><b>M15</b></td>
-                      <td class="mdc-data-table__cell"><b>Innere Medizin/Schwerpunkt Rheumatologie</b></td>
-                      <td class="mdc-data-table__cell"><b>Immanuel Krankenhaus Berlin - Standort Berlin Wannsee</b><br>Königstr. 63, 14109 Berlin</td>
-                      <td class="mdc-data-table__cell mdc-data-table__cell--numeric">460 km</td>
-                    </tr>
-                    <tr class="mdc-data-table__row site-selection-row">
-                      <td class="mdc-data-table__cell">
-                        <button class="mdc-button" style="color:grey; opacity: 50%">
-                          <i class="material-icons">highlight_off</i>
-                        </button>
-                      </td>
-                      <td class="mdc-data-table__cell"><b>M15</b></td>
-                      <td class="mdc-data-table__cell"><b>Innere Medizin/Schwerpunkt Naturheilkunde</b></td>
-                      <td class="mdc-data-table__cell"><b>Immanuel Krankenhaus Berlin - Standort Berlin Wannsee</b><br>Königstr. 63, 14109 Berlin</td>
-                      <td class="mdc-data-table__cell mdc-data-table__cell--numeric">460 km</td>
-                    </tr>
-                    <tr class="mdc-data-table__row site-selection-row">
-                      <td class="mdc-data-table__cell">
-                        <button class="mdc-button" style="color:grey; opacity: 50%">
-                          <i class="material-icons">highlight_off</i>
-                        </button>
-                      </td>
-                      <td class="mdc-data-table__cell"><b>M15</b></td>
-                      <td class="mdc-data-table__cell"><b>Obere Extremität, Hand- und Mikrochirurgie</b></td>
-                      <td class="mdc-data-table__cell"><b>Immanuel Krankenhaus Berlin - Standort Berlin Wannsee</b><br>Königstr. 63, 14109 Berlin</td>
-                      <td class="mdc-data-table__cell mdc-data-table__cell--numeric">460 km</td>
-                    </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div class="mdc-layout-grid__cell--span-4">
-              <button class="mdc-button"; type="submit" style="color: #b00020" value="Delete Table" style="float:left">
-                <i class="material-icons">delete</i>
-                Delete Selection
+  <div class="mdc-layout-grid">
+    <h3 id="selection" class="mdc-typography--headline3">Ausgewählte ÄrztInnen</h3>
+    <div class="mdc-layout-grid_cell--span-12 mdc-card" style="padding: 15px 20px">
+    <div class="mdc-layout-grid__inner">
+      <div class="mdc-layout-grid__cell--span-12">
+        
+        <ul class="mdc-list mdc-list--two-line" >
+          <li class="mdc-list-item" tabindex="0">
+            <span class="mdc-list-item__text">
+              <span class="mdc-list-item__primary-text">Herr Dr. med. Drews</span>
+              <span class="mdc-list-item__secondary-text">Allgemeinmediziner</span>
+            </span>
+            <span class="mdc-list-item__meta">
+              <button data-mdc-ripple-is-unbounded="" class="mdc-icon-button material-icons mdc-ripple-upgraded--unbounded mdc-ripple-upgraded" title="" >
+              delete
               </button>
-          </div>
-          <div class="mdc-layout-grid__cell--span-4" style="text-align:center">
-            <a class="mdc-button" href="BetterDoc PARC selection_expanded.htm#selection">
-              <i class="material-icons mdc-theme--primary expand-icon">expand_more</i>
-                Show all
-            </a>
-        </div>
-        <div class="mdc-layout-grid__cell--span-4">
-          <button class="mdc-button mdc-button--raised" target="_blank" data-stacker-no-hijack="true" href="https://parc-staging.betterdoc.org/stack/clinics-research-table?case_id=194-248-501" style="float: right;">
-              <i class="material-icons">launch</i>
-              Generate table
+            </span>
+          </li>
+          <li role="separator" class="mdc-list-divider"></li>
+          <li class="mdc-list-item">
+            <span class="mdc-list-item__text">
+              <span class="mdc-list-item__primary-text">Frau Prof. Dr. med. Ursula</span>
+              <span class="mdc-list-item__secondary-text">Allgemeinmediziner | Spaßarzt</span>
+            </span>
+            <span class="mdc-list-item__meta">
+              <button data-mdc-ripple-is-unbounded="" class="mdc-icon-button material-icons mdc-ripple-upgraded--unbounded mdc-ripple-upgraded" title=""tabindex="-1">
+              delete
+              </button>
+            </span>
+
+          </li>
+          <li role="separator" class="mdc-list-divider"></li>
+        </ul> 
+      </div>
+      <div class="mdc-layout-grid__cell--span-12">   
+      </div>
+      <div class="mdc-layout-grid__cell--span-4">
+          <button class="mdc-button"; type="submit" style="color: #b00020" value="Delete Table" style="float:left">
+            <i class="material-icons">delete</i>
+            Delete Selection
           </button>
-        </div>
-          </div>
-        </div>
+      </div>
+      <div class="mdc-layout-grid__cell--span-8">
+        <button class="mdc-button mdc-button--outlined" target="_blank" data-stacker-no-hijack="true" href="https://parc-staging.betterdoc.org/stack/clinics-research-table?case_id=194-248-501" style="float: right;">
+          <i class="material-icons">launch</i>
+          in Zwischenablage kopieren
+        </button>
+      </div>
       </div>
     </div>
+  </div>
+</div>
+
   
     <div id="selection-preview" class="container">
       <h3 id="selection" class="mdc-typography--headline3">Suchergebnisse</h3>
@@ -744,29 +675,37 @@ trix-toolbar [data-trix-dialog] [data-trix-validate]:invalid {
               <span class="mdc-typography--body2">12345678</span>
             </div>
             <div class="mdc-layout-grid__cell--span-2 ">
+              <span class="mdc-typography--overline">Fax</span><br>
+              <span class="mdc-typography--body2">12345678</span>
+            </div>
+            <div class="mdc-layout-grid__cell--span-2 ">
               <span class="mdc-typography--overline">Email</span><br>
               <span class="mdc-typography--body2">drews@korn.de</span>
             </div>
-            <div class="mdc-layout-grid__cell--span-4 ">
+            <div class="mdc-layout-grid__cell--span-2 ">
             </div>
-            <div class="mdc-layout-grid__cell--span-4 ">
-            </div>
-            <div class="mdc-layout-grid__cell--span-4" style="text-align:center">
+            <div class="mdc-layout-grid__cell--span-6">
               <a class="mdc-button" href="BetterDoc PARC selection_expanded.htm#selection">
               	<i class="material-icons mdc-theme--primary expand-icon">expand_less</i>
                 	Kontakt einklappen
               </a>
             </div>
-            <div class="mdc-layout-grid__cell--span-4">
+            <div class="mdc-layout-grid__cell--span-6">
               <button class="mdc-button mdc-button--outlined" style="float: right;">
                 <div class="mdc-button__ripple"></div>
                 <i class="material-icons mdc-button__icon" aria-hidden="true">star_border</i>
                 <span class="mdc-button__label">Merken</span>
               </button>
-              <button class="mdc-button mdc-button--outlined" style="float: right; margin-right: 10px">
+              <button class="mdc-button" style="float: right; margin-right: 10px">
+                <div class="mdc-button__ripple"></div>
+                <span class="mdc-button__label">in BORG öffnen</span>
+              </button>
+              
+              <button class="mdc-button" style="float: right; margin-right: 10px">
                 <div class="mdc-button__ripple"></div>
                 <span class="mdc-button__label">in GMaps finden</span>
               </button>
+
             </div>
           </div>
         </div>
@@ -800,21 +739,21 @@ trix-toolbar [data-trix-dialog] [data-trix-validate]:invalid {
   
 
   
-      <div id="selection-overview-topcard" class="topcard" style="display: block;">
+      
+  <div id="selection-overview-topcard" class="topcard" style="display: block;">
     <div class="mdc-card">
       <div class="mdc-card__primary-action">
-        <h6 class="mdc-typography--headline6">Selection</h6>
-        <p class="mdc-typography--overline">Clinic-<br>Sites</p>
-        <p class="mdc-typography--body1">3</p>
-        <p class="mdc-typography--overline">Department-<br>Sites</p>
-        <p class="mdc-typography--body1">7</p>
-        <p class="mdc-typography--overline">Codes</p>
-        <p class="mdc-typography--body1">M15<br>M17</p>
-        <div class="mdc-card__action-buttons">
-          <a class="mdc-button mdc-card__action mdc-card__action--button" href="https://parc-staging.betterdoc.org/stack/clinics?case_id=194-248-501#selection-preview">
-            <i class="material-icons">keyboard_arrow_up</i>
-            <span>Selection Preview</span>
-</a>        <div>
+          <h6 class="mdc-typography--headline6" >Auswahl</h6>
+          <ul>
+            <li class="mdc-typography--body2">Herr Dr. med. Drews</li>
+            <li class="mdc-typography--body2">Herr Dr. med. Drews</li>
+          </ul>
+          <div class="mdc-card__action-buttons">
+            <a class="mdc-button mdc-card__action mdc-card__action--button" href="#">
+              <i class="material-icons">keyboard_arrow_up</i>
+              <span>Zur Auswahl</span>
+            </a>        
+          <div>
       </div>
     </div>
   </div>
