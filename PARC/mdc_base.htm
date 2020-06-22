@@ -104,7 +104,7 @@
 <!-- CONTAINER HEADLINE END-->
 
 <!-- CARD - VIEW STATE - START -->
-	<div id="selection-preview" class="container">
+	<div id="container_name_for_anchor_linking" class="container">
 	    <div class="mdc-layout-grid">
 	      	<div class="mdc-layout-grid_cell--span-12 mdc-card" style="padding: 10px 20px">
 		        <div class="mdc-layout-grid__inner">
@@ -180,7 +180,7 @@
 		            <!-- CARD SUBHEADLINE END -->
 		            <!-- LIST START -->
 		            <ul class="mdc-layout-grid__cell--span-12 mdc-list mdc-list--two-line">
-		            	<li role="separator" class="mdc-list-divider"></li>
+		            <li role="separator" class="mdc-list-divider"></li>
 					  <li class="mdc-list-item" tabindex="0">
 					    <span class="mdc-list-item__text">
 					      <span class="mdc-list-item__primary-text">List item - Primary info</span>
@@ -374,133 +374,20 @@
 		    </div>
 		</div>
 	</div>
+	<br><br><br>
 <!-- CARD VIEW STATE END -->
-
-<!-- CONTAINER VIEW STATE -->
-    <div id="selection-preview" class="container">
-      <h4 id="selection" class="mdc-typography--headline4">Kontakt</h4>
-      <div class="mdc-layout-grid">
-      	<div class="mdc-layout-grid_cell--span-12 mdc-card" style="padding: 15px 20px">
-          <div class="mdc-layout-grid__inner">
-            <div class="mdc-layout-grid__cell--span-12">
-              <h5 class="mdc-typography--headline5" style="margin: 10px 0px 5px 0px">
-                  Patient
-              </h5>
-            </div>
-  <!--           <div class="mdc-layout-grid__cell--span-12 mdc-layout-grid--align-right">
-              
-            </div> -->
-            <div class="mdc-layout-grid__cell--span-12">
-              <label class="mdc-text-field mdc-text-field--filled">
-                <span class="mdc-text-field__ripple"></span>
-                <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
-                <span class="mdc-floating-label" id="my-label-id">Hint text</span>
-                <span class="mdc-line-ripple"></span>
-              </label>
-            </div>
-            <div class="mdc-layout-grid__cell--span-2">
-              <span class="mdc-typography--overline">Versicherung</span><br>
-              <span class="mdc-typography--body1">PKV</span>
-            </div>
-            <div class="mdc-layout-grid__cell--span-2">
-              <span class="mdc-typography--overline">NPS/Bewertungen</span><br>
-              <span class="mdc-typography--body1">12/3<span>
-            </div>
-            <div class="mdc-layout-grid__cell--span-6">
-              <span class="mdc-typography--overline">Spezialisierung</span><br>
-              <span class="mdc-typography--body1">Allgemeinmedizin<span>
-            </div>
-            <div class="mdc-layout-grid__cell--span-6">
-              <span class="mdc-typography--overline">Tags</span><br>
-<!-- tags start -->
-              <div class="mdc-chip-set" role="grid">
-                <div class="mdc-chip" role="row">
-                  <div class="mdc-chip__ripple"></div>
-                  <span role="gridcell">
-                    <span role="button" tabindex="0" class="mdc-chip__primary-action">
-                      <span class="mdc-chip__text">Short tag</span>
-                    </span>
-                  </span>
-                </div>
-                <div class="mdc-chip" role="row">
-                  <div class="mdc-chip__ripple"></div>
-                  <span role="gridcell">
-                    <span role="button" tabindex="-1" class="mdc-chip__primary-action">
-                      <span class="mdc-chip__text">Average Length lorem ipsum dolor sit ame </span>
-                    </span>
-                  </span>
-                </div>
-                <div class="mdc-chip" role="row">
-                  <div class="mdc-chip__ripple"></div>
-                  <span role="gridcell">
-                    <span role="button" tabindex="-1" class="mdc-chip__primary-action">
-                      <span class="mdc-chip__text">longer than 39 char lorem ipsum dolo...</span>
-                    </span>
-                  </span>
-                </div>
-              </div>
-<!-- tags ende -->
-            </div>
-            <div class="mdc-layout-grid__cell--span-6">
-              <span class="mdc-typography--overline">Notizen aus BORG</span><br>
-              <span class="mdc-typography--body2">✍️ <i>12.3.2020:</i> Jodler abfieseln gwiss do legst di nieda Brezn ded i hob di narrisch gean. Zidern etza hoid Kaiwe pfundig Wurscht<span><br>
-              <span class="mdc-typography--body2">✍️ <i>14.1.2020: </i>
-                Biaschdal, du Ams’l, du bleede, Grantlhuaba, Fettl, Hoibschaariga, Oasch, Flegel, Kreizdeifi
-              <span>
-            </div>
-            <div class="mdc-layout-grid__cell--span-12">
-              <h6 class="mdc-typography--headline6" style="margin: 10px 0px 5px 0px">Kontakt</h6>
-            </div>
-            <div class="mdc-layout-grid__cell--span-4 ">
-               <span class="mdc-typography--overline">Adresse</span><br>
-               <span class="mdc-typography--body2">Herr Dr. med. Jürgen Drews</span><br>
-               <span class="mdc-typography--body2">Gemeinschaftspraxis</span><br>
-               <span class="mdc-typography--body2">Kornfeldstraße 11</span><br>
-               <span class="mdc-typography--body2">71649 Korndorf</span><br>
-            </div>
-            <div class="mdc-layout-grid__cell--span-2 ">
-              <span class="mdc-typography--overline">Telefon</span><br>
-              <span class="mdc-typography--body2">12345678</span>
-            </div>
-            <div class="mdc-layout-grid__cell--span-2 ">
-              <span class="mdc-typography--overline">Fax</span><br>
-              <span class="mdc-typography--body2">12345678</span>
-            </div>
-            <div class="mdc-layout-grid__cell--span-2 ">
-              <span class="mdc-typography--overline">Email</span><br>
-              <span class="mdc-typography--body2">drews@korn.de</span>
-            </div>
-            <div class="mdc-layout-grid__cell--span-2 ">
-            </div>
-            <div class="mdc-layout-grid__cell--span-6">
-              <a class="mdc-button" href="BetterDoc PARC selection_expanded.htm#selection">
-              	<i class="material-icons mdc-theme--primary expand-icon">expand_less</i>
-                	Kontakt einklappen
-              </a>
-            </div>
-            <div class="mdc-layout-grid__cell--span-6">
-              <button class="mdc-button mdc-button--outlined" style="float: right;">
-                <div class="mdc-button__ripple"></div>
-                <i class="material-icons mdc-button__icon" aria-hidden="true">star_border</i>
-                <span class="mdc-button__label">Merken</span>
-              </button>
-              <button class="mdc-button" style="float: right; margin-right: 10px">
-                <div class="mdc-button__ripple"></div>
-                <span class="mdc-button__label">in BORG öffnen</span>
-              </button>
-              
-              <button class="mdc-button" style="float: right; margin-right: 10px">
-                <div class="mdc-button__ripple"></div>
-                <span class="mdc-button__label">in GMaps finden</span>
-              </button>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-<!-- CONTAINER -->
-
-
+	<div id="container_name_for_anchor_linking-2" class="container">
+	    <div class="mdc-layout-grid">
+	      	<div class="mdc-layout-grid_cell--span-12 mdc-card" style="padding: 10px 20px">
+		        <div class="mdc-layout-grid__inner">
+	<!-- CARD_HEADLINE START -->
+		            <div class="mdc-layout-grid__cell--span-12">
+			            <h5 class="mdc-typography--headline5" style="margin: 10px 0px 5px 0px">Card headline
+			            </h5>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+	</div>
 </body>
 </html>
