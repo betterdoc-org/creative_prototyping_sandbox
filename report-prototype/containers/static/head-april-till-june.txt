@@ -1,0 +1,10 @@
+CTN: header
+image_payer: /images/dak_logo.png
+---
+
+
+
+CTN: stage
+title: Zweitmeinung per Gutachten – Monatlicher Report
+subline: "Alle Prozentangaben sind auf die erste Nachkommastelle gerundet."
+---

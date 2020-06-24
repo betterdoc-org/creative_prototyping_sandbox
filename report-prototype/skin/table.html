@@ -1,0 +1,29 @@
+<!-- table start -->
+<section class="section has-background-light">
+  <div class="container">
+    <div class="column is-12">
+      <div class="title {{title_size}} has-text-weight-normal">{{title}}</div>
+    </div>
+    <div class="columns is-centered is-multiline">
+      <table class="table has-background-light">
+        <thead>
+          <tr>
+          {{#item_heads}}
+            <th>{{label}}</th>
+          {{/item_heads}}
+          </tr>
+        </thead>
+        <tbody>
+          {{#items}}
+          <tr>
+            <td>{{label}}</td>
+            <td class="has-text-right">{{number}}</td>
+            <td class="has-text-right">{{second_number}}</td>
+          </tr>
+          {{/items}}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+<!-- table end -->
