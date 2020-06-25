@@ -3,7 +3,7 @@ bd-title-not-displayed: Key Numbers
 dak_title: Anzahl der Gutachten
 items:
   -
-    label: Versendete Gutachten im März 2020
+    label: Versendete Gutachten April bis 8. Juni 2020
     number: 9
   -
     label: Versendete Gutachten seit Vertragsbeginn

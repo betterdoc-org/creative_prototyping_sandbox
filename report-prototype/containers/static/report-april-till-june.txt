@@ -3,17 +3,21 @@ bd-title-not-displayed: Key Numbers
 dak_title: Anzahl der Gutachten
 items:
   -
-    label: Versendete Gutachten im März 2020
-    number: 9
+    label: Versendete Gutachten April bis 8. Juni 2020
+    number: 12
   -
     label: Versendete Gutachten seit Vertragsbeginn
-    number: 9
+    number: 12
+  -
+    label: Operation nicht empfohlen
+    number: 7
 ---
+
 
 
 CTN: section_headline
 id: reports_march
-title: Versendete Gutachten im April bis 8. Juni 2020
+title: Versendete Gutachten von April bis 8. Juni 2020
 dak_title: 
 title_size: is-size-1
 ---
@@ -24,6 +28,7 @@ title: Demografie
 dak_title: 
 title_size: is-size-2
 ---
+
 
 
 CTN: compareable-numbers-medium-flexi
@@ -92,15 +97,22 @@ items:
 CTN: graphic
 items:
   - 
-    img: /images/rplot_age_border.png
+    img: /images/plot_age_histogram.png
 ---
 
 
 
-CTN: many-numbers
+CTN: table # many-numbers
 title: Regionale Inanspruchnahme
 dak_title: Regionale Inanspruchnahme
 title_size: is-size-3
+item_heads:
+  -
+    label: Bundesland
+  -
+    label: Anteil in %
+  -
+    label: Anzahl Fälle
 items:
   -
     label: Bayern
@@ -154,22 +166,31 @@ items:
 
 
 
+CTN: graphic
+items:
+  - 
+    img: /images/plot_state_histogram.png
+---
+
+
+
+
 CTN: compareable-numbers-large
 title: Indikationsbereiche
 dak_title: Gutachten je Indikationsbereich
 title_size: is-size-2
 items:
   -
-    label: Rücken
-    number: 3
-    unit: 📄
-    second_number: 25
-    second_unit: %
-  -
-    label: Schulter
+    label: Fuß
     number: 0
     unit: 📄
     second_number: 0
+    second_unit: % 
+  -
+    label: Hand
+    number: 1
+    unit: 📄
+    second_number: 8,3
     second_unit: % 
   -
     label: Hüfte
@@ -184,16 +205,16 @@ items:
     second_number: 50
     second_unit: % 
   -
-    label: Fuß
+    label: Rücken
+    number: 3
+    unit: 📄
+    second_number: 25
+    second_unit: %
+  -
+    label: Schulter
     number: 0
     unit: 📄
     second_number: 0
-    second_unit: % 
-  -
-    label: Hand
-    number: 1
-    unit: 📄
-    second_number: 8,3
     second_unit: % 
 
 ---
@@ -203,25 +224,45 @@ items:
 CTN: graphic
 items:
   - 
-    img: /images/rplot_indication_border.png
+    img: /images/plot_indication_histogram.png
 ---
 
 
 
+CTN: compareable-numbers-large
+title: "Gutachten einseitig/beidseitig"
+dak_title: 
+title_size: is-size-2
+items:
+  -
+    label: Gutachten einseitig
+    number: 100
+    unit: % 
+    second_number: 12
+    second_unit: 📄
+  -
+    label: Gutachten beidseitig
+    number: 0
+    unit: %
+    second_number: 0
+    second_unit: 📄
+---
+
+
 
 CTN: compareable-numbers-large
-title: Nicht-OP-Empfehlung zu OP-Empfehlung
+title: Operation nicht empfohlen zu Operation empfohlen
 dak_title: OP zu Nicht-OP-Quote
 title_size: is-size-2
 items:
   -
-    label: Nicht-OP-Empfehlungen
+    label: Operation nicht empfohlen
     number: 58,3
     unit: %
     second_number: 7
     second_unit: 📄 
   -
-    label: OP-Empfehlungen
+    label: Operation empfohlen
     number: 41,7
     unit: %
     second_number: 5
@@ -230,16 +271,24 @@ items:
 
 
 
+CTN: graphic
+items:
+  - 
+    img: /images/plot_surgery_not-surgery_histogram.png
+---
+
+
+
 CTN: compareable-numbers-medium
-title: Nicht-OP-Empfehlung – Quote je Indikationsbereich
+title: Operation nicht empfohlen – Quote je Indikationsbereich
 dak_title: OP zu Nicht-OP-Quote
 title_size: is-size-3
 items:
   -
-    label: Rücken
-    number: 100
+    label: Hand
+    number: 0
     unit: %
-    second_number: 3
+    second_number: 0
     second_unit: 📄 
   -
     label: Hüfte
@@ -254,10 +303,10 @@ items:
     second_number: 3
     second_unit: 📄
   -
-    label: Hand
-    number: 0
+    label: Rücken
+    number: 100
     unit: %
-    second_number: 0
+    second_number: 3
     second_unit: 📄 
 ---
 
@@ -266,6 +315,7 @@ items:
 CTN: compareable-numbers-large
 title: Therapieempfehlungen (∑21)
 dak_title: Therapieempfehlung
+lead_text: "Die Summe der Therapieempfehlungen entspricht wegen Mehrfachnennungen nicht der Summe der erstellten Gutachten."
 title_size: is-size-2
 items:
   -
@@ -297,7 +347,15 @@ items:
     number: 23,8
     unit: %
     second_number: 5
-    second_unit: %
+    second_unit: 📄
+---
+
+
+
+CTN: graphic
+items:
+  - 
+    img: /images/plot_therapy_recommended_histogram.png
 ---
 
 
@@ -320,7 +378,7 @@ items:
     second_number: 2
     second_unit: 📄 
   -
-    label: Operation ganz verhindert
+    label: Operation nicht empfohlen
     number: 58,3
     unit: %
     second_number: 7
@@ -340,13 +398,13 @@ title: Änderung der OP-Empfehlung je Indikationsbereich
 dak_title: Quote geplante OP zu andere operative Therapie
 title_size: is-size-3
 categories:
-  - category: Rücken
+  - category: Hand
     items:
       -
         label: Andere Operation empfohlen
-        number: 0
+        number: 100
         unit: %
-        second_number: 0
+        second_number: 1
         second_unit: 📄 
       -
         label: Geplante Operation verifiziert
@@ -355,10 +413,10 @@ categories:
         second_number: 0
         second_unit: 📄 
       -
-        label: Operation ganz verhindert
-        number: 100
+        label: Operation nicht empfohlen
+        number: 0
         unit: %
-        second_number: 3
+        second_number: 0
         second_unit: 📄 
       -
         label: Operation nicht konkretisiert
@@ -381,7 +439,7 @@ categories:
         second_number: 1
         second_unit: 📄 
       -
-        label: Operation ganz verhindert
+        label: Operation nicht empfohlen
         number: 50
         unit: %
         second_number: 1
@@ -407,7 +465,7 @@ categories:
         second_number: 1
         second_unit: 📄 
       -
-        label: Operation ganz verhindert
+        label: Operation nicht empfohlen
         number: 50
         unit: %
         second_number: 3
@@ -418,13 +476,13 @@ categories:
         unit: %
         second_number: 1
         second_unit: 📄 
-  - category: Hand
+  - category: Rücken
     items:
       -
         label: Andere Operation empfohlen
-        number: 100
+        number: 0
         unit: %
-        second_number: 1
+        second_number: 0
         second_unit: 📄 
       -
         label: Geplante Operation verifiziert
@@ -433,10 +491,10 @@ categories:
         second_number: 0
         second_unit: 📄 
       -
-        label: Operation ganz verhindert
-        number: 0
+        label: Operation nicht empfohlen
+        number: 100
         unit: %
-        second_number: 0
+        second_number: 3
         second_unit: 📄 
       -
         label: Operation nicht konkretisiert
@@ -450,12 +508,12 @@ categories:
 
 CTN: compareable-numbers-large
 title: Ø Dauer der Gutachtenerstellung
-dak_title: Tage Vollständiges Vorliegen der Unterlagen bis GA-Erstellung
+dak_title: Tage Vollständiges Vorliegen der Unterlagen bis Gutachtenerstellung
 title_size: is-size-2
 items:
   -
-    label: Vollständiges Vorliegen der Unterlagen bis GA-Erstellung
-    number: 2,25
+    label: Vollständiges Vorliegen der Unterlagen bis Gutachtenerstellung
+    number: 3,85
     unit:   Werktage 🗓
 ---
 
@@ -463,7 +521,7 @@ items:
 
 CTN: section_headline
 id: calls_march
-title: Telefongespräche im April bis 8. Juni 2020
+title: Telefongespräche von April bis 8. Juni 2020
 dak_title: 
 title_size: is-size-1
 ---
@@ -474,11 +532,11 @@ dak_title:
 title_size: is-size-5
 items:
   -
-    label: Erfolgreich (Angenommen)
+    label: Anliegen angenommen
     number: 26
     unit: 📞
   -
-    label: Nicht Erfolgreich (Abgelehnt)
+    label: Anliegen abgelehnt
     number: 5
     unit: 📞
 ---
