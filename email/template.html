@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>BetterDoc Email Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+      a {color: #007046; font-weight: bold; font-size: 1.21em; min-width: 100%}
+      body { margin: 0; padding: 1em; font-family: "Lato", sans-serif; background-color: white;}
+      p {font-size: 1.2em;
+      	line-height: 1.65em;
+	  	  -moz-osx-font-smoothing: grayscale;
+		  -webkit-font-smoothing: antialiased !important;
+		  -moz-font-smoothing: antialiased !important;
+		  text-rendering: optimizelegibility !important;
+		  letter-spacing: .02em;
+      }
+      i {font-style: italic;}
+      b {font-weight: bold;}
+      h1 {font-size: 1.3em; font-weight: normal;}
+      @import url("https://use.typekit.net/cbq4qpa.css");
+/*      @media screen and (min-width: 600px)  {
+        .mobile-break { display: none; }
+    	}*/
+  </style>
+</head>
+<body>
+ <table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+   <td>
+    <h1>{{patient.salutation}},</h1>
+    <p>
+    vielen Dank für Ihre Anfrage. Anbei die <b>Ergebnisse der Arzt-Suche:</b> <br><br>
+    {{results.pms.allrounder}} <br><br>
+    Sollten Sie weiteren Unterstützungsbedarf bei der Suche nach einem geeigneten Arzt oder einer qualifizierten Klinik haben, wenden Sie sich gerne erneut an uns. Wir finden für Sie den besten Arzt für eine wirkungsvolle Behandlung, eine erfolgreiche Operation oder eine unabhängige Zweitmeinung. Für alle Fachbereiche und Diagnosen. <br><br> 
+    Sie erreichen uns telefonisch unter der Telefonnummer <br class="mobile-break"><a href="tel:+4908004446999">0800 – 444 6 999</a><br class="mobile-break"> oder per E-Mail unter <br class="mobile-break"><a href="mailto:aerzte-team@betterdoc.de?subject=Re:%20Ergebnisse%20der%20Arztsuche%20{{case.id}}">aerzte-team@betterdoc.de</a>.<br><br>
+    Herzliche Grüße, <br>
+    {{user.signature}} <br>
+    <i>BetterDoc Patientenbetreuung</i>
+    </p>
+   </td>
+  </tr>
+ </table>
+</body>
+</html>
