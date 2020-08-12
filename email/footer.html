@@ -20,6 +20,9 @@
       i {font-style: italic;}
       b {font-weight: bold;}
       h1 {font-size: 1.3em; font-weight: normal;}
+      footer {
+        margin-top: 1em;
+      }
       footer p {
         font-size: 0.8em;
         color: #5a5764;
@@ -44,14 +47,6 @@
   </style>
 </head>
 <body>
-    <h1>{{patient.salutation}},</h1>
-    <p>
-    vielen Dank für Ihre Anfrage. Anbei die <b>Ergebnisse der Arzt-Suche:</b></p>
-    <p>{{results.pms.allrounder}}</p>
-    <p>Sollten Sie weiteren Unterstützungsbedarf bei der Suche nach einem geeigneten Arzt oder einer qualifizierten Klinik haben, wenden Sie sich gerne erneut an uns. Wir finden für Sie den besten Arzt für eine wirkungsvolle Behandlung, eine erfolgreiche Operation oder eine unabhängige Zweitmeinung. Für alle Fachbereiche und Diagnosen.</p> 
-    <p>Sie erreichen uns gebührenfrei unter der Telefonnummer <br><a href="tel:+4908004446999">0800 – 444 6 999</a><br> oder per E-Mail unter <br><a href="mailto:aerzte-team@betterdoc.de?subject=Re:%20Ergebnisse%20der%20Arztsuche%20{{case.id}}">aerzte-team@betterdoc.de</a></p>
-    <p>Herzliche Grüße,
-    <br>{{user.signature}}</p>
     <footer>
       <p><b>BetterDoc GmbH</b> <br>
       Patient Care/Patientenbetreuung <br>
