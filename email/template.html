@@ -22,6 +22,10 @@
 /*      @media screen and (min-width: 600px)  {
         .mobile-break { display: none; }
     	}*/
+      p {
+        margin-top: 1em;
+        margin-bottom: 1em;
+      }
   </style>
 </head>
 <body>
@@ -30,14 +34,12 @@
    <td>
     <h1>{{patient.salutation}},</h1>
     <p>
-    vielen Dank für Ihre Anfrage. Anbei die <b>Ergebnisse der Arzt-Suche:</b> <br><br>
-    {{results.pms.allrounder}} <br><br>
-    Sollten Sie weiteren Unterstützungsbedarf bei der Suche nach einem geeigneten Arzt oder einer qualifizierten Klinik haben, wenden Sie sich gerne erneut an uns. Wir finden für Sie den besten Arzt für eine wirkungsvolle Behandlung, eine erfolgreiche Operation oder eine unabhängige Zweitmeinung. Für alle Fachbereiche und Diagnosen. <br><br> 
-    Sie erreichen uns telefonisch unter der Telefonnummer <br class="mobile-break"><a href="tel:+4908004446999">0800 – 444 6 999</a><br class="mobile-break"> oder per E-Mail unter <br class="mobile-break"><a href="mailto:aerzte-team@betterdoc.de?subject=Re:%20Ergebnisse%20der%20Arztsuche%20{{case.id}}">aerzte-team@betterdoc.de</a>.<br><br>
-    Herzliche Grüße, <br>
-    {{user.signature}} <br>
-    <i>BetterDoc Patientenbetreuung</i>
-    </p>
+    vielen Dank für Ihre Anfrage. Anbei die <b>Ergebnisse der Arzt-Suche:</b></p>
+    <p>{{results.pms.allrounder}}</p>
+    <p>Sollten Sie weiteren Unterstützungsbedarf bei der Suche nach einem geeigneten Arzt oder einer qualifizierten Klinik haben, wenden Sie sich gerne erneut an uns. Wir finden für Sie den besten Arzt für eine wirkungsvolle Behandlung, eine erfolgreiche Operation oder eine unabhängige Zweitmeinung. Für alle Fachbereiche und Diagnosen.</p> 
+    <p>Sie erreichen uns telefonisch unter der Telefonnummer <br class="mobile-break"><a href="tel:+4908004446999">0800 – 444 6 999</a><br class="mobile-break"> oder per E-Mail unter <br class="mobile-break"><a href="mailto:aerzte-team@betterdoc.de?subject=Re:%20Ergebnisse%20der%20Arztsuche%20{{case.id}}">aerzte-team@betterdoc.de</a>.</p>
+    <p>Herzliche Grüße,
+    <br>{{user.signature}}</p>
    </td>
   </tr>
  </table>
