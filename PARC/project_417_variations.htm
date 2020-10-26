@@ -78,6 +78,16 @@
 		        display: none;
 		      }
 		    }
+
+			.truncate {
+				display:inline-block; 
+				width: 95%;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				margin-top: 0.5em;
+			}
+
 			.truncate_items {
 				display:inline-block; 
 				width: 95%;
@@ -115,48 +125,11 @@
 				</div>
 <!-- CARD_HEADLINE END -->
 <!-- CARD_INFORMATION_ITEM START-->
-<div class="mdc-layout-grid__cell--span-4">
-	<h6 class="mdc-typography--headline6" style="margin: 0px 0px 1em 0px"> <span class="mdc-typography--body2" style="margin-right: 0.5em;">🛑</span>  Laufzettel</h6>
-	<div class="mdc-typography--overline">
-		Pflicht
-	</div>
-	<div class="mdc-typography--body1 truncate_items">
-		<span class="mdc-typography--body2" style="margin-right: 0.5em;">✅</span>  
-		Laufzettel erstellt
-	</div>
-</div>
-<!-- CARD_INFORMATION_ITEM END-->
-<!-- CARD_INFORMATION_ITEM START-->
-<div class="mdc-layout-grid__cell--span-4">
-	<h6 class="mdc-typography--headline6" style="margin: 0px 0px 1em 0px"> <span class="mdc-typography--body2" style="margin-right: 0.5em;">🛑</span>  Service Selection</h6>
-	<div class="mdc-typography--overline">
-		Pflicht
-	</div>
-	<div class="mdc-typography--body1 truncate_items">
-		<span class="mdc-typography--body2" style="margin-right: 0.5em;">✅</span>  
-		Bevorzugter Kommunikationskanal
-		<br>
-		<span class="mdc-typography--body2" style="margin-right: 0.5em;">✅</span>  
-		Bevorzugter Kanal für Fazit
-		<br>
-		<span class="mdc-typography--body2" style="margin-right: 0.5em;">🛑</span>  
-		Primäre Telefonnummer
-	</div>
-	<br>
-	<div class="mdc-typography--overline">
-		Optional
-	</div>
-	<div class="mdc-typography--body1 truncate_items">
-		<span style="margin-right: 0.5em;">🧐</span>  
-		Email Adresse
-	</div>
-</div>
-<!-- CARD_INFORMATION_ITEM END-->
-<!-- CARD_INFORMATION_ITEM START-->
 				<div class="mdc-layout-grid__cell--span-4">
 					<h6 class="mdc-typography--headline6" style="margin: 0px 0px 1em 0px"> <span class="mdc-typography--body2" style="margin-right: 0.5em;">🛑</span>  Service Selection</h6>
 					<div class="mdc-typography--overline">
 						Pflicht
+						<i class="bd-foldable__toggle-label__icon material-icons mdc-theme--primary" style="padding-top: -1em;">expand_more</i>
 					</div>
 					<div class="mdc-typography--body1 truncate_items">
 						<span class="mdc-typography--body2" style="margin-right: 0.5em;">✅</span>  
@@ -164,12 +137,6 @@
 						<br>
 						<span class="mdc-typography--body2" style="margin-right: 0.5em;">✅</span>  
 						Bevorzugter Kanal für Fazit
-						<br>
-						<span class="mdc-typography--body2" style="margin-right: 0.5em;">🛑</span>  
-						Primäre Telefonnummer
-						<br>
-						<span class="mdc-typography--body2" style="margin-right: 0.5em;">🛑</span>  
-						Primäre Telefonnummer
 						<br>
 						<span class="mdc-typography--body2" style="margin-right: 0.5em;">🛑</span>  
 						Primäre Telefonnummer
@@ -184,77 +151,6 @@
 					</div>
 				</div>
 <!-- CARD_INFORMATION_ITEM START-->
-<!-- CARD_INFORMATION_ITEM START-->
-<div class="mdc-layout-grid__cell--span-4">
-	<h6 class="mdc-typography--headline6" style="margin: 0px 0px 1em 0px"> <span class="mdc-typography--body2" style="margin-right: 0.5em;">🛑</span>  Laufzettel</h6>
-	<div class="mdc-typography--overline">
-		Pflicht
-	</div>
-	<div class="mdc-typography--body1 truncate_items">
-		<span class="mdc-typography--body2" style="margin-right: 0.5em;">✅</span>  
-		Laufzettel erstellt
-	</div>
-</div>
-<!-- CARD_INFORMATION_ITEM END-->
-<!-- CARD_INFORMATION_ITEM START-->
-<div class="mdc-layout-grid__cell--span-4">
-	<h6 class="mdc-typography--headline6" style="margin: 0px 0px 1em 0px"> <span class="mdc-typography--body2" style="margin-right: 0.5em;">🛑</span>  Service Selection</h6>
-	<div class="mdc-typography--overline">
-		Pflicht
-	</div>
-	<div class="mdc-typography--body1 truncate_items">
-		<span class="mdc-typography--body2" style="margin-right: 0.5em;">✅</span>  
-		Bevorzugter Kommunikationskanal
-		<br>
-		<span class="mdc-typography--body2" style="margin-right: 0.5em;">✅</span>  
-		Bevorzugter Kanal für Fazit
-		<br>
-		<span class="mdc-typography--body2" style="margin-right: 0.5em;">🛑</span>  
-		Primäre Telefonnummer
-	</div>
-	<br>
-	<div class="mdc-typography--overline">
-		Optional
-	</div>
-	<div class="mdc-typography--body1 truncate_items">
-		<span style="margin-right: 0.5em;">🧐</span>  
-		Email Adresse
-	</div>
-</div>
-<!-- CARD_INFORMATION_ITEM END-->
-<!-- CARD_INFORMATION_ITEM START-->
-				<div class="mdc-layout-grid__cell--span-4">
-					<h6 class="mdc-typography--headline6" style="margin: 0px 0px 1em 0px"> <span class="mdc-typography--body2" style="margin-right: 0.5em;">🛑</span>  Service Selection</h6>
-					<div class="mdc-typography--overline">
-						Pflicht
-					</div>
-					<div class="mdc-typography--body1 truncate_items">
-						<span class="mdc-typography--body2" style="margin-right: 0.5em;">✅</span>  
-						Bevorzugter Kommunikationskanal
-						<br>
-						<span class="mdc-typography--body2" style="margin-right: 0.5em;">✅</span>  
-						Bevorzugter Kanal für Fazit
-						<br>
-						<span class="mdc-typography--body2" style="margin-right: 0.5em;">🛑</span>  
-						Primäre Telefonnummer
-						<br>
-						<span class="mdc-typography--body2" style="margin-right: 0.5em;">🛑</span>  
-						Primäre Telefonnummer
-						<br>
-						<span class="mdc-typography--body2" style="margin-right: 0.5em;">🛑</span>  
-						Primäre Telefonnummer
-					</div>
-					<br>
-					<div class="mdc-typography--overline">
-						Optional
-					</div>
-					<div class="mdc-typography--body1 truncate_items">
-						<span style="margin-right: 0.5em;">🧐</span>  
-						Email Adresse
-					</div>
-				</div>
-<!-- CARD_INFORMATION_ITEM START-->
-
 			</div>
 		</div>
 	</div>
@@ -262,6 +158,140 @@
 <br><br><br>
 <!-- CARD VIEW STATE END -->
 
+
+<!-- CARD - VIEW STATE - START -->
+<div id="container_name_for_anchor_linking" class="container">
+	<div class="mdc-layout-grid">
+		  <div class="mdc-layout-grid_cell--span-12 mdc-card" style="padding: 10px 20px">
+			<div class="mdc-layout-grid__inner">
+<!-- CARD_HEADLINE START -->
+				<div class="mdc-layout-grid__cell--span-12">
+					<h5 class="mdc-typography--headline5" style="margin: 10px 0px 5px 0px"> Aufnahme
+					</h5>
+				</div>
+<!-- CARD_HEADLINE END -->
+<!-- CARD_INFORMATION_ITEM START-->
+				<div class="mdc-layout-grid__cell--span-4">
+					<h6 class="mdc-typography--headline6" style="margin: 0px 0px 1em 0px">Service Selection</h6>
+					<span class="mdc-typography--overline">
+						<span style="margin-right: 0.5em;"> 🛑 
+						</span>
+						Pflicht
+					</span>
+					<div class="mdc-typography--body1">
+						<span class="mdc-typography--body2" style="margin-right: 0.5em;">✅</span>  
+						Bevorzugter Kommunikationskanal
+						<br>
+						<span class="mdc-typography--body2" style="margin-right: 0.5em;">✅</span>  
+						Bevorzugter Kanal für Fazit
+						<br>
+						<span class="mdc-typography--body2" style="margin-right: 0.5em;">🛑</span>  
+						Primäre Telefonnummer
+					</div>
+					<br>
+					<span class="mdc-typography--overline">
+						<span style="margin-right: 0.5em;">🧐
+						</span>
+						Optional
+					</span>
+					<div class="mdc-typography--body1">
+						<span style="margin-right: 0.5em;">🧐</span>  
+						Bevorzugter Kommunikationskanal
+					</div>
+				</div>
+<!-- CARD_INFORMATION_ITEM START-->
+			</div>
+		</div>
+	</div>
+</div>
+<br><br><br>
+<!-- CARD VIEW STATE END -->
+
+
+<!-- Segmented CARD - VIEW STATE - START -->
+	<div id="container_name_for_anchor_linking" class="container">
+	    <div class="mdc-layout-grid">
+	      	<div class="mdc-layout-grid_cell--span-12 mdc-card" style="padding: 10px 20px">
+		        <div class="mdc-layout-grid__inner">
+	<!-- CARD_HEADLINE START -->
+		            <div class="mdc-layout-grid__cell--span-12">
+			            <h5 class="mdc-typography--headline5" style="margin: 10px 0px 5px 0px"> Benötigt für PMS – Allrounder Aufnahme
+			            </h5>
+		            </div>
+	<!-- CARD_HEADLINE END -->
+	<!-- CARD_INFORMATION_ITEM START-->
+					<div class="mdc-layout-grid__cell--span-12 mdc-typography--overline">
+						<span class=""><span style="margin-right: 0.5em;"> 🛑 
+						</span> Service Selection</span>
+					</div>
+	<!-- CARD_INFORMATION_ITEM START-->
+	<!-- INFORMATION_ITEM START-->
+					<div class="mdc-layout-grid__cell--span-4">
+						<span class="mdc-typography--body1">
+						<span style="margin-right: 0.5em;">✅</span>  
+						Bevorzugter Kommunikationskanal
+						</span>
+						<br>
+						<span class="mdc-typography--caption truncate">E-Mail</span>
+					</div>
+	<!-- INFORMATION_ITEM END-->
+	<!-- INFORMATION_ITEM START-->
+					<div class="mdc-layout-grid__cell--span-4">
+						<span class="mdc-typography--body1">
+						<span style="margin-right: 0.5em;">🛑</span>  
+						Bevorzugter Kanal für Fazit
+						</span>
+						<br>
+						<span class="mdc-typography--caption truncate">fehlt</span>
+					</div>
+	<!-- INFORMATION_ITEM END-->
+	<!-- INFORMATION_ITEM START-->
+					<div class="mdc-layout-grid__cell--span-4">
+						<span class="mdc-typography--body1">
+						<span style="margin-right: 0.5em;"> 🧐 
+						</span>  
+						Primäre Telefonnummer
+						</span>
+						<br>
+						<span class="mdc-typography--caption truncate">unklar</span>
+					</div>
+	<!-- INFORMATION_ITEM END-->
+	<!-- CARD_GRID LAYOUT PLACEHOLDER START-->            
+		            <div class="mdc-layout-grid__cell--span-3">
+		            </div>
+	<!-- CARD_GRID LAYOUT PLACEHOLDER END-->  	
+	<!-- Nice 2 have section START-->  
+					<hr class="mdc-layout-grid__cell--span-12 mdc-list-divider">	
+	<!-- Nice 2 have section END-->  
+	<!-- CARD_HEADLINE START -->
+					<div class="mdc-layout-grid__cell--span-12">
+						<h6 class="mdc-typography--headline6" style="margin: 10px 0px 5px 0px"> Hilfreich für PMS – Allrounder Aufnahme
+						</h6>
+					</div>
+	<!-- CARD_HEADLINE END -->
+	<!-- CARD_INFORMATION_ITEM START-->
+					<div class="mdc-layout-grid__cell--span-12 mdc-typography--overline">
+						<span class=""><span style="margin-right: 0.5em;"> 🧐 
+						</span> Service Selection</span>
+					</div>
+	<!-- CARD_INFORMATION_ITEM START-->
+		<!-- INFORMATION_ITEM START-->
+		<div class="mdc-layout-grid__cell--span-4">
+			<span class="mdc-typography--body1">
+			<span style="margin-right: 0.5em;"> 🧐 
+			</span>  
+			Email
+			</span>
+			<br>
+			<span class="mdc-typography--caption truncate">unklar</span>
+		</div>
+	<!-- INFORMATION_ITEM END-->
+				</div>
+		    </div>
+		</div>
+	</div>
+	<br><br><br>
+<!-- CARD VIEW STATE END -->
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/material-components-web/3.2.0/material-components-web.min.js"></script>
     <script type="text/javascript" src="/js/app-b8b73356cb7c2d3cba55e1a4b24dfcbb.js?vsn=d"></script>
