@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<!-- saved from url=(0081)https://call-request.parc-staging.betterdoc.org/call_requests/new?country_code=de -->
+<html><script>
+(() => {
+/**
+ * This script injected by the installed three.js developer
+ * tools extension.
+ * https://github.com/threejs/three-devtools
+ */
+
+const $devtoolsReady = Symbol('devtoolsReady');
+const $backlog = Symbol('backlog');
+
+// The __THREE_DEVTOOLS__ target is small and light-weight, and collects
+// events triggered until the devtools panel is ready, which is when
+// the events are flushed.
+const target = new class ThreeDevToolsTarget extends EventTarget {
+  constructor() {
+    super();
+    this[$devtoolsReady] = false;
+    this[$backlog] = [];
+    this.addEventListener('devtools-ready', e => {
+      this[$devtoolsReady] = true;
+      for (let event of this[$backlog]) {
+        this.dispatchEvent(event);
+      }
+    }, { once: true });
+  }
+
+  dispatchEvent(event) {
+    if (this[$devtoolsReady] || event.type === 'devtools-ready') {
+      super.dispatchEvent(event);
+    } else {
+      this[$backlog].push(event);
+    }
+  }
+}
+
+Object.defineProperty(window, '__THREE_DEVTOOLS__', {
+  value: target,
+});
+})();
+</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>BetterDoc</title>
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="MKo1E2oRej1zAbbnojSF/NCrmi0Hefpm9MXP49RHYDANP4CrLmjyFI+aEDThdi1YOGH8eQLlSZcE1Kur5YoI1g==">
+    
+
+    <link href="./BetterDoc_files/icon" rel="stylesheet">
+    <!--[if lte IE 9]>
+      <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <![endif]-->
+
+    <!--[if (gt IE 9)|!(IE)]><!-->
+      <link href="./BetterDoc_files/stylesheet.css" rel="stylesheet" type="text/css">
+    <!--<![endif]-->
+
+    <link href="./BetterDoc_files/stylesheet.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" media="all" href="./BetterDoc_files/application-8cfc58743551a942ce542b1855e52ac4303672707633f32bec793b214b0f2252.css">
+    <style>
+      .divider{position:relative;display:flex;align-items:center;text-transform:uppercase;color:#7a7a7a;font-size:.75rem;font-weight:600;letter-spacing:.5px;margin:25px 0}.divider:after,.divider:before{content:"";display:block;flex:1;height:1px;background-color:#dbdbdb}.divider:not(.is-right):after{margin-left:10px}.divider:not(.is-left):before{margin-right:10px}.divider.is-left:before,.divider.is-right:after{display:none}.divider.is-vertical{flex-direction:column;margin:0 25px}.divider.is-vertical:after,.divider.is-vertical:before{height:auto;width:1px}.divider.is-vertical:after{margin-left:0;margin-top:10px}.divider.is-vertical:before{margin-right:0;margin-bottom:10px}.divider.is-white:after,.divider.is-white:before{background-color:#fff}.divider.is-black:after,.divider.is-black:before{background-color:#0a0a0a}.divider.is-light:after,.divider.is-light:before{background-color:#f5f5f5}.divider.is-dark:after,.divider.is-dark:before{background-color:#363636}.divider.is-primary:after,.divider.is-primary:before{background-color:#00d1b2}.divider.is-primary.is-light:after,.divider.is-primary.is-light:before{background-color:#ebfffc}.divider.is-link:after,.divider.is-link:before{background-color:#3273dc}.divider.is-link.is-light:after,.divider.is-link.is-light:before{background-color:#eef3fc}.divider.is-info:after,.divider.is-info:before{background-color:#3298dc}.divider.is-info.is-light:after,.divider.is-info.is-light:before{background-color:#eef6fc}.divider.is-success:after,.divider.is-success:before{background-color:#48c774}.divider.is-success.is-light:after,.divider.is-success.is-light:before{background-color:#effaf3}.divider.is-warning:after,.divider.is-warning:before{background-color:#ffdd57}.divider.is-warning.is-light:after,.divider.is-warning.is-light:before{background-color:#fffbeb}.divider.is-danger:after,.divider.is-danger:before{background-color:#f14668}.divider.is-danger.is-light:after,.divider.is-danger.is-light:before{background-color:#feecf0}
+      @-webkit-keyframes spinAround{from{-webkit-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}@keyframes spinAround{from{-webkit-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}.is-checkradio[type=checkbox],.is-checkradio[type=radio]{outline:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;display:inline-block;position:absolute;opacity:0}.is-checkradio[type=checkbox]+label,.is-checkradio[type=radio]+label{position:relative;display:initial;cursor:pointer;vertical-align:middle;margin:.5em;padding:.2rem .5rem .2rem 0;border-radius:4px}.is-checkradio[type=checkbox]+label:first-of-type,.is-checkradio[type=radio]+label:first-of-type{margin-left:0}.is-checkradio[type=checkbox]+label:hover::before,.is-checkradio[type=checkbox]+label:hover:before,.is-checkradio[type=radio]+label:hover::before,.is-checkradio[type=radio]+label:hover:before{-webkit-animation-duration:.4s;animation-duration:.4s;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:hover-color;animation-name:hover-color}.is-checkradio[type=checkbox]+label::before,.is-checkradio[type=checkbox]+label:before,.is-checkradio[type=radio]+label::before,.is-checkradio[type=radio]+label:before{position:absolute;left:0;top:0;content:'';border:.1rem solid #dbdbdb}.is-checkradio[type=checkbox]+label::after,.is-checkradio[type=checkbox]+label:after,.is-checkradio[type=radio]+label::after,.is-checkradio[type=radio]+label:after{position:absolute;display:none;content:'';top:0}.is-checkradio[type=checkbox].is-rtl+label,.is-checkradio[type=radio].is-rtl+label{margin-right:0;margin-left:.5rem}.is-checkradio[type=checkbox].is-rtl+label::before,.is-checkradio[type=checkbox].is-rtl+label:before,.is-checkradio[type=radio].is-rtl+label::before,.is-checkradio[type=radio].is-rtl+label:before{left:auto;right:0}.is-checkradio[type=checkbox]:focus+label::before,.is-checkradio[type=checkbox]:focus+label:before,.is-checkradio[type=radio]:focus+label::before,.is-checkradio[type=radio]:focus+label:before{outline:1px dotted #b5b5b5}.is-checkradio[type=checkbox]:hover:not([disabled])+label::before,.is-checkradio[type=checkbox]:hover:not([disabled])+label:before,.is-checkradio[type=radio]:hover:not([disabled])+label::before,.is-checkradio[type=radio]:hover:not([disabled])+label:before{border-color:#00d1b2!important}.is-checkradio[type=checkbox]:checked+label::before,.is-checkradio[type=checkbox]:checked+label:before,.is-checkradio[type=radio]:checked+label::before,.is-checkradio[type=radio]:checked+label:before{border:.1rem solid #dbdbdb}.is-checkradio[type=checkbox]:checked[disabled],.is-checkradio[type=radio]:checked[disabled]{cursor:not-allowed}.is-checkradio[type=checkbox]:checked[disabled]+label,.is-checkradio[type=radio]:checked[disabled]+label{opacity:.5}.is-checkradio[type=checkbox]:checked+label::before,.is-checkradio[type=checkbox]:checked+label:before,.is-checkradio[type=radio]:checked+label::before,.is-checkradio[type=radio]:checked+label:before{-webkit-animation-name:none;animation-name:none}.is-checkradio[type=checkbox]:checked+label::after,.is-checkradio[type=checkbox]:checked+label:after,.is-checkradio[type=radio]:checked+label::after,.is-checkradio[type=radio]:checked+label:after{display:inline-block}.is-checkradio[type=checkbox][disabled],.is-checkradio[type=radio][disabled]{cursor:not-allowed}.is-checkradio[type=checkbox][disabled]+label,.is-checkradio[type=radio][disabled]+label{opacity:.5;cursor:not-allowed}.is-checkradio[type=checkbox][disabled]+label::after,.is-checkradio[type=checkbox][disabled]+label::before,.is-checkradio[type=checkbox][disabled]+label:after,.is-checkradio[type=checkbox][disabled]+label:before,.is-checkradio[type=checkbox][disabled]+label:hover,.is-checkradio[type=radio][disabled]+label::after,.is-checkradio[type=radio][disabled]+label::before,.is-checkradio[type=radio][disabled]+label:after,.is-checkradio[type=radio][disabled]+label:before,.is-checkradio[type=radio][disabled]+label:hover{cursor:not-allowed}.is-checkradio[type=checkbox][disabled]:hover,.is-checkradio[type=radio][disabled]:hover{cursor:not-allowed}.is-checkradio[type=checkbox][disabled]:hover::before,.is-checkradio[type=checkbox][disabled]:hover:before,.is-checkradio[type=radio][disabled]:hover::before,.is-checkradio[type=radio][disabled]:hover:before{-webkit-animation-name:none;animation-name:none}.is-checkradio[type=checkbox][disabled]::before,.is-checkradio[type=checkbox][disabled]:before,.is-checkradio[type=radio][disabled]::before,.is-checkradio[type=radio][disabled]:before{cursor:not-allowed}.is-checkradio[type=checkbox][disabled]::after,.is-checkradio[type=checkbox][disabled]:after,.is-checkradio[type=radio][disabled]::after,.is-checkradio[type=radio][disabled]:after{cursor:not-allowed}.is-checkradio[type=checkbox].has-no-border+label::before,.is-checkradio[type=checkbox].has-no-border+label:before,.is-checkradio[type=radio].has-no-border+label::before,.is-checkradio[type=radio].has-no-border+label:before{border:none!important}.is-checkradio[type=checkbox].is-block,.is-checkradio[type=radio].is-block{display:none!important}.is-checkradio[type=checkbox].is-block+label,.is-checkradio[type=radio].is-block+label{width:100%!important;background:#f5f5f5;color:rgba(0,0,0,.7);padding-right:.75em}.is-checkradio[type=checkbox].is-block:hover:not([disabled])+label,.is-checkradio[type=radio].is-block:hover:not([disabled])+label{background:#e8e8e8}.is-checkradio[type=checkbox]+label::before,.is-checkradio[type=checkbox]+label:before{border-radius:4px}.is-checkradio[type=checkbox]+label::after,.is-checkradio[type=checkbox]+label:after{box-sizing:border-box;-webkit-transform:translateY(0) rotate(45deg);transform:translateY(0) rotate(45deg);border-width:.1rem;border-style:solid;border-color:#00d1b2;border-top:0;border-left:0}.is-checkradio[type=checkbox].is-circle+label::before,.is-checkradio[type=checkbox].is-circle+label:before{border-radius:50%}.is-checkradio[type=checkbox]+label{font-size:1rem;padding-left:2rem}.is-checkradio[type=checkbox]+label::before,.is-checkradio[type=checkbox]+label:before{width:1.5rem;height:1.5rem}.is-checkradio[type=checkbox]+label::after,.is-checkradio[type=checkbox]+label:after{width:.375rem;height:.6rem;top:.405rem;left:.6rem}.is-checkradio[type=checkbox].is-block+label::before,.is-checkradio[type=checkbox].is-block+label:before{width:1.25rem;height:1.25rem;left:.175rem;top:.175rem}.is-checkradio[type=checkbox].is-block+label::after,.is-checkradio[type=checkbox].is-block+label:after{top:.325rem;left:.65rem}.is-checkradio[type=checkbox].is-rtl+label{padding-left:0;padding-right:2rem}.is-checkradio[type=checkbox].is-rtl+label::after,.is-checkradio[type=checkbox].is-rtl+label:after{left:auto;right:.6rem}.is-checkradio[type=checkbox].is-small+label{font-size:.75rem;padding-left:1.5rem}.is-checkradio[type=checkbox].is-small+label::before,.is-checkradio[type=checkbox].is-small+label:before{width:1.125rem;height:1.125rem}.is-checkradio[type=checkbox].is-small+label::after,.is-checkradio[type=checkbox].is-small+label:after{width:.28125rem;height:.45rem;top:.30375rem;left:.45rem}.is-checkradio[type=checkbox].is-small.is-block+label::before,.is-checkradio[type=checkbox].is-small.is-block+label:before{width:.9375rem;height:.9375rem;left:.175rem;top:.175rem}.is-checkradio[type=checkbox].is-small.is-block+label::after,.is-checkradio[type=checkbox].is-small.is-block+label:after{top:.29375rem;left:.5375rem}.is-checkradio[type=checkbox].is-small.is-rtl+label{padding-left:0;padding-right:1.5rem}.is-checkradio[type=checkbox].is-small.is-rtl+label::after,.is-checkradio[type=checkbox].is-small.is-rtl+label:after{left:auto;right:.45rem}.is-checkradio[type=checkbox].is-medium+label{font-size:1.25rem;padding-left:2.5rem}.is-checkradio[type=checkbox].is-medium+label::before,.is-checkradio[type=checkbox].is-medium+label:before{width:1.875rem;height:1.875rem}.is-checkradio[type=checkbox].is-medium+label::after,.is-checkradio[type=checkbox].is-medium+label:after{width:.46875rem;height:.75rem;top:.50625rem;left:.75rem}.is-checkradio[type=checkbox].is-medium.is-block+label::before,.is-checkradio[type=checkbox].is-medium.is-block+label:before{width:1.5625rem;height:1.5625rem;left:.175rem;top:.175rem}.is-checkradio[type=checkbox].is-medium.is-block+label::after,.is-checkradio[type=checkbox].is-medium.is-block+label:after{top:.35625rem;left:.7625rem}.is-checkradio[type=checkbox].is-medium.is-rtl+label{padding-left:0;padding-right:2.5rem}.is-checkradio[type=checkbox].is-medium.is-rtl+label::after,.is-checkradio[type=checkbox].is-medium.is-rtl+label:after{left:auto;right:.75rem}.is-checkradio[type=checkbox].is-large+label{font-size:1.5rem;padding-left:3rem}.is-checkradio[type=checkbox].is-large+label::before,.is-checkradio[type=checkbox].is-large+label:before{width:2.25rem;height:2.25rem}.is-checkradio[type=checkbox].is-large+label::after,.is-checkradio[type=checkbox].is-large+label:after{width:.5625rem;height:.9rem;top:.6075rem;left:.9rem}.is-checkradio[type=checkbox].is-large.is-block+label::before,.is-checkradio[type=checkbox].is-large.is-block+label:before{width:1.875rem;height:1.875rem;left:.175rem;top:.175rem}.is-checkradio[type=checkbox].is-large.is-block+label::after,.is-checkradio[type=checkbox].is-large.is-block+label:after{top:.3875rem;left:.875rem}.is-checkradio[type=checkbox].is-large.is-rtl+label{padding-left:0;padding-right:3rem}.is-checkradio[type=checkbox].is-large.is-rtl+label::after,.is-checkradio[type=checkbox].is-large.is-rtl+label:after{left:auto;right:.9rem}.is-checkradio[type=checkbox].is-white.has-background-color+label::before,.is-checkradio[type=checkbox].is-white.has-background-color+label:before{border-color:transparent!important;background-color:#fff!important}.is-checkradio[type=checkbox].is-white:hover:not([disabled])+label::before,.is-checkradio[type=checkbox].is-white:hover:not([disabled])+label:before{border-color:#fff!important}.is-checkradio[type=checkbox].is-white:checked+label::after,.is-checkradio[type=checkbox].is-white:checked+label:after{border-color:#fff!important}.is-checkradio[type=checkbox].is-white:checked.has-background-color+label::before,.is-checkradio[type=checkbox].is-white:checked.has-background-color+label:before{border-color:transparent!important;background-color:#fff!important}.is-checkradio[type=checkbox].is-white:checked.has-background-color+label::after,.is-checkradio[type=checkbox].is-white:checked.has-background-color+label:after{border-color:#0a0a0a!important;background-color:#fff!important}.is-checkradio[type=checkbox].is-white.is-block:hover:not([disabled])+label::after,.is-checkradio[type=checkbox].is-white.is-block:hover:not([disabled])+label::before,.is-checkradio[type=checkbox].is-white.is-block:hover:not([disabled])+label:after,.is-checkradio[type=checkbox].is-white.is-block:hover:not([disabled])+label:before{border-color:#fff!important}.is-checkradio[type=checkbox].is-white.is-block:checked+label{color:#0a0a0a;border-color:#fff!important;background:#fff}.is-checkradio[type=checkbox].is-white.is-block:checked+label::after,.is-checkradio[type=checkbox].is-white.is-block:checked+label:after{border-color:#0a0a0a!important}.is-checkradio[type=checkbox].is-white.is-block:checked:hover:not([disabled])+label{background:#f2f2f2}.is-checkradio[type=checkbox].is-white.is-block:checked:hover:not([disabled])+label::after,.is-checkradio[type=checkbox].is-white.is-block:checked:hover:not([disabled])+label::before,.is-checkradio[type=checkbox].is-white.is-block:checked:hover:not([disabled])+label:after,.is-checkradio[type=checkbox].is-white.is-block:checked:hover:not([disabled])+label:before{border-color:#000!important}.is-checkradio[type=checkbox].is-black.has-background-color+label::before,.is-checkradio[type=checkbox].is-black.has-background-color+label:before{border-color:transparent!important;background-color:#0a0a0a!important}.is-checkradio[type=checkbox].is-black:hover:not([disabled])+label::before,.is-checkradio[type=checkbox].is-black:hover:not([disabled])+label:before{border-color:#0a0a0a!important}.is-checkradio[type=checkbox].is-black:checked+label::after,.is-checkradio[type=checkbox].is-black:checked+label:after{border-color:#0a0a0a!important}.is-checkradio[type=checkbox].is-black:checked.has-background-color+label::before,.is-checkradio[type=checkbox].is-black:checked.has-background-color+label:before{border-color:transparent!important;background-color:#0a0a0a!important}.is-checkradio[type=checkbox].is-black:checked.has-background-color+label::after,.is-checkradio[type=checkbox].is-black:checked.has-background-color+label:after{border-color:#fff!important;background-color:#0a0a0a!important}.is-checkradio[type=checkbox].is-black.is-block:hover:not([disabled])+label::after,.is-checkradio[type=checkbox].is-black.is-block:hover:not([disabled])+label::before,.is-checkradio[type=checkbox].is-black.is-block:hover:not([disabled])+label:after,.is-checkradio[type=checkbox].is-black.is-block:hover:not([disabled])+label:before{border-color:#0a0a0a!important}.is-checkradio[type=checkbox].is-black.is-block:checked+label{color:#fff;border-color:#0a0a0a!important;background:#0a0a0a}.is-checkradio[type=checkbox].is-black.is-block:checked+label::after,.is-checkradio[type=checkbox].is-black.is-block:checked+label:after{border-color:#fff!important}.is-checkradio[type=checkbox].is-black.is-block:checked:hover:not([disabled])+label{background:#000}.is-checkradio[type=checkbox].is-black.is-block:checked:hover:not([disabled])+label::after,.is-checkradio[type=checkbox].is-black.is-block:checked:hover:not([disabled])+label::before,.is-checkradio[type=checkbox].is-black.is-block:checked:hover:not([disabled])+label:after,.is-checkradio[type=checkbox].is-black.is-block:checked:hover:not([disabled])+label:before{border-color:#f2f2f2!important}.is-checkradio[type=checkbox].is-light.has-background-color+label::before,.is-checkradio[type=checkbox].is-light.has-background-color+label:before{border-color:transparent!important;background-color:#f5f5f5!important}.is-checkradio[type=checkbox].is-light:hover:not([disabled])+label::before,.is-checkradio[type=checkbox].is-light:hover:not([disabled])+label:before{border-color:#f5f5f5!important}.is-checkradio[type=checkbox].is-light:checked+label::after,.is-checkradio[type=checkbox].is-light:checked+label:after{border-color:#f5f5f5!important}.is-checkradio[type=checkbox].is-light:checked.has-background-color+label::before,.is-checkradio[type=checkbox].is-light:checked.has-background-color+label:before{border-color:transparent!important;background-color:#f5f5f5!important}.is-checkradio[type=checkbox].is-light:checked.has-background-color+label::after,.is-checkradio[type=checkbox].is-light:checked.has-background-color+label:after{border-color:#363636!important;background-color:#f5f5f5!important}.is-checkradio[type=checkbox].is-light.is-block:hover:not([disabled])+label::after,.is-checkradio[type=checkbox].is-light.is-block:hover:not([disabled])+label::before,.is-checkradio[type=checkbox].is-light.is-block:hover:not([disabled])+label:after,.is-checkradio[type=checkbox].is-light.is-block:hover:not([disabled])+label:before{border-color:#f5f5f5!important}.is-checkradio[type=checkbox].is-light.is-block:checked+label{color:#363636;border-color:#f5f5f5!important;background:#f5f5f5}.is-checkradio[type=checkbox].is-light.is-block:checked+label::after,.is-checkradio[type=checkbox].is-light.is-block:checked+label:after{border-color:#363636!important}.is-checkradio[type=checkbox].is-light.is-block:checked:hover:not([disabled])+label{background:#e8e8e8}.is-checkradio[type=checkbox].is-light.is-block:checked:hover:not([disabled])+label::after,.is-checkradio[type=checkbox].is-light.is-block:checked:hover:not([disabled])+label::before,.is-checkradio[type=checkbox].is-light.is-block:checked:hover:not([disabled])+label:after,.is-checkradio[type=checkbox].is-light.is-block:checked:hover:not([disabled])+label:before{border-color:#292929!important}.is-checkradio[type=checkbox].is-dark.has-background-color+label::before,.is-checkradio[type=checkbox].is-dark.has-background-color+label:before{border-color:transparent!important;background-color:#363636!important}.is-checkradio[type=checkbox].is-dark:hover:not([disabled])+label::before,.is-checkradio[type=checkbox].is-dark:hover:not([disabled])+label:before{border-color:#363636!important}.is-checkradio[type=checkbox].is-dark:checked+label::after,.is-checkradio[type=checkbox].is-dark:checked+label:after{border-color:#363636!important}.is-checkradio[type=checkbox].is-dark:checked.has-background-color+label::before,.is-checkradio[type=checkbox].is-dark:checked.has-background-color+label:before{border-color:transparent!important;background-color:#363636!important}.is-checkradio[type=checkbox].is-dark:checked.has-background-color+label::after,.is-checkradio[type=checkbox].is-dark:checked.has-background-color+label:after{border-color:#f5f5f5!important;background-color:#363636!important}.is-checkradio[type=checkbox].is-dark.is-block:hover:not([disabled])+label::after,.is-checkradio[type=checkbox].is-dark.is-block:hover:not([disabled])+label::before,.is-checkradio[type=checkbox].is-dark.is-block:hover:not([disabled])+label:after,.is-checkradio[type=checkbox].is-dark.is-block:hover:not([disabled])+label:before{border-color:#363636!important}.is-checkradio[type=checkbox].is-dark.is-block:checked+label{color:#f5f5f5;border-color:#363636!important;background:#363636}.is-checkradio[type=checkbox].is-dark.is-block:checked+label::after,.is-checkradio[type=checkbox].is-dark.is-block:checked+label:after{border-color:#f5f5f5!important}.is-checkradio[type=checkbox].is-dark.is-block:checked:hover:not([disabled])+label{background:#292929}.is-checkradio[type=checkbox].is-dark.is-block:checked:hover:not([disabled])+label::after,.is-checkradio[type=checkbox].is-dark.is-block:checked:hover:not([disabled])+label::before,.is-checkradio[type=checkbox].is-dark.is-block:checked:hover:not([disabled])+label:after,.is-checkradio[type=checkbox].is-dark.is-block:checked:hover:not([disabled])+label:before{border-color:#e8e8e8!important}.is-checkradio[type=checkbox].is-primary.has-background-color+label::before,.is-checkradio[type=checkbox].is-primary.has-background-color+label:before{border-color:transparent!important;background-color:#00d1b2!important}.is-checkradio[type=checkbox].is-primary:hover:not([disabled])+label::before,.is-checkradio[type=checkbox].is-primary:hover:not([disabled])+label:before{border-color:#00d1b2!important}.is-checkradio[type=checkbox].is-primary:checked+label::after,.is-checkradio[type=checkbox].is-primary:checked+label:after{border-color:#00d1b2!important}.is-checkradio[type=checkbox].is-primary:checked.has-background-color+label::before,.is-checkradio[type=checkbox].is-primary:checked.has-background-color+label:before{border-color:transparent!important;background-color:#00d1b2!important}.is-checkradio[type=checkbox].is-primary:checked.has-background-color+label::after,.is-checkradio[type=checkbox].is-primary:checked.has-background-color+label:after{border-color:#fff!important;background-color:#00d1b2!important}.is-checkradio[type=checkbox].is-primary.is-block:hover:not([disabled])+label::after,.is-checkradio[type=checkbox].is-primary.is-block:hover:not([disabled])+label::before,.is-checkradio[type=checkbox].is-primary.is-block:hover:not([disabled])+label:after,.is-checkradio[type=checkbox].is-primary.is-block:hover:not([disabled])+label:before{border-color:#00d1b2!important}.is-checkradio[type=checkbox].is-primary.is-block:checked+label{color:#fff;border-color:#00d1b2!important;background:#00d1b2}.is-checkradio[type=checkbox].is-primary.is-block:checked+label::after,.is-checkradio[type=checkbox].is-primary.is-block:checked+label:after{border-color:#fff!important}.is-checkradio[type=checkbox].is-primary.is-block:checked:hover:not([disabled])+label{background:#00b89c}.is-checkradio[type=checkbox].is-primary.is-block:checked:hover:not([disabled])+label::after,.is-checkradio[type=checkbox].is-primary.is-block:checked:hover:not([disabled])+label::before,.is-checkradio[type=checkbox].is-primary.is-block:checked:hover:not([disabled])+label:after,.is-checkradio[type=checkbox].is-primary.is-block:checked:hover:not([disabled])+label:before{border-color:#f2f2f2!important}.is-checkradio[type=checkbox].is-link.has-background-color+label::before,.is-checkradio[type=checkbox].is-link.has-background-color+label:before{border-color:transparent!important;background-color:#3273dc!important}.is-checkradio[type=checkbox].is-link:hover:not([disabled])+label::before,.is-checkradio[type=checkbox].is-link:hover:not([disabled])+label:before{border-color:#3273dc!important}.is-checkradio[type=checkbox].is-link:checked+label::after,.is-checkradio[type=checkbox].is-link:checked+label:after{border-color:#3273dc!important}.is-checkradio[type=checkbox].is-link:checked.has-background-color+label::before,.is-checkradio[type=checkbox].is-link:checked.has-background-color+label:before{border-color:transparent!important;background-color:#3273dc!important}.is-checkradio[type=checkbox].is-link:checked.has-background-color+label::after,.is-checkradio[type=checkbox].is-link:checked.has-background-color+label:after{border-color:#fff!important;background-color:#3273dc!important}.is-checkradio[type=checkbox].is-link.is-block:hover:not([disabled])+label::after,.is-checkradio[type=checkbox].is-link.is-block:hover:not([disabled])+label::before,.is-checkradio[type=checkbox].is-link.is-block:hover:not([disabled])+label:after,.is-checkradio[type=checkbox].is-link.is-block:hover:not([disabled])+label:before{border-color:#3273dc!important}.is-checkradio[type=checkbox].is-link.is-block:checked+label{color:#fff;border-color:#3273dc!important;background:#3273dc}.is-checkradio[type=checkbox].is-link.is-block:checked+label::after,.is-checkradio[type=checkbox].is-link.is-block:checked+label:after{border-color:#fff!important}.is-checkradio[type=checkbox].is-link.is-block:checked:hover:not([disabled])+label{background:#2366d1}.is-checkradio[type=checkbox].is-link.is-block:checked:hover:not([disabled])+label::after,.is-checkradio[type=checkbox].is-link.is-block:checked:hover:not([disabled])+label::before,.is-checkradio[type=checkbox].is-link.is-block:checked:hover:not([disabled])+label:after,.is-checkradio[type=checkbox].is-link.is-block:checked:hover:not([disabled])+label:before{border-color:#f2f2f2!important}.is-checkradio[type=checkbox].is-info.has-background-color+label::before,.is-checkradio[type=checkbox].is-info.has-background-color+label:before{border-color:transparent!important;background-color:#209cee!important}.is-checkradio[type=checkbox].is-info:hover:not([disabled])+label::before,.is-checkradio[type=checkbox].is-info:hover:not([disabled])+label:before{border-color:#209cee!important}.is-checkradio[type=checkbox].is-info:checked+label::after,.is-checkradio[type=checkbox].is-info:checked+label:after{border-color:#209cee!important}.is-checkradio[type=checkbox].is-info:checked.has-background-color+label::before,.is-checkradio[type=checkbox].is-info:checked.has-background-color+label:before{border-color:transparent!important;background-color:#209cee!important}.is-checkradio[type=checkbox].is-info:checked.has-background-color+label::after,.is-checkradio[type=checkbox].is-info:checked.has-background-color+label:after{border-color:#fff!important;background-color:#209cee!important}.is-checkradio[type=checkbox].is-info.is-block:hover:not([disabled])+label::after,.is-checkradio[type=checkbox].is-info.is-block:hover:not([disabled])+label::before,.is-checkradio[type=checkbox].is-info.is-block:hover:not([disabled])+label:after,.is-checkradio[type=checkbox].is-info.is-block:hover:not([disabled])+label:before{border-color:#209cee!important}.is-checkradio[type=checkbox].is-info.is-block:checked+label{color:#fff;border-color:#209cee!important;background:#209cee}.is-checkradio[type=checkbox].is-info.is-block:checked+label::after,.is-checkradio[type=checkbox].is-info.is-block:checked+label:after{border-color:#fff!important}.is-checkradio[type=checkbox].is-info.is-block:checked:hover:not([disabled])+label{background:#118fe4}.is-checkradio[type=checkbox].is-info.is-block:checked:hover:not([disabled])+label::after,.is-checkradio[type=checkbox].is-info.is-block:checked:hover:not([disabled])+label::before,.is-checkradio[type=checkbox].is-info.is-block:checked:hover:not([disabled])+label:after,.is-checkradio[type=checkbox].is-info.is-block:checked:hover:not([disabled])+label:before{border-color:#f2f2f2!important}.is-checkradio[type=checkbox].is-success.has-background-color+label::before,.is-checkradio[type=checkbox].is-success.has-background-color+label:before{border-color:transparent!important;background-color:#23d160!important}.is-checkradio[type=checkbox].is-success:hover:not([disabled])+label::before,.is-checkradio[type=checkbox].is-success:hover:not([disabled])+label:before{border-color:#23d160!important}.is-checkradio[type=checkbox].is-success:checked+label::after,.is-checkradio[type=checkbox].is-success:checked+label:after{border-color:#23d160!important}.is-checkradio[type=checkbox].is-success:checked.has-background-color+label::before,.is-checkradio[type=checkbox].is-success:checked.has-background-color+label:before{border-color:transparent!important;background-color:#23d160!important}.is-checkradio[type=checkbox].is-success:checked.has-background-color+label::after,.is-checkradio[type=checkbox].is-success:checked.has-background-color+label:after{border-color:#fff!important;background-color:#23d160!important}.is-checkradio[type=checkbox].is-success.is-block:hover:not([disabled])+label::after,.is-checkradio[type=checkbox].is-success.is-block:hover:not([disabled])+label::before,.is-checkradio[type=checkbox].is-success.is-block:hover:not([disabled])+label:after,.is-checkradio[type=checkbox].is-success.is-block:hover:not([disabled])+label:before{border-color:#23d160!important}.is-checkradio[type=checkbox].is-success.is-block:checked+label{color:#fff;border-color:#23d160!important;background:#23d160}.is-checkradio[type=checkbox].is-success.is-block:checked+label::after,.is-checkradio[type=checkbox].is-success.is-block:checked+label:after{border-color:#fff!important}.is-checkradio[type=checkbox].is-success.is-block:checked:hover:not([disabled])+label{background:#20bc56}.is-checkradio[type=checkbox].is-success.is-block:checked:hover:not([disabled])+label::after,.is-checkradio[type=checkbox].is-success.is-block:checked:hover:not([disabled])+label::before,.is-checkradio[type=checkbox].is-success.is-block:checked:hover:not([disabled])+label:after,.is-checkradio[type=checkbox].is-success.is-block:checked:hover:not([disabled])+label:before{border-color:#f2f2f2!important}.is-checkradio[type=checkbox].is-warning.has-background-color+label::before,.is-checkradio[type=checkbox].is-warning.has-background-color+label:before{border-color:transparent!important;background-color:#ffdd57!important}.is-checkradio[type=checkbox].is-warning:hover:not([disabled])+label::before,.is-checkradio[type=checkbox].is-warning:hover:not([disabled])+label:before{border-color:#ffdd57!important}.is-checkradio[type=checkbox].is-warning:checked+label::after,.is-checkradio[type=checkbox].is-warning:checked+label:after{border-color:#ffdd57!important}.is-checkradio[type=checkbox].is-warning:checked.has-background-color+label::before,.is-checkradio[type=checkbox].is-warning:checked.has-background-color+label:before{border-color:transparent!important;background-color:#ffdd57!important}.is-checkradio[type=checkbox].is-warning:checked.has-background-color+label::after,.is-checkradio[type=checkbox].is-warning:checked.has-background-color+label:after{border-color:rgba(0,0,0,.7)!important;background-color:#ffdd57!important}.is-checkradio[type=checkbox].is-warning.is-block:hover:not([disabled])+label::after,.is-checkradio[type=checkbox].is-warning.is-block:hover:not([disabled])+label::before,.is-checkradio[type=checkbox].is-warning.is-block:hover:not([disabled])+label:after,.is-checkradio[type=checkbox].is-warning.is-block:hover:not([disabled])+label:before{border-color:#ffdd57!important}.is-checkradio[type=checkbox].is-warning.is-block:checked+label{color:rgba(0,0,0,.7);border-color:#ffdd57!important;background:#ffdd57}.is-checkradio[type=checkbox].is-warning.is-block:checked+label::after,.is-checkradio[type=checkbox].is-warning.is-block:checked+label:after{border-color:rgba(0,0,0,.7)!important}.is-checkradio[type=checkbox].is-warning.is-block:checked:hover:not([disabled])+label{background:#ffd83d}.is-checkradio[type=checkbox].is-warning.is-block:checked:hover:not([disabled])+label::after,.is-checkradio[type=checkbox].is-warning.is-block:checked:hover:not([disabled])+label::before,.is-checkradio[type=checkbox].is-warning.is-block:checked:hover:not([disabled])+label:after,.is-checkradio[type=checkbox].is-warning.is-block:checked:hover:not([disabled])+label:before{border-color:rgba(0,0,0,.7)!important}.is-checkradio[type=checkbox].is-danger.has-background-color+label::before,.is-checkradio[type=checkbox].is-danger.has-background-color+label:before{border-color:transparent!important;background-color:#ff3860!important}.is-checkradio[type=checkbox].is-danger:hover:not([disabled])+label::before,.is-checkradio[type=checkbox].is-danger:hover:not([disabled])+label:before{border-color:#ff3860!important}.is-checkradio[type=checkbox].is-danger:checked+label::after,.is-checkradio[type=checkbox].is-danger:checked+label:after{border-color:#ff3860!important}.is-checkradio[type=checkbox].is-danger:checked.has-background-color+label::before,.is-checkradio[type=checkbox].is-danger:checked.has-background-color+label:before{border-color:transparent!important;background-color:#ff3860!important}.is-checkradio[type=checkbox].is-danger:checked.has-background-color+label::after,.is-checkradio[type=checkbox].is-danger:checked.has-background-color+label:after{border-color:#fff!important;background-color:#ff3860!important}.is-checkradio[type=checkbox].is-danger.is-block:hover:not([disabled])+label::after,.is-checkradio[type=checkbox].is-danger.is-block:hover:not([disabled])+label::before,.is-checkradio[type=checkbox].is-danger.is-block:hover:not([disabled])+label:after,.is-checkradio[type=checkbox].is-danger.is-block:hover:not([disabled])+label:before{border-color:#ff3860!important}.is-checkradio[type=checkbox].is-danger.is-block:checked+label{color:#fff;border-color:#ff3860!important;background:#ff3860}.is-checkradio[type=checkbox].is-danger.is-block:checked+label::after,.is-checkradio[type=checkbox].is-danger.is-block:checked+label:after{border-color:#fff!important}.is-checkradio[type=checkbox].is-danger.is-block:checked:hover:not([disabled])+label{background:#ff1f4b}.is-checkradio[type=checkbox].is-danger.is-block:checked:hover:not([disabled])+label::after,.is-checkradio[type=checkbox].is-danger.is-block:checked:hover:not([disabled])+label::before,.is-checkradio[type=checkbox].is-danger.is-block:checked:hover:not([disabled])+label:after,.is-checkradio[type=checkbox].is-danger.is-block:checked:hover:not([disabled])+label:before{border-color:#f2f2f2!important}.is-checkradio[type=checkbox]:indeterminate+label::after,.is-checkradio[type=checkbox]:indeterminate+label:after{display:inline-block;-webkit-transform:rotate(90deg);transform:rotate(90deg);border-bottom:none}.is-checkradio[type=checkbox]:indeterminate.is-white+label::after,.is-checkradio[type=checkbox]:indeterminate.is-white+label:after{border-color:#fff}.is-checkradio[type=checkbox]:indeterminate.is-black+label::after,.is-checkradio[type=checkbox]:indeterminate.is-black+label:after{border-color:#0a0a0a}.is-checkradio[type=checkbox]:indeterminate.is-light+label::after,.is-checkradio[type=checkbox]:indeterminate.is-light+label:after{border-color:#f5f5f5}.is-checkradio[type=checkbox]:indeterminate.is-dark+label::after,.is-checkradio[type=checkbox]:indeterminate.is-dark+label:after{border-color:#363636}.is-checkradio[type=checkbox]:indeterminate.is-primary+label::after,.is-checkradio[type=checkbox]:indeterminate.is-primary+label:after{border-color:#00d1b2}.is-checkradio[type=checkbox]:indeterminate.is-link+label::after,.is-checkradio[type=checkbox]:indeterminate.is-link+label:after{border-color:#3273dc}.is-checkradio[type=checkbox]:indeterminate.is-info+label::after,.is-checkradio[type=checkbox]:indeterminate.is-info+label:after{border-color:#209cee}.is-checkradio[type=checkbox]:indeterminate.is-success+label::after,.is-checkradio[type=checkbox]:indeterminate.is-success+label:after{border-color:#23d160}.is-checkradio[type=checkbox]:indeterminate.is-warning+label::after,.is-checkradio[type=checkbox]:indeterminate.is-warning+label:after{border-color:#ffdd57}.is-checkradio[type=checkbox]:indeterminate.is-danger+label::after,.is-checkradio[type=checkbox]:indeterminate.is-danger+label:after{border-color:#ff3860}.is-checkradio[type=radio]+label::before,.is-checkradio[type=radio]+label:before{border-radius:50%}.is-checkradio[type=radio]+label::after,.is-checkradio[type=radio]+label:after{border-radius:50%;background:#00d1b2;left:0;-webkit-transform:scale(.5);transform:scale(.5)}.is-checkradio[type=radio]:checked.has-background-color+label::before,.is-checkradio[type=radio]:checked.has-background-color+label:before{border-color:#4a4a4a!important;background-color:#4a4a4a!important}.is-checkradio[type=radio]:checked.has-background-color+label::after,.is-checkradio[type=radio]:checked.has-background-color+label:after{border-color:#4a4a4a!important;background-color:#4a4a4a!important}.is-checkradio[type=radio].is-rtl+label{padding-left:0}.is-checkradio[type=radio].is-rtl+label::after,.is-checkradio[type=radio].is-rtl+label:after{left:auto;right:0}.is-checkradio[type=radio]+label{font-size:1rem;line-height:1.5rem;padding-left:2rem}.is-checkradio[type=radio]+label::after,.is-checkradio[type=radio]+label::before,.is-checkradio[type=radio]+label:after,.is-checkradio[type=radio]+label:before{width:1.5rem;height:1.5rem}.is-checkradio[type=radio].is-rtl+label{padding-right:2rem}.is-checkradio[type=radio].is-small+label{font-size:.75rem;line-height:1.125rem;padding-left:1.5rem}.is-checkradio[type=radio].is-small+label::after,.is-checkradio[type=radio].is-small+label::before,.is-checkradio[type=radio].is-small+label:after,.is-checkradio[type=radio].is-small+label:before{width:1.125rem;height:1.125rem}.is-checkradio[type=radio].is-small.is-rtl+label{padding-right:1.5rem}.is-checkradio[type=radio].is-medium+label{font-size:1.25rem;line-height:1.875rem;padding-left:2.5rem}.is-checkradio[type=radio].is-medium+label::after,.is-checkradio[type=radio].is-medium+label::before,.is-checkradio[type=radio].is-medium+label:after,.is-checkradio[type=radio].is-medium+label:before{width:1.875rem;height:1.875rem}.is-checkradio[type=radio].is-medium.is-rtl+label{padding-right:2.5rem}.is-checkradio[type=radio].is-large+label{font-size:1.5rem;line-height:2.25rem;padding-left:3rem}.is-checkradio[type=radio].is-large+label::after,.is-checkradio[type=radio].is-large+label::before,.is-checkradio[type=radio].is-large+label:after,.is-checkradio[type=radio].is-large+label:before{width:2.25rem;height:2.25rem}.is-checkradio[type=radio].is-large.is-rtl+label{padding-right:3rem}.is-checkradio[type=radio].is-white.has-background-color+label::before,.is-checkradio[type=radio].is-white.has-background-color+label:before{border-color:#fff!important;background-color:#fff!important}.is-checkradio[type=radio].is-white:hover:not([disabled])+label::before,.is-checkradio[type=radio].is-white:hover:not([disabled])+label:before{border-color:#fff!important}.is-checkradio[type=radio].is-white:checked+label::after,.is-checkradio[type=radio].is-white:checked+label:after{border-color:#fff!important;background-color:#fff!important}.is-checkradio[type=radio].is-white:checked.has-background-color+label::before,.is-checkradio[type=radio].is-white:checked.has-background-color+label:before{border-color:#fff!important;background-color:#fff!important}.is-checkradio[type=radio].is-white:checked.has-background-color+label::after,.is-checkradio[type=radio].is-white:checked.has-background-color+label:after{border-color:#0a0a0a!important;background-color:#0a0a0a!important}.is-checkradio[type=radio].is-black.has-background-color+label::before,.is-checkradio[type=radio].is-black.has-background-color+label:before{border-color:#0a0a0a!important;background-color:#0a0a0a!important}.is-checkradio[type=radio].is-black:hover:not([disabled])+label::before,.is-checkradio[type=radio].is-black:hover:not([disabled])+label:before{border-color:#0a0a0a!important}.is-checkradio[type=radio].is-black:checked+label::after,.is-checkradio[type=radio].is-black:checked+label:after{border-color:#0a0a0a!important;background-color:#0a0a0a!important}.is-checkradio[type=radio].is-black:checked.has-background-color+label::before,.is-checkradio[type=radio].is-black:checked.has-background-color+label:before{border-color:#0a0a0a!important;background-color:#0a0a0a!important}.is-checkradio[type=radio].is-black:checked.has-background-color+label::after,.is-checkradio[type=radio].is-black:checked.has-background-color+label:after{border-color:#fff!important;background-color:#fff!important}.is-checkradio[type=radio].is-light.has-background-color+label::before,.is-checkradio[type=radio].is-light.has-background-color+label:before{border-color:#f5f5f5!important;background-color:#f5f5f5!important}.is-checkradio[type=radio].is-light:hover:not([disabled])+label::before,.is-checkradio[type=radio].is-light:hover:not([disabled])+label:before{border-color:#f5f5f5!important}.is-checkradio[type=radio].is-light:checked+label::after,.is-checkradio[type=radio].is-light:checked+label:after{border-color:#f5f5f5!important;background-color:#f5f5f5!important}.is-checkradio[type=radio].is-light:checked.has-background-color+label::before,.is-checkradio[type=radio].is-light:checked.has-background-color+label:before{border-color:#f5f5f5!important;background-color:#f5f5f5!important}.is-checkradio[type=radio].is-light:checked.has-background-color+label::after,.is-checkradio[type=radio].is-light:checked.has-background-color+label:after{border-color:#363636!important;background-color:#363636!important}.is-checkradio[type=radio].is-dark.has-background-color+label::before,.is-checkradio[type=radio].is-dark.has-background-color+label:before{border-color:#363636!important;background-color:#363636!important}.is-checkradio[type=radio].is-dark:hover:not([disabled])+label::before,.is-checkradio[type=radio].is-dark:hover:not([disabled])+label:before{border-color:#363636!important}.is-checkradio[type=radio].is-dark:checked+label::after,.is-checkradio[type=radio].is-dark:checked+label:after{border-color:#363636!important;background-color:#363636!important}.is-checkradio[type=radio].is-dark:checked.has-background-color+label::before,.is-checkradio[type=radio].is-dark:checked.has-background-color+label:before{border-color:#363636!important;background-color:#363636!important}.is-checkradio[type=radio].is-dark:checked.has-background-color+label::after,.is-checkradio[type=radio].is-dark:checked.has-background-color+label:after{border-color:#f5f5f5!important;background-color:#f5f5f5!important}.is-checkradio[type=radio].is-primary.has-background-color+label::before,.is-checkradio[type=radio].is-primary.has-background-color+label:before{border-color:#00d1b2!important;background-color:#00d1b2!important}.is-checkradio[type=radio].is-primary:hover:not([disabled])+label::before,.is-checkradio[type=radio].is-primary:hover:not([disabled])+label:before{border-color:#00d1b2!important}.is-checkradio[type=radio].is-primary:checked+label::after,.is-checkradio[type=radio].is-primary:checked+label:after{border-color:#00d1b2!important;background-color:#00d1b2!important}.is-checkradio[type=radio].is-primary:checked.has-background-color+label::before,.is-checkradio[type=radio].is-primary:checked.has-background-color+label:before{border-color:#00d1b2!important;background-color:#00d1b2!important}.is-checkradio[type=radio].is-primary:checked.has-background-color+label::after,.is-checkradio[type=radio].is-primary:checked.has-background-color+label:after{border-color:#fff!important;background-color:#fff!important}.is-checkradio[type=radio].is-link.has-background-color+label::before,.is-checkradio[type=radio].is-link.has-background-color+label:before{border-color:#3273dc!important;background-color:#3273dc!important}.is-checkradio[type=radio].is-link:hover:not([disabled])+label::before,.is-checkradio[type=radio].is-link:hover:not([disabled])+label:before{border-color:#3273dc!important}.is-checkradio[type=radio].is-link:checked+label::after,.is-checkradio[type=radio].is-link:checked+label:after{border-color:#3273dc!important;background-color:#3273dc!important}.is-checkradio[type=radio].is-link:checked.has-background-color+label::before,.is-checkradio[type=radio].is-link:checked.has-background-color+label:before{border-color:#3273dc!important;background-color:#3273dc!important}.is-checkradio[type=radio].is-link:checked.has-background-color+label::after,.is-checkradio[type=radio].is-link:checked.has-background-color+label:after{border-color:#fff!important;background-color:#fff!important}.is-checkradio[type=radio].is-info.has-background-color+label::before,.is-checkradio[type=radio].is-info.has-background-color+label:before{border-color:#209cee!important;background-color:#209cee!important}.is-checkradio[type=radio].is-info:hover:not([disabled])+label::before,.is-checkradio[type=radio].is-info:hover:not([disabled])+label:before{border-color:#209cee!important}.is-checkradio[type=radio].is-info:checked+label::after,.is-checkradio[type=radio].is-info:checked+label:after{border-color:#209cee!important;background-color:#209cee!important}.is-checkradio[type=radio].is-info:checked.has-background-color+label::before,.is-checkradio[type=radio].is-info:checked.has-background-color+label:before{border-color:#209cee!important;background-color:#209cee!important}.is-checkradio[type=radio].is-info:checked.has-background-color+label::after,.is-checkradio[type=radio].is-info:checked.has-background-color+label:after{border-color:#fff!important;background-color:#fff!important}.is-checkradio[type=radio].is-success.has-background-color+label::before,.is-checkradio[type=radio].is-success.has-background-color+label:before{border-color:#23d160!important;background-color:#23d160!important}.is-checkradio[type=radio].is-success:hover:not([disabled])+label::before,.is-checkradio[type=radio].is-success:hover:not([disabled])+label:before{border-color:#23d160!important}.is-checkradio[type=radio].is-success:checked+label::after,.is-checkradio[type=radio].is-success:checked+label:after{border-color:#23d160!important;background-color:#23d160!important}.is-checkradio[type=radio].is-success:checked.has-background-color+label::before,.is-checkradio[type=radio].is-success:checked.has-background-color+label:before{border-color:#23d160!important;background-color:#23d160!important}.is-checkradio[type=radio].is-success:checked.has-background-color+label::after,.is-checkradio[type=radio].is-success:checked.has-background-color+label:after{border-color:#fff!important;background-color:#fff!important}.is-checkradio[type=radio].is-warning.has-background-color+label::before,.is-checkradio[type=radio].is-warning.has-background-color+label:before{border-color:#ffdd57!important;background-color:#ffdd57!important}.is-checkradio[type=radio].is-warning:hover:not([disabled])+label::before,.is-checkradio[type=radio].is-warning:hover:not([disabled])+label:before{border-color:#ffdd57!important}.is-checkradio[type=radio].is-warning:checked+label::after,.is-checkradio[type=radio].is-warning:checked+label:after{border-color:#ffdd57!important;background-color:#ffdd57!important}.is-checkradio[type=radio].is-warning:checked.has-background-color+label::before,.is-checkradio[type=radio].is-warning:checked.has-background-color+label:before{border-color:#ffdd57!important;background-color:#ffdd57!important}.is-checkradio[type=radio].is-warning:checked.has-background-color+label::after,.is-checkradio[type=radio].is-warning:checked.has-background-color+label:after{border-color:rgba(0,0,0,.7)!important;background-color:rgba(0,0,0,.7)!important}.is-checkradio[type=radio].is-danger.has-background-color+label::before,.is-checkradio[type=radio].is-danger.has-background-color+label:before{border-color:#ff3860!important;background-color:#ff3860!important}.is-checkradio[type=radio].is-danger:hover:not([disabled])+label::before,.is-checkradio[type=radio].is-danger:hover:not([disabled])+label:before{border-color:#ff3860!important}.is-checkradio[type=radio].is-danger:checked+label::after,.is-checkradio[type=radio].is-danger:checked+label:after{border-color:#ff3860!important;background-color:#ff3860!important}.is-checkradio[type=radio].is-danger:checked.has-background-color+label::before,.is-checkradio[type=radio].is-danger:checked.has-background-color+label:before{border-color:#ff3860!important;background-color:#ff3860!important}.is-checkradio[type=radio].is-danger:checked.has-background-color+label::after,.is-checkradio[type=radio].is-danger:checked.has-background-color+label:after{border-color:#fff!important;background-color:#fff!important}
+    :root {
+        --bd-warning: #FFDD57;
+        --bd-error: #E05700;
+        --bd-success: #50C71B;
+        --bd-primary: #267B00;
+        }
+    </style>
+  </head>
+
+<body class="has-background-light">
+
+<section class="hero is-primary is-medium" style="background-color: #267B00;">
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item has-background-white">
+              <img src="./BetterDoc_files/logo.png" alt="Logo">
+            </a>
+          </div>
+          <div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+              <span class="navbar-item">
+                <a class="button is-primary is-inverted">
+                  <span>Jetzt Rückruf vereinbaren</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  <!-- Hero content: will be in the middle -->
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="is-size-1 title">
+        Wir bringen Sie zum richtigen Arzt
+      </h1>
+      <h2 class="subtitle">
+        Sie benötigen eine Zweitmeinung oder stehen vor einer Behandlung/Operation?<br>
+      Wir helfen Ihnen, einen höchst kompetenten Spezialisten für Ihr Gesundheitsproblem zu finden.<br>
+      Auf Basis nachvollziehbarer Qualitätskriterien.
+      </h2>
+    </div>
+  </div>
+</section>
+<section class="section">
+<div class="container">
+    <div class="tile is-ancestor">
+    <div class="tile is-3 is-parent">
+        <h2 class="is-size-3">Jetzt kostenfreien Rückruf vereinbaren</h2>
+    </div>
+    <div class="tile is-vertical is-parent">
+        <div class="tile is-child box">
+            <div class="block"><label class="label">Wohnsitz auswählen</label></div>
+            
+            <div class="buttons has-addons my-0 is-fullwidth">
+                <button class="button is-success is-medium is-fullwidth is-selected">Deutschland 🇩🇪</button>
+                <button class="button is-success is-outlined is-medium is-fullwidth">Schweiz 🇨🇭</button>
+            </div>
+            <div class="divider mt-0">⬇</div>
+            <div class="block">
+              <article class="message is-success">
+                <div class="message-body">
+                    <strong>Fast geschafft!</strong> Dieser Rückruftermin ist für Sie reserviert.
+                    Bitte geben Sie Ihre Kontakt Informationen an, so dass wir Sie zurück rufen können.
+                </div>
+              </article>
+            </div>
+            <div class="divider mt-0">⬇</div>
+            <div class="block"><label class="label"> Kontakt Informationen angeben</label></div>
+            <div class="block">
+              <div class="block">
+                <input type="hidden" name="country_code" id="country_code" value="de">
+        
+                  <div class="field">
+                    <label class="label" for="call_request_first_name">Vorname</label>
+                    <div class="control">
+                      <input class="input" placeholder="Max" type="text" name="call_request[first_name]" id="call_request_first_name">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label" for="call_request_last_name">Nachname</label>
+                    <div class="control">
+                      <input class="input" placeholder="Mustermann" type="text" name="call_request[last_name]" id="call_request_last_name">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label" for="call_request_phone">Telefon</label>
+                    <div class="control">
+                      <input class="input" placeholder="+49 1234567" type="text" name="call_request[phone]" id="call_request_phone">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label" for="call_request_email">Email (optional)</label>
+                    <div class="control">
+                      <input class="input" placeholder="max.mustermann@gmail.com" type="text" name="call_request[email]" id="call_request_email">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label" for="call_request_voucher_code">Gutscheincode (optional)</label>
+                    <div class="control">
+                      <input class="input" placeholder="XXXX-XXXX" type="text" name="call_request[voucher_code]" id="call_request_voucher_code">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label" for="call_request_existing_case_id">Fall-Nummer (optional)</label>
+                    <div class="control">
+                      <input class="input" placeholder="XXXX-XXXX-XXXX" type="text" name="call_request[existing_case_id]" id="call_request_existing_case_id">
+                    </div>
+                  </div>
+        
+                <div class="field">
+                  <div class="control">
+                    <a href="success_state.htm" type="submit" name="commit" value="Rückruftermin vereinbaren" class="button is-success is-medium is-fullwidth" data-disable-with="Submit">Rückruftermin vereinbaren</a>
+                  </div>
+                </div>
+            </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="tile is-ancestor">
+            <div class="tile is-3 is-parent">
+                    <h2 class="is-size-3">Einfach selbst anrufen</h2>
+            </div>
+            <div class="tile is-vertical">
+                <div class="block">
+                </div>
+                <div class="tile is-parent">
+                    <p class="block">
+                        Gerne können Sie uns auch vom Montag bis Freitag zwischen 9:00 und 18:00 Uhr telefonisch kontaktieren.
+                    </p>
+                </div>
+                <div class="tile">
+                  <div class="tile is-parent">
+                    <div class="tile is-child box">
+                        <div class="block has-text-centered">
+                            <label class="label">BetterDoc Deutschland 🇩🇪</label>
+                        </div>
+                        <div class="block has-text-centered">
+                            <a href="tel:123-456-7890" class="button is-success is-medium is-inverted">Jetzt gebührenfrei anrufen
+                            </a>
+                        </div>
+                        <div class="block has-text-centered">
+                            0800 / 444 6 999 (gebührenfrei)
+                        </div>
+                    </div>
+                  </div>
+                  <div class="tile is-parent">
+                    <div class="tile is-child box">
+                        <div class="block has-text-centered">
+                            <label class="label">BetterDoc Schweiz 🇨🇭</label>
+                        </div>
+                        <div class="block has-text-centered">
+                            <a href="tel:123-456-7890" class="button is-success is-medium is-inverted">Jetzt anrufen
+                            </a>
+                        </div>
+                        <div class="block has-text-centered">
+                            021 / 552 35 70
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="columns is-multiline">
+            <div class="column is-3 ">
+              <h2 class="is-size-3">Geschützt</h2>
+            </div>
+            <div class="column is-6">
+              <p class="is-size-5">Wir legen höchsten Wert auf die sichere Verarbeitung und Speicherung Ihrer Daten.</p>
+              <br>
+              <p class="is-size-6">„Seit dem Tag der Gründung von BetterDoc steht Sicherheit an erster Stelle. Wir beschäftigen ein eigenes Team von Sicherheitsspezialisten, das rund um die Uhr daran arbeitet, unseren Service verlässlich und nach modernsten Sicherheitsstandards zu erbringen. Diesbezüglich wurden wir auch vom TÜV Saarland geprüft und erfolgreich zertifiziert.“</p>
+              <br>
+            </div>
+            <div class="column">
+              <figure class="image is-128x128">
+                <img src="./BetterDoc_files/christoph-von-dellingshausen-983618e7e1dfd1534ce5bbb08d11f05f7ac4d03eff863a374eaa0f7af63ef549.png">
+              </figure>
+              <p class="is-size-6"><b>Christoph A. v. Dellingshausen</b><br>
+              Co-Founder &amp; Chief Security Officer</p>
+            </div>
+            <div class="column is-one-quarter-desktop is-hidden-tablet">
+            </div>
+          </div>
+    </div>
+</section>
+
+<section id="about" class="section has-text-white" style="background-color: #267B00;">
+  <div class="container">
+    <div class="columns is-multiline">
+      <div class="column is-full-tablet is-one-quarter-desktop">
+        <h3 class="is-size-3">Über uns</h3>
+      </div>
+      <div class="column">
+        <h3 class="is-size-1">10.000+</h3>
+        <h5 class="is-size-5">Wir betreuen mehr als 10.000 Patientenfälle pro Jahr</h5>
+      </div>
+      <div class="column">
+        <h3 class="is-size-1">Über 91%</h3>
+        <h5 class="is-size-5">Mehr als 91% der betreuten Patienten empfehlen uns weiter</h5>
+      </div>
+      <div class="column">
+        <h3 class="is-size-1">&gt; 20 Mio.</h3>
+        <h5 class="is-size-5">Über 20 Millionen Versicherte können unsere Services kostenfrei nutzen</h5>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-multiline">
+      <div class="column is-full-tablet is-one-quarter-desktop">
+        <img alt="Logo" src="./BetterDoc_files/betterdoc-subtext-d2a9cc86b2ee62a23ce57cdfc0c6fa4949020208e7d3a4f575836649d11d4f7b.png">
+      </div>
+      <div class="column">
+        <h5 class="white-text">Für Patienten</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/">Unser Angebot</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/so-funktionierts">Ablauf und Kosten</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/qualitaet-bei-betterdoc">Qualität bei BetterDoc</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/der-experten-beirat">Der Experten-Beirat</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h5 class="white-text">Für Arbeitgeber</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/fuer-arbeitgeber/unser-angebot">Unser Angebot</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/fuer-arbeitgeber/vorteile-fuer-arbeitnehmer">Vorteile für Arbeitnehmer</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/fuer-arbeitgeber/vorteile-fuer-arbeitgeber">Vorteile für Arbeitgeber</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/fuer-arbeitgeber/qualitaet-bei-betterdoc">Qualität bei BetterDoc</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h5 class="white-text">Für Krankenversicherungen</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/fuer-krankenversicherungen/unser-angebot">Unser Angebot</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/fuer-krankenversicherungen/patientensteuerung">Patientensteuerung</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/fuer-krankenversicherungen/zweitmeinung">Zweitmeinung</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/fuer-krankenversicherungen/qualitaet-bei-betterdoc">Qualität bei BetterDoc</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/fuer-krankenversicherungen/ergebnisse-und-referenzen">Ergebnisse &amp; Referenzen</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="columns is-multiline">
+      <div class="column is-full-mobile is-full-tablet is-one-quarter-desktop">
+      </div>
+      <div class="column is-one-third-tablet is-one-quarter-desktop">
+        <ul>
+          <li>Über BetterDoc</li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/ueber-betterdoc/idee-und-werte">Idee &amp; Werte</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/ueber-betterdoc/unser-team">Unser Team</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/karriere">Karriere</a></li>
+        </ul>
+      </div>
+      <div class="column is-one-third-tablet is-one-quarter-desktop">
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/impressum">Impressum</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/agb">AGB</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/datenschutzbestimmungen">Datenschutzbestimmungen</a></li>
+          <li><a class="grey-text text-lighten-3" href="javascript:window.Metomic(&#39;ConsentManager:show&#39;)">Cookies verwalten</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/sicherheit-bei-betterdoc">Sicherheit</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/haeufig-gestellte-fragen-patienten">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="column is-one-third-tablet is-one-quarter-desktop">
+        <img width="160px" src="./BetterDoc_files/tuv-logo-de80677508f1a3307e65b71a3221bd92f74ece6f9c74f0756977fe128a7fe29b.png">
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-full">
+        <h5 class="white-text">BetterDoc GmbH</h5>
+        <p class="grey-text text-lighten-4">Kaiser-Wilhelm-Ring 30-32, D-50672 Köln</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+
+<style>.tb_button {padding:1px;cursor:pointer;border-right: 1px solid #8b8b8b;border-left: 1px solid #FFF;border-bottom: 1px solid #fff;}.tb_button.hover {borer:2px outset #def; background-color: #f8f8f8 !important;}.ws_toolbar {z-index:100000} .ws_toolbar .ws_tb_btn {cursor:pointer;border:1px solid #555;padding:3px}   .tb_highlight{background-color:yellow} .tb_hide {visibility:hidden} .ws_toolbar img {padding:2px;margin:0px}</style></body></html>
