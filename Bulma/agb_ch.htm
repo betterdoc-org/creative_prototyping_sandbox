@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<!-- saved from url=(0081)https://call-request.parc-staging.betterdoc.org/call_requests/new?country_code=de -->
+<html><script>
+(() => {
+/**
+ * This script injected by the installed three.js developer
+ * tools extension.
+ * https://github.com/threejs/three-devtools
+ */
+
+const $devtoolsReady = Symbol('devtoolsReady');
+const $backlog = Symbol('backlog');
+
+// The __THREE_DEVTOOLS__ target is small and light-weight, and collects
+// events triggered until the devtools panel is ready, which is when
+// the events are flushed.
+const target = new class ThreeDevToolsTarget extends EventTarget {
+  constructor() {
+    super();
+    this[$devtoolsReady] = false;
+    this[$backlog] = [];
+    this.addEventListener('devtools-ready', e => {
+      this[$devtoolsReady] = true;
+      for (let event of this[$backlog]) {
+        this.dispatchEvent(event);
+      }
+    }, { once: true });
+  }
+
+  dispatchEvent(event) {
+    if (this[$devtoolsReady] || event.type === 'devtools-ready') {
+      super.dispatchEvent(event);
+    } else {
+      this[$backlog].push(event);
+    }
+  }
+}
+
+Object.defineProperty(window, '__THREE_DEVTOOLS__', {
+  value: target,
+});
+})();
+</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>BetterDoc</title>
+    <meta name="csrf-param" content="authenticity_token">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="csrf-token" content="MKo1E2oRej1zAbbnojSF/NCrmi0Hefpm9MXP49RHYDANP4CrLmjyFI+aEDThdi1YOGH8eQLlSZcE1Kur5YoI1g==">
+    
+
+    <link href="./BetterDoc_files/icon" rel="stylesheet">
+    <!--[if lte IE 9]>
+      <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <![endif]-->
+
+    <!--[if (gt IE 9)|!(IE)]><!-->
+      <link href="./BetterDoc_files/stylesheet.css" rel="stylesheet" type="text/css">
+    <!--<![endif]-->
+
+    <link href="./BetterDoc_files/stylesheet.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" media="all" href="./BetterDoc_files/application-8cfc58743551a942ce542b1855e52ac4303672707633f32bec793b214b0f2252.css">
+    <style>
+      .divider{position:relative;display:flex;align-items:center;text-transform:uppercase;color:#7a7a7a;font-size:.75rem;font-weight:600;letter-spacing:.5px;margin:25px 0}.divider:after,.divider:before{content:"";display:block;flex:1;height:1px;background-color:#dbdbdb}.divider:not(.is-right):after{margin-left:10px}.divider:not(.is-left):before{margin-right:10px}.divider.is-left:before,.divider.is-right:after{display:none}.divider.is-vertical{flex-direction:column;margin:0 25px}.divider.is-vertical:after,.divider.is-vertical:before{height:auto;width:1px}.divider.is-vertical:after{margin-left:0;margin-top:10px}.divider.is-vertical:before{margin-right:0;margin-bottom:10px}.divider.is-white:after,.divider.is-white:before{background-color:#fff}.divider.is-black:after,.divider.is-black:before{background-color:#0a0a0a}.divider.is-light:after,.divider.is-light:before{background-color:#f5f5f5}.divider.is-dark:after,.divider.is-dark:before{background-color:#363636}.divider.is-primary:after,.divider.is-primary:before{background-color:#00d1b2}.divider.is-primary.is-light:after,.divider.is-primary.is-light:before{background-color:#ebfffc}.divider.is-link:after,.divider.is-link:before{background-color:#3273dc}.divider.is-link.is-light:after,.divider.is-link.is-light:before{background-color:#eef3fc}.divider.is-info:after,.divider.is-info:before{background-color:#3298dc}.divider.is-info.is-light:after,.divider.is-info.is-light:before{background-color:#eef6fc}.divider.is-success:after,.divider.is-success:before{background-color:#48c774}.divider.is-success.is-light:after,.divider.is-success.is-light:before{background-color:#effaf3}.divider.is-warning:after,.divider.is-warning:before{background-color:#ffdd57}.divider.is-warning.is-light:after,.divider.is-warning.is-light:before{background-color:#fffbeb}.divider.is-danger:after,.divider.is-danger:before{background-color:#f14668}.divider.is-danger.is-light:after,.divider.is-danger.is-light:before{background-color:#feecf0}
+    </style>
+  </head>
+
+<body class="has-background-light">
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item has-background-white">
+              <img src="./BetterDoc_files/logo.png" alt="Logo">
+            </a>
+          </div>
+          <div class="navbar-menu">
+            <div class="navbar-end">
+              <span class="navbar-item">
+                <a class="button is-primary is-inverted" href="#call-request">
+                  <span>Jetzt Rückruf vereinbaren</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+<section class="section has-background-white has-text-black-ter">
+  <div class="container" style="max-width: 920px">
+    <h4 class="title is-4">
+      Allgemeine Geschäftsbedingungen
+    </h4>
+    <p class="mb-3 is-size-6">
+      Allgemeine Geschäftsbedingungen der BetterDoc GmbH, Zweigniederlassung Basel, Dufourstrasse 49, CH-4052 Basel („BetterDoc“), für den Internet-Dienst <a href="https://betterdoc.ch">www.betterdoc.ch</a> („Dienst”).
+    </p>
+    <h6 class="title is-6 mt-5">Vorbemerkung</h6>
+    <p class="mb-3 is-size-6">
+      Betterdoc.ch ist eine Internet-Plattform, auf der Nutzer, die auf der Suche nach einem spezialisierten Arzt aus einem bestimmten Fachbereich sind und/oder eine ärztliche Zweitmeinung einholen möchten („Nutzer“), BetterDoc beauftragen können, entsprechende Arztauskünfte auf Basis vorliegender Qualitätsdaten zu erteilen und/oder eine ärztliche Zweitmeinung bei einem mit BetterDoc kooperierenden Facharzt einzuholen.
+    </p>
+    <p class="is-size-6"><i>Vertragsgegenstand „Arztauskünfte“</i></p>
+    <p class="mb-3 is-size-6">
+      Zur Erteilung von Arztauskünften erhebt, analysiert und interpretiert BetterDoc unterschiedliche Qualitätsdaten zu Ärzten und Spitälern aus dem Gesundheitswesen. Bei komplexen Erkrankungen ohne ausreichende Datenlage werden Suchanfragen zusätzlich an registrierte Fachärzte („BetterDoc-Fachärzte“) aus dem betreffenden Fachgebiet weitergeleitet, um mit deren fachlicher Unterstützung einen passenden Spezialisten zu identifizieren.
+    </p>
+    <p class="mb-3 is-size-6">
+      Auf Wunsch vereinbart BetterDoc für den Nutzer auch einen Termin bei dem vermittelten Spezialisten. Ferner führt BetterDoc eine Nachbetreuung bei jedem Nutzer durch und bleibt hierzu nach der Auskunft bzw. Vermittlung mit dem jeweiligen Nutzer bis zu 24 Monate in Kontakt.
+    </p>
+    <p class="is-size-6"><i>Vertragsgegenstand „Ärztliche Zweitmeinung“</i></p>
+    <p class="mb-3 is-size-6">
+      BetterDoc kooperiert mit spezialisierten Fachärzten, die für Nutzer bei Bedarf eine ärztliche Zweitmeinung für die jeweils vorliegende Diagnose oder Therapieempfehlung abgeben. 
+    </p>
+    <p class="mb-3 is-size-6">
+      BetterDoc bietet selbst keine Zweitmeinungsleistungen an und nimmt für diesen Teil der Dienstleistung lediglich als bevollmächtigte Empfangsvertreterin Zweitmeinungsanfragen vom Nutzer entgegen, um sie anschliessend an die kooperierenden Fachärzte weiterzuleiten. Dabei wird zwischen dem Nutzer und dem kooperierenden Facharzt ein Vertrag geschlossen. BetterDoc selbst wird dabei nicht Vertragspartner.
+    </p>
+    <p class="mb-3 is-size-6">
+      <b>
+      Bitte beachten Sie, dass die unter <a href="https://betterdoc.ch">www.betterdoc.ch</a> angebotenen Inhalte und Dienste ausschliesslich zu Informationszwecken bestimmt sind und selbstverständlich nicht die persönliche Beratung oder Behandlung durch einen Arzt oder andere professionelle Beratungen ersetzen. BetterDoc kann Ihnen aber dabei helfen, den Arzt, bei dem Sie die persönliche Beratung oder Behandlung bekommen wollen, zu finden. Bei Gesundheitsproblemen bzw. Fragen dazu wenden Sie sich unbedingt an einen Arzt. Bei Notfällen rufen Sie sofort die Schweizer Notrufnummer 112 an.
+    </b>
+    </p>
+    <p class="mb-3 is-size-6">
+      <b>
+      Sofern Sie eine ärztliche Zweitmeinung über BetterDoc angefordert haben, werden Sie hiermit darauf hingewiesen, dass Ihnen ausdrücklich empfohlen wird, den Zweitmeinungsbericht und etwaige Therapieempfehlungen mit einem weiteren Arzt vor Ort oder telefonisch persönlich zu besprechen.
+    </b>
+    </p>
+    <p class="mb-3 is-size-6">
+      Der Service steht nur juristischen Personen und unbeschränkt geschäftsfähigen natürlichen Personen offen. Minderjährige dürfen den Service nicht nutzen.
+    </p>
+    <p class="mb-3 is-size-6">
+      Für jede Nutzung des Dienstes gelten die Hinweise unter I. Für die registrierten BetterDoc-Fachärzte gelten zusätzlich und – im Fall eines Regelungswiderspruchs – vorrangig die Regelungen unter II.
+    </p>
+    <h6 class="title is-6 mt-5">I. Rechtliche Hinweise zur Nutzung</h6>
+    <h6 class="title is-6 mt-5">1. Geltung</h6>
+    <p class="mb-3 is-size-6">
+      Für Nutzer der Website gelten diese Bedingungen in der bei Vornahme der Nutzungshandlung jeweils aktuellen Fassung. BetterDoc ist berechtigt, diese Bedingungen jederzeit und ohne Angaben von Gründen zu ändern oder zu ergänzen.
+    </p>
+    <h6 class="title is-6 mt-5">2. Bereitstellung und Vertragsschluss</h6>
+    <p class="is-size-6">
+      a) Keine Pflicht BetterDocs zur Bereitstellung
+    </p>
+    <p class="mb-3 is-size-6">
+      BetterDoc ist ständig bemüht, einen ordnungsgemässen Betrieb des Dienstes sicherzustellen, steht jedoch nicht für die Nutzbarkeit bzw. Erreichbarkeit des Dienstes ein und haftet insbesondere nicht für technisch bedingte Verzögerungen, Unterbrechungen oder Ausfälle. BetterDoc behält sich zudem vor, die Bearbeitung von Suchanfragen nach freiem Ermessen abzulehnen, sofern die Anfragen nicht mit den Nutzungsregeln BetterDocs zu vereinbaren sind.
+    </p>
+    <p class="mb-3 is-size-6">
+      <p class="is-size-6">
+      b) Vertragsschluss
+    </p>
+    <p class="is-size-6"><i>„Arztauskünfte“</i></p>  
+    <p class="mb-3 is-size-6">
+Der Vertrag über die Nutzung des Dienstes mit der Bezeichnung Arztauskünfte kommt zwischen BetterDoc und dem jeweiligen Nutzer zustande, indem BetterDoc die Suchanfrage des Nutzers durch Übermittlung der angefragten Auskunft annimmt. Änderungen im Vertragsablauf bleiben vorbehalten. Für das Vertragsverhältnis gelten diese Allgemeinen Geschäftsbedingungen.
+    </p>
+    <p class="is-size-6"><i>
+      „Ärztliche Zweitmeinung“
+    </i></p>  
+    <p class="mb-3 is-size-6">
+Der Vertrag über die Nutzung des Dienstes („Zweitmeinungsvertrag“, vgl. Ziffer III) kommt ausschliesslich zwischen dem Nutzer und dem kooperierenden Facharzt zustande, indem BetterDoc als bevollmächtigte Empfangsvertreterin die medizinischen Unterlagen zum Zwecke der Erstellung einer Zweitmeinung vom Nutzer annimmt. Der Nutzer verzichtet dabei gemäss Artikel 6 Schweizer OR auf die Erklärung des kooperierenden Facharztes zur Vertragsannahme.
+    </p>
+    <p class="is-size-6">
+      c) Vertragsübernahme durch Dritte
+    </p>  
+    <p class="mb-3 is-size-6">
+BetterDoc ist berechtigt, seine Rechte und Pflichten aus dem Vertragsverhältnis mit dem jeweiligen Nutzer mit Ankündigung gegenüber dem Nutzer ganz oder teilweise auf Dritte zu übertragen. In diesem Fall ist der Nutzer berechtigt, das Vertragsverhältnis zu kündigen.    </p>
+    <h6 class="title is-6 mt-5">
+      3. Verhaltensregeln
+    </h6>  
+    <p class="mb-3 is-size-6">
+Für alle Nutzer und BetterDoc-Fachärzte gelten die Regeln eines professionellen, guten und respektvollen Umgangs. Alle Nutzer und BetterDoc-Fachärzte verpflichten sich, diese Regeln sowie die Allgemeinen Geschäftsbedingungen einzuhalten. Die Sammlung, Zusammenfassung, Kopie, Vervielfältigung, öffentliche Darstellung oder abgeleitete Nutzung der Seite sowie die Nutzung von Data-Mining, Robots, Spiders oder ähnlichen Datensammlungs- und Datengewinnungstools ohne vorherige schriftliche Zustimmung ist nicht gestattet.
+    </p>
+    <h6 class="title is-6 mt-5">
+      4. Haftungsausschluss
+    </h6>
+    <p class="is-size-6">
+      a) Eigene Inhalte
+    </p>
+    <p class="mb-3 is-size-6">
+BetterDoc ist Diensteanbieter und für eigene Inhalte, die im Rahmen des Dienstes abrufbar sind, nach den allgemeinen Gesetzen verantwortlich. BetterDoc hat diese eigenen Inhalte nach bestem Wissen erstellt, übernimmt jedoch weder Gewähr für deren Richtigkeit, Vollständigkeit oder Aktualität noch für deren Rechtmässigkeit. BetterDoc hat keinerlei Einfluss auf die Gestaltung und/oder auf die Inhalte von per Link verknüpften externen Webseiten und ist weder verpflichtet, noch in der Lage, diese laufend zu kontrollieren.
+</p>
+    <p class="is-size-6">
+      b) Fremde Inhalte
+    </p>
+    <p class="mb-3 is-size-6">
+BetterDoc ist nach den gesetzlichen Vorschriften nicht verpflichtet und auch nicht in der Lage, die Rechtmässigkeit der von Dritten (insbesondere der BetterDoc-Fachärzten) hochgeladenen oder publizierten Inhalte umfassend zu prüfen und/oder zu überwachen sowie nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Das gilt auch für Hyperlinks. BetterDoc macht sich diese fremden Inhalte nicht zu eigen und übernimmt keine Gewähr für die Vollständigkeit, Aktualität oder Richtigkeit der Inhalte.
+</p>
+    <p class="is-size-6">
+      c) Kenntnis von Rechtsverletzungen
+    </p>
+    <p class="mb-3 is-size-6">
+Wenn BetterDoc auf Gesetzesverstösse und/oder Rechtsverletzungen hingewiesen wird, werden die entsprechenden Inhalte – vorbehaltlich umfassender Prüfung – unverzüglich entfernt. BetterDoc behält sich hierzu vor, von Dritten zugänglich gemachte Inhalte einschliesslich Links zu sperren und/oder dauerhaft zu entfernen. BetterDoc haftet für fremde Inhalte frühestens ab dem Zeitpunkt der Kenntniserlangung einer konkreten Rechtsverletzung.
+    </p>
+    <p class="is-size-6">
+      d) Datenverlust
+    </p>
+    <p class="mb-3 is-size-6">
+Den Nutzern und den BetterDoc-Fachärzten obliegt es selbst, ihre Daten in angemessenen Intervallen zu sichern. Im Falle eines von BetterDoc zu vertretenden Datenverlustes wird nur für den Aufwand gehaftet, der bei Erfüllung dieser Obliegenheit üblicherweise für die Wiederherstellung entsteht.
+    </p>
+    <p class="mb-3 is-size-6">
+      e) Ärztliche Zweitmeinung
+Schäden, die im Zusammenhang mit der Einholung einer ärztlichen Zweitmeinung entstehen, sind von der Haftung BetterDocs ausgenommen, da BetterDoc hier keine Vertragspartnerin ist. Diesbezüglich hat sich der Nutzer an den kooperierenden Facharzt als Zweitmeiner zu halten.
+</p>
+    <h6 class="title is-6 mt-5">
+      5. Urheberrecht
+    </h6>
+    <p class="is-size-6">a) Verpflichtung zur Einhaltung von Urheberrechten</p>
+    <p class="mb-3 is-size-6">
+Die im Rahmen des Dienstes veröffentlichten Inhalte (insbesondere Texte und Bilder) sind grundsätzlich urheberrechtlich geschützt. Die Vervielfältigung oder die sonstige Nutzung oder Verwertung urheberrechtlich geschützter Inhalte ist ohne die Zustimmung des jeweiligen Rechteinhabers unzulässig. Gestattet ist jedoch die persönliche, nicht kommerzielle Nutzung im Rahmen der Zweckbestimmung des Dienstes. Die Nutzer dürfen die Inhalte daher zum privaten Gebrauch abrufen, abspeichern und ausdrucken, soweit dies weder unmittelbar noch mittelbar Erwerbszwecken dient.
+    </p>
+    <p class="is-size-6">b) Rechteeinräumung</p>
+    <p class="mb-3 is-size-6">
+Mit dem Stellen einer Suchanfrage bzw. der Bereitstellung von anderem möglicherweise urheberrechtlich geschützten Material räumt ein Nutzer BetterDoc unentgeltlich das übertragbare Recht ein, das Material zeitlich unbegrenzt zu speichern, zu vervielfältigen, zu verbreiten und es in anonymisierter Form öffentlich zugänglich zu machen, anderen Nutzern des Dienstes zum Speichern und Ausdrucken anzubieten und es in Online-, Print- und sonstigen Medien zur Bewerbung des Dienstes zu nutzen.
+    </p>
+    <h6 class="title is-6 mt-5">6. Widerrufsbelehrung</h6>
+    <p class="is-size-6">a) Widerrufsrecht</p>
+    <p class="mb-3 is-size-6">
+Nutzer können Ihre Vertragserklärung innerhalb von 14 Tagen ohne Angabe von Gründen in Textform (z.B. Brief, Fax, E-Mail) widerrufen. Die Frist beginnt nach Erhalt dieser Belehrung in Textform. Zur Wahrung der Widerrufsfrist genügt die rechtzeitige Absendung des Widerrufs. Der Widerruf ist zu richten an: BetterDoc GmbH Köln, Zweigniederlassung Basel, Dufourstrasse 49, CH-4052 Basel, Fax: 021 552 35 75, E-Mail: <a href="mailto:service@betterdoc.ch">service@betterdoc.ch</a>
+    </p>
+    <p class="is-size-6">b) Widerrufsbelehrung</p>
+    <p class="mb-3 is-size-6">
+Im Falle eines wirksamen Widerrufs sind die beiderseits empfangenen Leistungen zurückzugewähren und ggf. gezogene Nutzungen herauszugeben. Können die empfangene Leistung sowie Nutzungen (z.B. Gebrauchsvorteile) nicht oder teilweise nicht oder nur in verschlechtertem Zustand zurückgewährt beziehungsweise herausgegeben werden, müssen Nutzer insoweit Wertersatz leisten. Dies kann dazu führen, dass Nutzer die vertraglichen Zahlungsverpflichtungen für den Zeitraum bis zum Widerruf gleichwohl erfüllen müssen. Verpflichtungen zur Erstattung von Zahlungen müssen innerhalb von 30 Tagen erfüllt werden. Die Frist beginnt für den Nutzer mit der Absendung seiner Widerrufserklärung, für BetterDoc mit deren Empfang. 
+    </p>
+    <p class="is-size-6">c) Besondere Hinweise</p>
+    <p class="mb-3 is-size-6">
+Das Widerrufsrecht erlischt vorzeitig, wenn der Vertrag von beiden Seiten auf ausdrücklichen Wunsch des Nutzers vollständig erfüllt ist, bevor der Nutzer sein Widerrufsrecht ausgeübt hat.
+</p>
+    <h6 class="title is-6 mt-5">7. Betrieb, Änderung oder Einstellung des Dienstes</h6>
+    <p class="mb-3 is-size-6">
+Der Dienst kann online rund um die Uhr (7 * 24 Stunden) genutzt werden. Der bediente Betrieb des Dienstes findet von Montag bis Freitag ausser an Feiertagen von 8.00 Uhr bis 17.00 Uhr statt.
+</p>
+    <p class="mb-3 is-size-6">
+BetterDoc behält sich vor, Teile des Dienstes oder den Dienst als Ganzes ohne gesonderte Ankündigung zu verändern oder die Veröffentlichung zeitweise oder endgültig einzustellen. Ansprüche erwachsen den Nutzern hieraus nicht.
+</p>
+    <h6 class="title is-6 mt-5">8. Datenschutz</h6>
+    <p class="mb-3 is-size-6">
+Es gelten die <a href="https://betterdoc.ch/datenschutzbestimmungen">Datenschutzbestimmungen</a> von BetterDoc, die hier aufgerufen werden können.
+    </p>
+    <h6 class="title is-6 mt-5">9. Schlussbestimmungen</h6>
+    <p class="mb-3 is-size-6">
+Soweit rechtlich zulässig, ist ausschliesslicher Gerichtsstand für alle Streitigkeiten Basel.
+    </p>
+    <p class="mb-3 is-size-6">
+      Es gilt ausschliesslich das Recht der Schweiz.
+    </p>
+    <p class="mb-3 is-size-6">
+Sollten Bestimmungen dieser allgemeinen Geschäftsbedingungen ganz oder teilweise unwirksam sein oder werden, so bleiben die übrigen Bestimmungen davon unberührt. Vielmehr gilt anstelle jeder unwirksamen Bestimmung eine dem Zweck der Vereinbarung entsprechende oder zumindest nahekommende Ersatzbestimmung, wie sie die Parteien zur Erreichung des ursprünglichen Ergebnisses vereinbart hätten, wenn sie die Unwirksamkeit der Bestimmung gekannt hätten. Entsprechendes gilt für Unvollständigkeit.
+</p>
+    <h6 class="title is-6 mt-5">II. Zusätzliche rechtliche Hinweise für BetterDoc-Fachärzte</h6>
+    <h6 class="title is-6 mt-5">1. Geltung</h6>
+    <p class="mb-3 is-size-6">
+Es gelten die Bedingungen in der bei Registrierung aktuellen Fassung. BetterDoc ist berechtigt, diese Bedingungen jederzeit und ohne Angaben von Gründen zu ändern oder zu ergänzen. Die Ankündigung erfolgt per E-Mail oder beim Einloggen. Widerspricht ein registrierter BetterDoc-Facharzt nicht innerhalb von vier Wochen, nachdem er per E-Mail oder beim Einloggen informiert wurde, so werden die geänderten oder ergänzten Bedingungen wirksam. Widerspricht ein BetterDoc-Facharzt fristgemäss, so ist BetterDoc berechtigt, die Möglichkeit der Nutzung zu dem Zeitpunkt zu beenden, an dem die geänderten oder ergänzten Geschäftsbedingungen in Kraft treten sollen, frühestens jedoch zwei Wochen nach Ablauf der Widerspruchsfrist. Diese Folgen treten nur ein, wenn der registrierte BetterDoc-Facharzt in der E-Mail, die die geänderten Bedingungen enthält, bzw. beim Einloggen gesondert auf die Bedeutung der Vierwochenfrist und die genannten Folgen eines Widerspruchs hingewiesen wurde.
+    </p>
+    <h6 class="title is-6 mt-5">2. Registrierung und Vertragsschluss</h6>
+    <p class="is-size-6">a) Allgemeines</p>
+    <p class="mb-3 is-size-6">
+Eine mehrfache Registrierung ist unzulässig.
+</p>
+    <p class="is-size-6">b) Registrierungsinformationen</p>
+    <p class="mb-3 is-size-6">
+Jeder BetterDoc-Facharzt verpflichtet sich, im Rahmen seiner Registrierung richtige und vollständige Informationen zu geben und insbesondere nicht die Rechte Dritter zu verletzen. Eine Verletzung der Rechte Dritter ist unter anderem dann gegeben, wenn personenbezogene Informationen oder sonstige Daten Dritter ohne deren Einwilligung verwendet werden, z.B. der Name oder die E-Mail-Adresse.
+    </p>
+    <p class="is-size-6">
+    <p class="mb-3 is-size-6">
+      c) Mit der erfolgreichen Registrierung kommt ein Vertrag zwischen BetterDoc und dem jeweiligen BetterDoc-Facharzt nach Massgabe dieser Allgemeinen Geschäftsbedingungen zustande. BetterDoc ist berechtigt, seine Rechte und Pflichten aus diesem Vertragsverhältnis mit Ankündigung ganz oder teilweise auf Dritte zu übertragen. In diesem Fall ist der BetterDoc-Facharzt berechtigt, das Vertragsverhältnis zu kündigen.
+    </p>
+    <h6 class="title is-6 mt-5">3. Regeln für die Benutzung und Verantwortung der BetterDoc-Fachärzte</h6>
+    <p class="is-size-6">a) Allgemeines</p>
+    <p class="mb-3 is-size-6">
+Es gelten die unter I. 3. genannten Regeln und Pflichten entsprechend. Zudem darf kein BetterDoc-Facharzt mit Informationen, die er anderen über den Dienst zugänglich macht, gegen gesetzliche Verbote oder die guten Sitten verstossen oder Rechte Dritter (Namens-, Kennzeichen-, Urheber-, Datenschutzrechte usw.) verletzen. Für die BetterDoc-Fachärzte sind die Entscheidungen und Vorgaben von BetterDoc und ihren Beauftragten verbindlich, die entscheiden, welche Inhalte gegen die genannten Grundsätze verstossen.
+    </p>
+    <p class="is-size-6">b) Einhaltung berufsrechtlicher und arbeitsrechtlicher Regeln</p>
+    <p class="mb-3 is-size-6">
+BetterDoc-Fachärzte sind für die Einhaltung sämtlicher berufsrechtlicher Vorgaben verantwortlich. Hierzu gehört auch die Einhaltung der für den einzelnen BetterDoc-Facharzt jeweils einschlägigen Schweizer Berufsordnung bzw. Standesordnung für Ärzte. Weitere Informationen dazu können bei der FMH – dem Berufsverband der Schweizer Ärztinnen und Ärzte abgerufen werden: <a href="https://www.fmh.ch">http://www.fmh.ch.</a> Die BetterDoc-Fachärzte sind weiterhin selbst für die Einhaltung sämtlicher arbeitsrechtlicher Regeln verantwortlich. Hierzu gehört unter Umständen auch die Einholung einer Erlaubnis ihres jeweiligen Arbeitgebers zur Tätigkeit bei BetterDoc.
+    </p>
+    <p class="is-size-6">c) Zugangsinformationen</p>
+    <p class="mb-3 is-size-6">
+Die registrierten BetterDoc-Fachärzte sind verantwortlich für die vertrauliche Behandlung der ihnen erteilten bzw. von ihnen gewählten Zugangsinformationen (insbes. Passwort) und sind sowohl gegenüber BetterDoc als auch Dritten für deren Gebrauch verantwortlich. Jeder registrierte BetterDoc-Facharzt ist verpflichtet, BetterDoc im Falle der unbefugten Nutzung seiner Zugangsinformationen unverzüglich zu unterrichten.
+    </p>
+    <p class="is-size-6">d) Keine Schadsoftware</p>
+    <p class="mb-3 is-size-6">
+Kein BetterDoc-Facharzt darf bei der Benutzung des Dienstes Daten versenden oder auf einem Datenträger von BetterDoc speichern, die nach ihrer Art oder Beschaffenheit, Grösse oder Zahl geeignet sind, die Funktionsweise der Computersysteme von BetterDoc oder von Dritten zu beeinträchtigen oder Rechte Dritter zu verletzen (z.B. Viren, Spam-E-Mails etc.).
+    </p>
+    <p class="is-size-6">e) Keine Werbung durch registrierte BetterDoc-Fachärzte</p>
+    <p class="mb-3 is-size-6">
+Es ist registrierten BetterDoc-Fachärzten mit Ausnahme von Selbstempfehlungen nicht erlaubt, anderen Nutzern oder Dritten unter Verwendung des Dienstes Werbung in jedweder Form zu unterbreiten. Dies bezieht sich auch auf das Setzen von entsprechenden Links und insbesondere auf Werbung für Kettenbriefe, Schenkkreise, Umfragen, Pyramiden- und Schneeballsysteme sowie für den Kauf von Wertpapieren.
+</p>
+    <p class="is-size-6">f) Kein Missbrauch von Daten</p>
+    <p class="mb-3 is-size-6">
+Die Nutzung einer Registrierung zur Auslesung, Speicherung oder Weitergabe personenbezogener Daten anderer registrierter BetterDoc-Fachärzte oder sonstigen auf dem Portal genannten bzw. verfügbaren Ärzte zu anderen Zwecken als der bestimmungsgemässen Nutzung des Dienstes ist verboten. Die registrierten BetterDoc-Fachärzte behandeln ihnen bekannt werdende Informationen über Nutzer sowie Kommunikationsinhalte grundsätzlich vertraulich.</p>
+    <p class="is-size-6">g) Besondere Vorschriften für Empfehlungen</p>
+    <p class="mb-3 is-size-6">
+Alle registrierten BetterDoc-Fachärzte sind verpflichtet, ihre Empfehlungen und zugehörigen Angaben auf der Website wahrheitsgemäss nach bestem Wissen und Gewissen in sachlicher Art und Weise vorzunehmen. Eine unsachliche Herabwürdigung ist ausdrücklich untersagt. Empfehlungen dürfen nur persönlich abgegeben werden. Die registrierten
+BetterDoc-Fachärzte sind verpflichtet, die Abgabe einer Empfehlung abzulehnen, soweit sich hieraus ein Interessenkonflikt ergeben würde.
+    </p>
+    <h6 class="title is-6 mt-5">4. Urheberrechte und verwandte Rechte</h6>
+    <p class="is-size-6">a) Rechteeinräumung</p>
+    <p class="mb-3 is-size-6">
+Mit dem Einstellen von Texten und anderem möglicherweise urheberrechtlich geschützten Material räumt ein registrierter BetterDoc-Facharzt BetterDoc unentgeltlich das übertragbare Recht ein, das Material zeitlich unbegrenzt zu speichern, zu vervielfältigen, zu verbreiten und es öffentlich zugänglich zu machen, den Nutzern des Dienstes zum Speichern und Ausdrucken anzubieten und es in Online-, Print- und sonstigen Medien zur Bewerbung des Dienstes zu nutzen. Innerhalb des Dienstes kann eingestelltes Material auch redaktionell hervorgehoben und bewertet werden.</p>
+    <p class="is-size-6">b) Verantwortung der registrierten BetterDoc-Fachärzte</p>
+    <p class="mb-3 is-size-6">
+Es liegt in der alleinigen Verantwortung eines jeden registrierten BetterDoc-Facharztes, die nötigen Rechte für das Einstellen von Material in den Dienst von BetterDoc zu erwerben. In der Regel besitzt er die erforderlichen Rechte nur, wenn er das betreffende Material selbst angefertigt hat.
+    </p>
+    <h6 class="title is-6 mt-5">5. Folgen von Verstößen</h6>
+    <p class="is-size-6">a) Prüfung</p>
+    <p class="mb-3 is-size-6">
+BetterDoc ist nicht verpflichtet und auch nicht in der Lage, die Rechtmässigkeit der von BetterDoc-Fachärzten hochgeladenen oder publizierten Inhalte umfassend zu prüfen und/oder zu überwachen sowie nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. BetterDoc führt aber Stichproben durch und behält sich in jedem Fall das Recht auf Prüfung vor.
+    </p>
+    <p class="is-size-6">b) Sanktionen</p>
+    <p class="mb-3 is-size-6">
+Im Fall von Verstössen gegen diese Nutzungsbedingungen kann BetterDoc den betreffenden BetterDoc-Facharzt vorübergehend oder dauerhaft von der Nutzung des Dienstes ausschliessen sowie eingestellte dem betreffenden BetterDoc-Facharzt zuzuordnende Inhalte und Informationen löschen. Bei einem schuldhaften Verstoss haftet der BetterDoc-Facharzt gegenüber BetterDoc auf Ersatz aller hieraus entstehenden direkten und indirekten Schäden, auch des Vermögensschadens. Der BetterDoc-Facharzt stellt BetterDoc im Falle eines Verstosses gegen die Bestimmungen der Ziffern 2.b), 3. und 4. von jeglichen Ansprüchen Dritter frei, die gegen BetterDoc, ihre gesetzlichen Vertreter und/oder Erfüllungsgehilfen aufgrund dieses Verstosses geltend gemacht werden. Alle weiteren Ansprüche bleiben vorbehalten.
+    </p>
+    <h6 class="title is-6 mt-5">6. Haftung</h6>
+    <p class="mb-3 is-size-6">
+    BetterDoc haftet nur für Schäden durch vorsätzliches oder grob fahrlässiges Handeln sowie für Schäden, die sich aus leicht fahrlässigen Verletzungen solcher Vertragspflichten ergeben, die die ordnungsgemässe Durchführung des Vertrages erst ermöglichen und auf deren Erfüllung die BetterDoc-Fachärzte deshalb vertrauen dürfen (Kardinalpflichten). Im letzteren Fall ist die Haftung begrenzt auf den bei Vertragsschluss vorhersehbaren Schaden. Bei Personenschäden und im Anwendungsbereich des Produkthaftungsgesetzes ist die Haftung nicht beschränkt. Die vorstehenden Haftungsregelungen gelten auch bei Pflichtverletzungen der gesetzlichen Vertreter oder Erfüllungsgehilfen von BetterDoc.
+    </p>
+    <h6 class="title is-6 mt-5">7. Vertragsdauer und Kündigung</h6>
+    <p class="is-size-6">a) Beendigung der Registrierung durch den BetterDoc-Facharzt</p>
+    <p class="mb-3 is-size-6">
+Die Registrierung kann jederzeit ohne Einhaltung einer Frist durch E-Mail an BetterDoc beendet werden.</p>
+    <p class="is-size-6">b) Beendigung der Registrierung durch BetterDoc</p>
+    <p class="mb-3 is-size-6">
+BetterDoc freut sich über jeden aktiven BetterDoc-Facharzt, behält sich jedoch vor, die Registrierung ohne Angabe von Gründen mit einer Frist von vier Wochen zu beenden.</p>
+    <p class="is-size-6">c) Außerordentliche Kündigung</p>
+    <p class="mb-3 is-size-6">
+Das Recht zur ausserordentlichen Kündigung aus wichtigem Grund bleibt unberührt.</p>
+    <p class="is-size-6">d) Änderung und Einstellung des Dienstes.</p>
+    <p class="mb-3 is-size-6">
+BetterDoc kann jederzeit entscheiden, einzelne Dienste oder den Dienst insgesamt einzustellen, in Zukunft nur noch kostenpflichtig zu betreiben oder zu modifizieren. In diesem Fall bestehen keine Ersatzansprüche der registrierten BetterDoc-Fachärzte, insbesondere nicht wegen einer Löschung der von ihm hochgeladenen Texte. Der BetterDoc-Facharzt ist vielmehr verpflichtet selbst für die erforderliche Datensicherung Sorge zu tragen.</p>
+    <h6 class="title is-6 mt-5">III. Zweitmeinungsvertrag</h6>
+    <p class="mb-3 is-size-6">
+Zwischen dem Nutzer in seiner Funktion als Nachfrager einer ärztlichen Zweitmeinung – nachfolgend Auftraggeber genannt – und einem kooperierenden Facharzt – nachfolgend Zweitmeiner genannt –</p>
+    <p class="is-size-6"><b>§ 1 Gegenstand des Vertrages</b></p>
+    <p class="mb-3 is-size-6">
+Der Zweitmeiner  wird für den Auftraggeber eine Zweitmeinung zu Fragen seiner gesundheitlichen Beschwerden erstellen, die die Bewertung eines medizinischen Erstbefundes zum Gegenstand hat.</p>
+    <p class="mb-3 is-size-6">
+Für die Zweitmeinungserstellung werden die vom Auftraggeber ausgefüllten Formulare zu dessen Gesundheitszustand ausgewertet. Darüber hinaus werden sämtliche weitere medizinische Unterlagen, die der Nutzer über BetterDoc dem Zweitmeiner zur Verfügung stellt (einschl. Röntgen- und MRT-Aufnahmen) in die Begutachtung einbezogen. Im Rahmen dieser Zweitmeinungserstellung setzt sich der Zweitmeiner intensiv, umfangreich und ggf. unter Einbezug wissenschaftlicher Studien vertiefend mit den ihm zur Verfügung gestellten Informationen auseinander.</p>
+    <p class="is-size-6"><b>§ 2 Zeit</b></p>
+    <p class="mb-3 is-size-6">
+Der Zweitmeiner erstellt die Zweitmeinung zu dem mit dem Auftraggeber vereinbarten Zeitpunkt, d.h. innerhalb der Erstellungsfrist, nach Bestätigung der Vollständigkeit der durch den Auftraggeber zu übermittelnden Unterlagen.
+    </p>
+    <p class="is-size-6"><b>§ 3 Vergütung</b></p>
+    <p class="mb-3 is-size-6">
+Für Auftraggeber, die Versicherte einer kooperierenden Krankenversicherung sind, ist das Zweitmeinungsverfahren kostenlos. In allen anderen Fällen gilt, dass die Vergütung des Arztes für die in Auftrag gegebene ärztliche Zweitmeinung  auf Grundlage eines individuellen Angebots gegenüber dem Auftraggeber mit Informationen zu anfallenden Kosten erfolgt.
+    </p>
+    <p class="is-size-6"><b>§ 4 Haftung</b></p>
+    <p class="mb-3 is-size-6">
+Der Auftraggeber wurde im Rahmen der Allgemeinen Geschäftsbedingungen darüber informiert, dass sowohl BetterDoc als auch der Zweitmeiner ausdrücklich empfehlen, den Zweitmeinungsbericht und etwaige Therapievorschläge mit einem weiteren Arzt vor Ort persönlich zu besprechen. In seinem eigenen Interesse obliegt es dem Auftraggeber daher, dieser Empfehlung nachzukommen. Sollte der Auftraggeber diesen Empfehlungshinweis ignorieren, ist er darauf hinzuweisen, dass dies einer bestmöglichen Diagnose sowie einer bestmöglichen Behandlung – sofern erforderlich – nicht zuträglich ist. Eventuelle Schäden, die dem Auftraggeber infolge der Missachtung der ausgesprochenen Empfehlung entstehen, können im Einzelfall u. U. nur gemindert oder überhaupt nicht berücksichtigt werden.
+    </p>
+    <p class="is-size-6"><b>§ 5 Verschwiegenheit</b></p>
+    <p class="mb-3 is-size-6">
+Der Zweitmeiner verpflichtet sich, über alle ihm zur Kenntnis gelangten Angelegenheiten, auch nach Fertigstellung der Zweitmeinung, Stillschweigen gegenüber jedermann zu bewahren. Dem Zweitmeiner ist untersagt, personenbezogene Daten unbefugt zu erheben, zu verarbeiten oder zu nutzen (Datengeheimnis). Mit Aufnahme seiner Tätigkeit verpflichtet sich der Zweitmeiner das Datengeheimnis bedingungslos einzuhalten. Das Datengeheimnis besteht auch nach Beendigung der Zweitmeinungstätigkeit fort und somit auch die Verpflichtung des Zweitmeiners.
+    </p>
+    <p class="is-size-6"><b>§ 6 Beendigung des Vertragsverhältnisses</b></p>
+    <p class="mb-3 is-size-6">
+Der Zweitmeinungsvertrag ist seitens des Auftraggebers zu jeder Zeit ohne Angabe von Gründen kündbar. Ansonsten endet das Vertragsverhältnis mit Fertigstellung der Zweitmeinung und seiner Überstellung an den Auftraggeber.
+    </p>
+    <p class="is-size-6"><b>§ 7 Widerrufsbelehrung</b></p>
+    <p class="mb-3 is-size-6">
+Hinsichtlich der durch den Zweitmeiner erbrachten Zweitmeinung steht dem Nutzer als Verbraucher nach Massgabe der fernabsatzrechtlichen Vorschriften ein Widerrufsrecht zu.
+    </p>
+    <p class="is-size-6"><b>§ 8 Schlussbestimmungen</b></p>
+    <p class="mb-3 is-size-6">
+Änderungen oder Ergänzungen dieses Vertrages bedürfen zu ihrer Wirksamkeit der Schriftform. Dies gilt auch für eine Änderung des Schriftformerfordernisses selbst. Nebenbestimmungen zu diesem Vertrag wurden weder schriftlich noch mündlich getroffen. Nebenabreden und die Aufhebung dieses Vertrages bedürfen zu ihrer Wirksamkeit ebenfalls der Schriftform. Dies gilt auch für die Änderung oder Aufhebung dieses Schriftformerfordernisses. Ausgenommen sind hiervon Individualabreden.
+    </p>
+    <p class="mb-3 is-size-6">
+      Sollte eine Bestimmung dieses Vertrages ganz oder teilweise unwirksam sein, so wird dadurch die Gültigkeit der übrigen Bestimmungen nicht berührt. Die Parteien sind in diesem Fall verpflichtet, über eine wirksame und zumutbare Ersatzregelung zu verhandeln, die dem von den Vertragsparteien mit der unwirksamen Bestimmung verfolgten wirtschaftlichen Zweck möglichst nahekommt. Entsprechendes gilt für Lücken des Vertrages.
+    </p>
+    <p class="mb-3 is-size-6">
+      Gerichtsstand für alle Streitigkeiten aus diesem Vertrag ist der für den Wohnsitz des Zweitmeiners örtlich und sachlich zuständige Gericht. Für Schweizer Zweitmeiner gilt das Recht der Schweiz, für deutsche Zweitmeiner das Recht der Bundesrepublik Deutschland.
+    </p>
+    </p>
+    </p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-multiline">
+      <div class="column is-full-tablet is-one-quarter-desktop">
+        <img alt="Logo" src="./BetterDoc_files/betterdoc-subtext-d2a9cc86b2ee62a23ce57cdfc0c6fa4949020208e7d3a4f575836649d11d4f7b.png">
+      </div>
+      <div class="column">
+        <h5 class="white-text">Für Patienten</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/">Unser Angebot</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/so-funktionierts">Ablauf und Kosten</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/qualitaet-bei-betterdoc">Qualität bei BetterDoc</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/der-experten-beirat">Der Experten-Beirat</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h5 class="white-text">Für Arbeitgeber</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/fuer-arbeitgeber/unser-angebot">Unser Angebot</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/fuer-arbeitgeber/vorteile-fuer-arbeitnehmer">Vorteile für Arbeitnehmer</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/fuer-arbeitgeber/vorteile-fuer-arbeitgeber">Vorteile für Arbeitgeber</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/fuer-arbeitgeber/qualitaet-bei-betterdoc">Qualität bei BetterDoc</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h5 class="white-text">Für Krankenversicherungen</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/fuer-krankenversicherungen/unser-angebot">Unser Angebot</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/fuer-krankenversicherungen/patientensteuerung">Patientensteuerung</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/fuer-krankenversicherungen/zweitmeinung">Zweitmeinung</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/fuer-krankenversicherungen/qualitaet-bei-betterdoc">Qualität bei BetterDoc</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/fuer-krankenversicherungen/ergebnisse-und-referenzen">Ergebnisse &amp; Referenzen</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="columns is-multiline">
+      <div class="column is-full-mobile is-full-tablet is-one-quarter-desktop">
+      </div>
+      <div class="column is-one-third-tablet is-one-quarter-desktop">
+        <ul>
+          <li>Über BetterDoc</li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/ueber-betterdoc/idee-und-werte">Idee &amp; Werte</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/ueber-betterdoc/unser-team">Unser Team</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/karriere">Karriere</a></li>
+        </ul>
+      </div>
+      <div class="column is-one-third-tablet is-one-quarter-desktop">
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/impressum">Impressum</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/agb">AGB</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/datenschutzbestimmungen">Datenschutzbestimmungen</a></li>
+          <li><a class="grey-text text-lighten-3" href="javascript:window.Metomic(&#39;ConsentManager:show&#39;)">Cookies verwalten</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/sicherheit-bei-betterdoc">Sicherheit</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/haeufig-gestellte-fragen-patienten">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="column is-one-third-tablet is-one-quarter-desktop">
+        <img width="160px" src="./BetterDoc_files/tuv-logo-de80677508f1a3307e65b71a3221bd92f74ece6f9c74f0756977fe128a7fe29b.png">
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-full">
+        <h5 class="white-text">BetterDoc GmbH</h5>
+        <p class="grey-text text-lighten-4">Kaiser-Wilhelm-Ring 30-32, D-50672 Köln</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+
+<style>.tb_button {padding:1px;cursor:pointer;border-right: 1px solid #8b8b8b;border-left: 1px solid #FFF;border-bottom: 1px solid #fff;}.tb_button.hover {borer:2px outset #def; background-color: #f8f8f8 !important;}.ws_toolbar {z-index:100000} .ws_toolbar .ws_tb_btn {cursor:pointer;border:1px solid #555;padding:3px}   .tb_highlight{background-color:yellow} .tb_hide {visibility:hidden} .ws_toolbar img {padding:2px;margin:0px}</style></body></html>

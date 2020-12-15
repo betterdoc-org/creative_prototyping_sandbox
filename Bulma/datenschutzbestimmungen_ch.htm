@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!-- saved from url=(0081)https://call-request.parc-staging.betterdoc.org/call_requests/new?country_code=de -->
+<html><script>
+(() => {
+/**
+ * This script injected by the installed three.js developer
+ * tools extension.
+ * https://github.com/threejs/three-devtools
+ */
+
+const $devtoolsReady = Symbol('devtoolsReady');
+const $backlog = Symbol('backlog');
+
+// The __THREE_DEVTOOLS__ target is small and light-weight, and collects
+// events triggered until the devtools panel is ready, which is when
+// the events are flushed.
+const target = new class ThreeDevToolsTarget extends EventTarget {
+  constructor() {
+    super();
+    this[$devtoolsReady] = false;
+    this[$backlog] = [];
+    this.addEventListener('devtools-ready', e => {
+      this[$devtoolsReady] = true;
+      for (let event of this[$backlog]) {
+        this.dispatchEvent(event);
+      }
+    }, { once: true });
+  }
+
+  dispatchEvent(event) {
+    if (this[$devtoolsReady] || event.type === 'devtools-ready') {
+      super.dispatchEvent(event);
+    } else {
+      this[$backlog].push(event);
+    }
+  }
+}
+
+Object.defineProperty(window, '__THREE_DEVTOOLS__', {
+  value: target,
+});
+})();
+</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>BetterDoc</title>
+    <meta name="csrf-param" content="authenticity_token">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="csrf-token" content="MKo1E2oRej1zAbbnojSF/NCrmi0Hefpm9MXP49RHYDANP4CrLmjyFI+aEDThdi1YOGH8eQLlSZcE1Kur5YoI1g==">
+    
+
+    <link href="./BetterDoc_files/icon" rel="stylesheet">
+    <!--[if lte IE 9]>
+      <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <![endif]-->
+
+    <!--[if (gt IE 9)|!(IE)]><!-->
+      <link href="./BetterDoc_files/stylesheet.css" rel="stylesheet" type="text/css">
+    <!--<![endif]-->
+
+    <link href="./BetterDoc_files/stylesheet.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" media="all" href="./BetterDoc_files/application-8cfc58743551a942ce542b1855e52ac4303672707633f32bec793b214b0f2252.css">
+    <style>
+      .divider{position:relative;display:flex;align-items:center;text-transform:uppercase;color:#7a7a7a;font-size:.75rem;font-weight:600;letter-spacing:.5px;margin:25px 0}.divider:after,.divider:before{content:"";display:block;flex:1;height:1px;background-color:#dbdbdb}.divider:not(.is-right):after{margin-left:10px}.divider:not(.is-left):before{margin-right:10px}.divider.is-left:before,.divider.is-right:after{display:none}.divider.is-vertical{flex-direction:column;margin:0 25px}.divider.is-vertical:after,.divider.is-vertical:before{height:auto;width:1px}.divider.is-vertical:after{margin-left:0;margin-top:10px}.divider.is-vertical:before{margin-right:0;margin-bottom:10px}.divider.is-white:after,.divider.is-white:before{background-color:#fff}.divider.is-black:after,.divider.is-black:before{background-color:#0a0a0a}.divider.is-light:after,.divider.is-light:before{background-color:#f5f5f5}.divider.is-dark:after,.divider.is-dark:before{background-color:#363636}.divider.is-primary:after,.divider.is-primary:before{background-color:#00d1b2}.divider.is-primary.is-light:after,.divider.is-primary.is-light:before{background-color:#ebfffc}.divider.is-link:after,.divider.is-link:before{background-color:#3273dc}.divider.is-link.is-light:after,.divider.is-link.is-light:before{background-color:#eef3fc}.divider.is-info:after,.divider.is-info:before{background-color:#3298dc}.divider.is-info.is-light:after,.divider.is-info.is-light:before{background-color:#eef6fc}.divider.is-success:after,.divider.is-success:before{background-color:#48c774}.divider.is-success.is-light:after,.divider.is-success.is-light:before{background-color:#effaf3}.divider.is-warning:after,.divider.is-warning:before{background-color:#ffdd57}.divider.is-warning.is-light:after,.divider.is-warning.is-light:before{background-color:#fffbeb}.divider.is-danger:after,.divider.is-danger:before{background-color:#f14668}.divider.is-danger.is-light:after,.divider.is-danger.is-light:before{background-color:#feecf0}
+    </style>
+  </head>
+
+<body class="has-background-light">
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item has-background-white">
+              <img src="./BetterDoc_files/logo.png" alt="Logo">
+            </a>
+          </div>
+          <div class="navbar-menu">
+            <div class="navbar-end">
+              <span class="navbar-item">
+                <a class="button is-primary is-inverted" href="#call-request">
+                  <span>Jetzt Rückruf vereinbaren</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+<section class="section has-background-white has-text-black-ter">
+  <div class="container" style="max-width: 980px">
+    <h4 class="title is-4">
+      Datenschutzbestimmungen
+    </h4>
+    <p class="mb-3 is-size-6">
+Der Schutz Ihrer Personendaten bei der Nutzung unserer Website hat für BetterDoc höchste Bedeutung. Das Einhalten der gesetzlichen Bestimmungen zum Datenschutz ist für uns selbstverständlich. Nachfolgend geben wir Ihnen einen Überblick darüber, wie wir den Schutz Ihrer Personendaten gewährleisten und welche Ihrer Daten wir zu welchem Zweck bearbeiten.
+    </p>
+    <p class="mb-3 is-size-6">
+Personendaten sind alle Daten, die auf Sie persönlich beziehbar sind, wie etwa Ihr Name, Ihre Adresse und Ihre E-Mail-Adresse. Der Begriff der Bearbeitung ist weit gefasst, er bezeichnet jeden Umgang mit Personendaten, unabhängig von den angewandten Mitteln und Verfahren, insbesondere das Beschaffen, Aufbewahren, Verwenden, Umarbeiten, Bekanntgeben, Archivieren oder Vernichten von Daten
+    </p>
+    <h6 class="title is-6 mt-5">Kontaktinformationen des Verantwortlichen</h6>
+    <p class="mb-3 is-size-6">Verantwortlicher für die Datenbearbeitung ist:</p>
+    <p class="is-size-6">BetterDoc GmbH, Zweigniederlassung Basel</p>
+    <p class="is-size-6">Dufourstrasse 49</p>
+    <p class="is-size-6">CH-4052 Basel</p>
+    <p class="mb-3 is-size-6">Schweiz</p>
+
+    <p class="is-size-6">Tel.: <a href="tel:41 21 552 35 70">41 21 552 35 70</a></p>
+    <p class="is-size-6">Fax.: 41 21 552 35 75</p>
+    <p class="mb-3 is-size-6">E-Mail: <a href="mailto:service@betterdoc.ch">service@betterdoc.ch</a></p>
+    <p class="mb-3 is-size-6">
+     Unseren Datenschutzbeauftragten erreichen Sie unter <a href="mailto:datenschutz@betterdoc.ch">datenschutz@betterdoc.ch</a> oder postalisch unter: Herr Reto Zbinden, Rechtsanwalt, Swiss Infotec AG, Centralstrasse 8a, CH-6210 Sursee, Schweiz.
+    </p>
+    <h6 class="title is-6 mt-5">Bereitstellung der Website</h6>
+    <p class="mb-3 is-size-6">
+      Mit jedem Zugriff auf www.betterdoc.ch werden vorübergehend folgende Personendaten, die Ihr Browser an unseren Server übermittelt, bearbeitet: IP-Adresse des Rechners, der die Seite anfordert, Datum und Uhrzeit der Anfrage, Status, übertragene Datenmenge und die Internetseite, von der der Nutzer auf die angeforderte Seite gekommen ist sowie Produkt- und Versionsinformationen des verwendeten Browsers. Die Daten werden erhoben, da diese für uns technisch erforderlich sind, um Ihnen unsere Website anzuzeigen und die Datensicherheit zu gewährleisten. Eine Auswertung dieser Daten erfolgt grundsätzlich nicht. Etwas anderes gilt nur für statistische Zwecke, zu denen die Daten in anonymisierter Form bearbeitet werden. Grundlage für die Datenbearbeitung ist unser berechtigtes Interesse. Das insofern erforderliche berechtigte Interesse von BetterDoc liegt darin, die vorstehend beschriebenen Zwecke zu erreichen. Die Daten werden gelöscht, sobald sie für die Erreichung des Zwecks ihrer Erhebung nicht mehr erforderlich sind. Das ist der Fall, wenn die jeweilige Sitzung beendet ist.
+    </p>
+    <h6 class="title is-6 mt-5">Online-Registrierung zur Rückrufvereinbarung</h6>
+    <p class="mb-3 is-size-6">
+      Nutzer, die Leistungen von BetterDoc per Online-Anfrage in Anspruch nehmen wollen, müssen auf der Website ein Formular ausfüllen, mit dem sie einen Rückruf vereinbaren. Hierzu muss der Nutzer seine E-Mail-Adresse, Vor- und Nachnamen, seine Telefonnummer und ggf. Informationen zum vorliegenden Gesundheitsproblem angeben. Die bei BetterDoc in diesem Zusammenhang gespeicherten Daten der Nutzer werden ausschliesslich zu Zwecken des telefonischen Rückrufs oder zur Kontaktaufnahme per E-Mail bearbeitet. Nutzer können jederzeit die Kontaktaufnahme untersagen oder die Löschung ihrer Daten verlangen. Grundlage für die Datenbearbeitung ist die Anbahnung und Erfüllung des Vertrages mit Ihnen. Sofern Gesundheitsdaten zur Verfügung gestellt werden, wird vom Nutzer eine ausdrückliche Einwilligung eingeholt.
+    </p>
+    <h6 class="title is-6 mt-5">Nutzung des BetterDoc-Services</h6>
+    <p class="mb-3 is-size-6">
+Im Rahmen der Nutzung unserer Website sowie der dort angebotenen Leistungen werden zudem die folgenden Daten des Nutzers bearbeitet: Im Zusammenhang mit der Suchanfrage die Beschreibung des Gesundheitsproblems, der gesuchte Fachbereich, Suchort bzw. -region, Alter und Geschlecht des Patienten, Telefonnummer, Information zur Krankenversicherung (Name der Krankenversicherung) und die Vertragsdaten (E-Mail-Adresse, Passwort, Vorname, Nachname und Adresse). Ferner werden die Antworten der BetterDoc-Fachärzte, Angaben, die der Nutzer im Zusammenhang mit einer auf seinen Wunsch erfolgenden Vereinbarung eines Termins beim Spezialisten seiner Wahl macht, sowie Angaben, die er im Rahmen der Nachbetreuung macht, bearbeitet. Diese Daten bearbeiten wir, um die individuelle Suche bearbeiten zu können, und um medizinische Spezialisten vermitteln zu können. Um Ihre Suchanfrage beantworten zu können, benötigen wir von Ihnen Angaben zu Ihrer physischen und möglicherweise auch psychischen Verfassung. Hierbei handelt es sich um Gesundheitsdaten im Sinne des Datenschutzgesetzes. Es handelt sich dabei um Personendaten, die sich auf die körperliche oder geistige Gesundheit einer natürlichen Person, einschliesslich der Erbringung von Gesundheitsdienstleistungen beziehen und aus denen Informationen über deren Gesundheitszustand hervorgehen. Grundlage für die Bearbeitung dieser Daten ist Ihre Einwilligung.
+    </p>
+    <h6 class="title is-6 mt-5">Datenspeicherung und Löschfristen</h6>
+    <p class="mb-3 is-size-6">Soweit Personendaten erhoben werden, erfolgt die Übertragung dieser Daten gesichert gegen den Zugriff Unberechtigter per SSL-Verschlüsselung. Vom Nutzer per Post, Fax oder per verschlüsseltem Online-Kanal eingereichte Dokumente mit Gesundheitsinformationen werden bei BetterDoc durch technische und organisatorische Massnahmen geschützt (z.B. verschlossenen Stahlschränke oder verschlüsselt in einem Online-Datenraum) und dadurch sicher verwahrt.
+    </p>
+    <p class="mb-3 is-size-6"><b>
+    Personenbezogene Gesundheitsdaten von Schweizer Patienten werden nach dem aktuellen Stand der Technik verschlüsselt in einem Hochsicherheitsrechenzentrum innerhalb von Deutschland gespeichert und bearbeitet. Sofern Mitarbeiter der Schweizer Niederlassung im Einzelfall aus einem EU-Land auf diese Daten zugreifen, erfolgt dies stets per “Remote Access”, d.h. über eine verschlüsselte Verbindung zu einem Schweizer Server, über den nachfolgend gesichert auf das BetterDoc-System zugegriffen wird.</b></p>
+    <p class="mb-3 is-size-6">Zur Bearbeitung der Arztsuchanfragen ist eine Verknüpfung von Gesundheitsdaten und Personendaten der Nutzer notwendig. Diese werden von Ärzten und im Auftrag der Ärzte von deren medizinisch ausgebildeten Mitarbeitern erhoben und bearbeitet. Aufgrund der gesetzlich vorgeschriebenen Dokumentationspflicht für Schweizer Ärzte werden die erhobenen Gesundheitsdaten des Patienten, i.e. Nutzers für mindestens 10 Jahre gespeichert.</p>
+    <p class="mb-3 is-size-6">Kurz vor Ablauf der gesetzlich vorgeschriebenen 10-Jahres-Frist erhält der Nutzer eine schriftliche Mitteilung über die bevorstehende Anonymisierung seiner Personendaten. Danach wird eine Zuordnung seiner Person zu seinem medizinischen Fall nicht mehr möglich sein. Fallbezogene Rücksprachen mit dem medizinischen Team werden danach unmöglich. Innerhalb einer Frist von einem Monat ist eine Einwilligung des Nutzers möglich. Erfolgt eine Einwilligung verschiebt sich die Datenanonymisierung um ein Jahr. Die Einwilligung muss schriftlich erfolgen.</p>
+    <h6 class="title is-6 mt-5">Weitergabe personenbezogener Daten an Dritte</h6>
+    <p class="mb-3 is-size-6">Sofern der Nutzer die Durchführung einer Terminvereinbarung bei einem Arzt oder die Erstellung eines medizinischen Zweitmeinungsgutachtens wünscht, werden in diesem Fall vom verantwortlichen Mitarbeiter bei BetterDoc, Vor- und Nachname des Patienten, Adresse, Geburtsdatum, Telefonnummer, Name der Krankenversicherung und Beschreibung des Gesundheitsproblems (Anamnese) per Telefon, Fax oder einem verschlüsselten Online-Kanal an die betreffende Praxis oder Klinik des Arztes übermittelt. Der Nutzer entbindet BetterDoc dazu von der ärztlichen Schweigepflicht. Eine diesbezügliche Einwilligung wird vom Nutzer bei Bedarf eingeholt.</p>
+    <p class="mb-3 is-size-6">Sofern wir Dritte beiziehen, um Leistungen bereitzustellen, ergreifen wir geeignete rechtliche Vorkehrungen sowie entsprechende technische und organisatorische Massnahmen, um für den Schutz Ihrer Personendaten gemäss den einschlägigen gesetzlichen Vorschriften zu sorgen.</p>
+    <p class="mb-3 is-size-6">Wenn das Datenschutzniveau in einem Land in dem die Daten bearbeitet werden nicht den anwendbaren Datenschutzbestimmungen entspricht, stellen wir vertraglich sicher, dass der Schutz Ihrer Personendaten demjenigen in der Schweiz bzw. des Europäischen Wirtschaftsraums (EWR) jederzeit entspricht.</p>
+    
+    <h6 class="title is-6 mt-5">Registrierung und Authentifizierung der BetterDoc-Fachärzte</h6>
+    <p class="mb-3 is-size-6">
+      Fachärzte, die bei BetterDoc Empfehlungen für medizinische Spezialisten abgeben möchten, müssen sich vorher registrieren und ein Arztkonto anlegen. Hierzu muss der Facharzt seine E-Mail-Adresse angeben und ein Passwort auswählen. Zur Überprüfung der Identität wird bei Angabe der dienstlichen E-Mail-Adresse des Arztes diese auf Korrektheit überprüft. Sollte dies nicht möglich sein, bspw. bei Angabe einer privaten E-Mail-Adresse, führt BetterDoc mindestens ein Telefonat mit dem Arzt unter Verwendung seiner dienstlichen Telefonnummer. Nach erfolgreicher Prüfung wird das Arztkonto des Facharztes freigeschaltet und kann verwendet werden. Zu Nachweiszwecken speichert BetterDoc die bei der Anmeldung angegebene E-Mail-Adresse und das Passwort für die Dauer des Bestehens des Arztkontos. Die bei BetterDoc in diesem Zusammenhang gespeicherten Daten der Fachärzte werden ausschliesslich für den Portalzugang bzw. die Portalnutzung bearbeitet. Ärzte können jederzeit die Löschung ihres Arztkontos verlangen. Weiterhin speichert BetterDoc die Suchanfragen der Nutzer und die korrespondierenden Antworten der BetterDoc-Fachärzte, Angaben, die der Nutzer im Zusammenhang mit einer auf seinen Wunsch erfolgenden Vereinbarung eines Termins beim Spezialisten seiner Wahl macht, sowie Angaben, die der Nutzer im Rahmen der Nachbetreuung macht. Diese Daten bleiben auch nach einer Löschung des Arztkontos erhalten und stehen BetterDoc in anonymisierter Form zur weiteren Nutzung zur Verfügung. Grundlage für die Datenbearbeitung ist die Erfüllung des Vertrages mit Ihnen.
+    </p>
+    <h6 class="title is-6 mt-5">Ihre Rechte</h6>
+    <p class="mb-3 is-size-6">Sie haben gegenüber uns folgende Rechte hinsichtlich der Sie  betreffenden Personendaten:</p>
+    <dl class="mb-3 is-size-6">
+      <li>Recht auf Auskunft</li>
+      <li>Recht auf Berichtigung oder Löschung</li>
+      <li>Recht auf Einschränkung der Bearbeitung</li>
+      <li>Recht auf Widerspruch gegen die Bearbeitung</li>
+      <li>Recht auf Widerruf der Einwilligung</li>
+      <li>Recht auf Datenübertragbarkeit</li>
+    </dl>
+    <p class="mb-3 is-size-6">Alle Informationswünsche, Auskunftsbegehren oder Widersprüche zur Datenverarbeitung richten Sie bitte per E-Mail an <a href="mailto:datenschutz@betterdoc.ch">datenschutz@betterdoc.ch</a>. Sie haben ferner das Recht, sich bei einer Aufsichtsbehörde über die Verarbeitung Ihrer personenbezogenen Daten in unserem Unternehmen zu beschweren.</p>
+    <p class="mb-3 is-size-6">Bitte beachten Sie, dass für diese Rechte Ausnahmen und Einschränkungen gelten. Insbesondere müssen wir Ihre Personendaten gegebenenfalls weiterhin bearbeiten und speichern, um einen Vertrag mit Ihnen zu erfüllen, um gesetzliche Verpflichtungen einzuhalten, oder aber um eigene schutzwürdige Interessen zu wahren. Soweit rechtlich zulässig, können wir daher Ihre datenschutzbezogenen Begehren auch ablehnen oder diesen nur eingeschränkt entsprechen.</p>
+    <h6 class="title is-6 mt-5">Einsatz von Cookies</h6>
+    <p class="mb-3 is-size-6">
+Ausserdem werden bei der Nutzung unserer Website zusätzlich zu den zuvor genannten Daten Cookies auf Ihrem Rechner gespeichert. Bei Cookies handelt es sich um kleine Textdateien, die Ihr Internet-Browser auf Ihrem Rechner ablegt und speichert. Sie dienen dazu, unsere Website zu optimieren. Hierzu werden Informationen dazu gesammelt, wie die Seite von Ihnen genutzt wird, die BetterDoc übermittelt werden. Cookies können keine Programme ausführen oder Viren auf Ihren Computer übertragen. Bei den von BetterDoc genutzten Cookies handelt es sich hauptsächlich um Session-Cookies. Diese werden automatisiert gelöscht, wenn Sie den Browser schliessen, oder wenn Sie sich ausloggen. Session-Cookies speichern eine sogenannte Session-ID, mit der sich unterschiedliche Anfragen Ihres Browsers der gemeinsamen Sitzung zuordnen lassen. Ihr Rechner kann dadurch wiedererkannt werden, wenn Sie auf unsere Website zurückkehren. Darüber hinaus verwendet BetterDoc auch andere Cookies, die über den jeweiligen Nutzungsvorgang hinaus auf Ihrem Rechner eingesetzt werden. Soweit andere Cookies (z.B. Cookies zur Analyse Ihres Surfverhaltens) gespeichert werden, werden diese in diesen Datenschutzbestimmungen gesondert behandelt. Nutzer können die Speicherung der Cookies durch eine entsprechende Einstellung in der Browser-Software löschen, das Speichern von Cookies gänzlich deaktivieren oder bestimmte Cookies selektiv akzeptieren. Bitte verwenden Sie die Hilfefunktionen Ihres Browsers, um zu erfahren, wie Sie diese Einstellungen ändern können. Grundlage für die Bearbeitung der von Cookies gesammelten Daten ist Ihre Einwilligung.
+    </p>
+    <h6 class="title is-6 mt-5">Nutzung von Google Analytics</h6>
+    <p class="mb-3 is-size-6">Unsere Website benutzt Google Analytics, einen Webanalysedienst der Google LLC,1600 Amphitheatre Parkway, Mountain View, CA 94043, USA („Google“). Bei Nutzern, die ihren gewöhnlichen Aufenthalt im Europäischen Wirtschaftsraum oder der Schweiz haben, ist laut Google die Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland, der für Ihre Daten zuständige Verantwortliche.</p>
+    <p class="mb-3 is-size-6">Google verwendet Cookies und ähnliche Technologien, die auf Ihrem Rechner gespeichert werden und die Analyse Ihrer Nutzung dieser Website erlauben.. Die durch diese Cookies erzeugten Informationen über Ihre Benutzung dieser Website (einschliesslich Ihrer IP-Adresse) werden an einen Server von Google,  möglicherweise in den USA oder anderen Drittstaaten, übertragen und dort gespeichert. Google wird diese Informationen benutzen, um Ihre Nutzung der Website für uns auszuwerten, um Reports über die Websiteaktivitäten für uns zusammenzustellen und um weitere mit der Website- und der Internetnutzung verbundenen Dienstleistungen zu erbringen. Auch wird Google diese Informationen gegebenenfalls an Dritte übertragen, sofern dies gesetzlich vorgeschrieben oder soweit Dritte diese Daten im Auftrag von Google bearbeiten. Google wird, nach eigenen Angaben, in keinem Fall Ihre IP-Adresse mit anderen Daten von Google in Verbindung bringen. Unsere Website verwendet Google Analytics einschliesslich der Funktionen von Universal Analytics. Universal Analytics erlaubt es, die Aktivitäten auf unserer Website geräteübergreifend zu analysieren (z.B. bei Zugriffen mittels Laptop und später über ein Tablet). Dies wird durch die pseudonyme Zuweisung einer User-ID zu einem Nutzer ermöglicht. Es werden jedoch keine personenbezogenen Daten an Google weitergeleitet. Auch wenn mit Universal Analytics zusätzliche Funktionen zu Google Analytics hinzukommen, bedeutet dies nicht, dass damit eine Einschränkung von Massnahmen zum Datenschutz verbunden ist.</p>
+    <p class="mb-3 is-size-6">Wir möchten Sie darauf hinweisen, dass unsere Website zur Verbesserung des Datenschutzes Google Analytics nur mit der Erweiterung „anonymizeIP" verwendet. IP-Adressen werden daher nur gekürzt weiterbearbeitet. Damit ist eine Personenbeziehbarkeit bei der Analyse der Nutzung unserer Website ausgeschlossen. Sie können das Setzen der Google Analytics-Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern. Damit können Sie Ihr Recht wahrnehmen, der Datenbearbeitung durch Google mit Wirkung für die Zukunft zu widersprechen. Sie können darüber hinaus die Erhebung der Daten sowie die Verarbeitung der Daten durch Google verhindern, indem Sie das unter dem folgenden Link verfügbare Browser Add-On herunterladen und installieren https://tools.google.com/dlpage/gaoptout. Sie können Google Analytics für Display-Werbung deaktivieren und die Anzeigen im Google Display-Netzwerk anpassen, indem Sie die Anzeigeneinstellungen aufrufen: https://adssettings.google.de.</p>
+    <p class="mb-3 is-size-6">Weitere Informationen zu den Nutzungsbedingungen und zum Datenschutz von Google Analytics finden Sie unter <a href="https://marketingplatform.google.com/about/analytics/terms/de/">https://marketingplatform.google.com/about/analytics/terms/de/</a> bzw. unter <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</p>
+
+    <h6 class="title is-6 mt-5">Google Ad Words</h6>
+    <p class="mb-3 is-size-6">Wir nutzen als Ads-Kunde ferner das Google Ads Conversion Tracking, einen Analysedienst der Google LLC. Dabei wird von Google Ads ein Cookie auf Ihrem Rechner gesetzt („Conversion Cookie“), sofern Sie über eine Google-Anzeige auf unsere Website gelangt sind. Diese Cookies haben eine begrenzte Gültigkeit, enthalten keine personenbezogenen Daten und dienen somit nicht der persönlichen Identifizierung. Besucht der Nutzer bestimmte Seiten dieser Website und das Cookie ist noch nicht abgelaufen, können wir und Google erkennen, dass der Nutzer auf die Anzeige geklickt hat und zu dieser Seite weitergeleitet wurde. Jeder Google Ads-Kunde erhält ein anderes Cookie. Cookies können somit nicht über die Websites von Ads-Kunden nachverfolgt werden. Die mithilfe des Conversion-Cookies eingeholten Informationen dienen dazu, Conversion-Statistiken für Ads-Kunden zu erstellen, die sich für Conversion-Tracking entschieden haben. Die Kunden erfahren die Gesamtanzahl der Nutzer, die auf ihre Anzeige geklickt haben und zu einer mit einem Conversion-Tracking-Tag versehenen Seite weitergeleitet wurden. Sie erhalten jedoch keine Informationen, mit denen sich Nutzer persönlich identifizieren lassen.</p>
+    <p class="mb-3 is-size-6">Wenn Sie nicht an dem Tracking-Verfahren teilnehmen möchten, können Sie auch das hierfür erforderliche Setzen eines Cookies ablehnen – etwa per Browser-Einstellung, die das automatische Setzen von Cookies generell deaktiviert. Sie können der interessenbezogenen Werbung durch Google Ads auch widersprechen, indem Sie die entsprechenden Einstellungen unter: https://adssettings.google.de vornehmen. Wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich werden nutzen können. Mehr über die Google Datenschutzbestimmungen erfahren Sie unter <a href="https://policies.google.com/privacy?gl=de">https://policies.google.com/privacy?gl=de.</a></p>
+    <h6 class="title is-6 mt-5">Änderungen der Datenschutzbestimmungen</h6>
+    <p class="mb-3 is-size-6">BetterDoc behält sich das Recht vor, die vorliegenden Datenschutzbestimmungen jederzeit und nach freiem Ermessen abzuändern und zu ergänzen. Es gilt die jeweils aktuelle, auf der Website von BetterDoc publizierte Fassung.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-multiline">
+      <div class="column is-full-tablet is-one-quarter-desktop">
+        <img alt="Logo" src="./BetterDoc_files/betterdoc-subtext-d2a9cc86b2ee62a23ce57cdfc0c6fa4949020208e7d3a4f575836649d11d4f7b.png">
+      </div>
+      <div class="column">
+        <h5 class="white-text">Für Patienten</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/">Unser Angebot</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/so-funktionierts">Ablauf und Kosten</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/qualitaet-bei-betterdoc">Qualität bei BetterDoc</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/der-experten-beirat">Der Experten-Beirat</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h5 class="white-text">Für Arbeitgeber</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/fuer-arbeitgeber/unser-angebot">Unser Angebot</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/fuer-arbeitgeber/vorteile-fuer-arbeitnehmer">Vorteile für Arbeitnehmer</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/fuer-arbeitgeber/vorteile-fuer-arbeitgeber">Vorteile für Arbeitgeber</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/fuer-arbeitgeber/qualitaet-bei-betterdoc">Qualität bei BetterDoc</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h5 class="white-text">Für Krankenversicherungen</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/fuer-krankenversicherungen/unser-angebot">Unser Angebot</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/fuer-krankenversicherungen/patientensteuerung">Patientensteuerung</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/fuer-krankenversicherungen/zweitmeinung">Zweitmeinung</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/fuer-krankenversicherungen/qualitaet-bei-betterdoc">Qualität bei BetterDoc</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/fuer-krankenversicherungen/ergebnisse-und-referenzen">Ergebnisse &amp; Referenzen</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="columns is-multiline">
+      <div class="column is-full-mobile is-full-tablet is-one-quarter-desktop">
+      </div>
+      <div class="column is-one-third-tablet is-one-quarter-desktop">
+        <ul>
+          <li>Über BetterDoc</li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/ueber-betterdoc/idee-und-werte">Idee &amp; Werte</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/ueber-betterdoc/unser-team">Unser Team</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/karriere">Karriere</a></li>
+        </ul>
+      </div>
+      <div class="column is-one-third-tablet is-one-quarter-desktop">
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/impressum">Impressum</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/agb">AGB</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/datenschutzbestimmungen">Datenschutzbestimmungen</a></li>
+          <li><a class="grey-text text-lighten-3" href="javascript:window.Metomic(&#39;ConsentManager:show&#39;)">Cookies verwalten</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/sicherheit-bei-betterdoc">Sicherheit</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://call-request.parc-staging.betterdoc.org/haeufig-gestellte-fragen-patienten">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="column is-one-third-tablet is-one-quarter-desktop">
+        <img width="160px" src="./BetterDoc_files/tuv-logo-de80677508f1a3307e65b71a3221bd92f74ece6f9c74f0756977fe128a7fe29b.png">
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-full">
+        <h5 class="white-text">BetterDoc GmbH</h5>
+        <p class="grey-text text-lighten-4">Kaiser-Wilhelm-Ring 30-32, D-50672 Köln</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+
+<style>.tb_button {padding:1px;cursor:pointer;border-right: 1px solid #8b8b8b;border-left: 1px solid #FFF;border-bottom: 1px solid #fff;}.tb_button.hover {borer:2px outset #def; background-color: #f8f8f8 !important;}.ws_toolbar {z-index:100000} .ws_toolbar .ws_tb_btn {cursor:pointer;border:1px solid #555;padding:3px}   .tb_highlight{background-color:yellow} .tb_hide {visibility:hidden} .ws_toolbar img {padding:2px;margin:0px}</style></body></html>
