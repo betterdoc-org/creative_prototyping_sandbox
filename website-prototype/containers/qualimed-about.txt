@@ -1,9 +1,0 @@
-CTN: about
-title: "Über uns"
-items:
-  - 
-    heading: "Über 91%"
-    text: "Mehr als 91% der betreuten Patienten empfehlen uns weiter"
-  - 
-    heading: "> 1 Mio."
-    text: "MÜber 1 Million Assura-Versicherte können unsere Services kostenfrei nutzen"
