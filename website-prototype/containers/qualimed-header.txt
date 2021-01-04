@@ -1,0 +1,23 @@
+CTN: header
+image_logo: /images/betterdoc-logo-2018.png
+
+CTN: hero-landingpage
+hero-image: /images/hero_236862639.jpeg
+in-page-nav:
+  -
+    label: Assura QualiMed
+    anchor: qualimed
+  -
+    label: Ablauf
+    anchor: process
+  -
+    label: Qualität
+    anchor: quality
+  -
+    label: Datenschutz
+    anchor: protection
+  -
+    label: Über uns
+    anchor: about
+
+

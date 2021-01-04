@@ -1,0 +1,11 @@
+CTN: stack
+title: "Spezialistenempfehlungen durch BetterDoc, den unabhängigen Beratungsdienst"
+---
+qualimed-header
+qualimed-intro
+qualimed-process
+qualimed-quality
+qualimed-protection
+qualimed-cta-bottom
+qualimed-about
+footer

@@ -1,0 +1,2 @@
+CTN: hero-bottom
+image: /images/hero_115398442.jpeg
