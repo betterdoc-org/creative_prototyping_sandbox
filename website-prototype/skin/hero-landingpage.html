@@ -1,0 +1,80 @@
+<!-- CTN hero_landingpage START -->
+
+<style>
+  section.hero.bg-image {
+    background-image: url({{hero-image}});
+    background-position: top center;
+    background-repeat:  no-repeat;
+    background-size: cover;
+    background-color: #fff;
+  }
+</style>
+
+<section class="hero is-medium bg-image">
+  <!-- Hero head: will stick at the top -->
+  <div class="hero-head">
+    <nav class="navbar  has-background-white">
+      <div class="container">
+        <div class="navbar-brand">
+          <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+            <!-- <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span> -->
+          </span>
+        </div>
+        <div id="navbarMenuHeroA" class="navbar-menu">
+          <div class="navbar-end">
+            {{#in-page-nav}}
+            <a href="#{{anchor}}" class="navbar-item">
+              {{{label}}}
+            </a>
+            {{/in-page-nav}}
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Hero content: will be in the middle -->
+
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-multiline">
+       <div class="column is-one-third-desktop is-half-tablet is-full-mobile box">
+          <p>
+            <form method="GET" action="https://call-request.betterdoc.org/call_requests/new#call-request">
+              <input type="hidden" name="cms_voucher" value="ASSR-QM01">
+              <input type="hidden" name="country_code" value="ch">
+              <p class="tos"><input type="checkbox" name="checkbox" value="check" class="checkbox tos" /> Ich akzeptiere die <a href="#" class="modal-button" data-target="modal-terms">Bedingungen</a></p>
+              <br />
+              <input type="submit" class="button is-primary is-large" name="email_submit" value="Rückruf vereinbaren" onclick="if(!this.form.checkbox.checked){alert('Sie müssen zuerst die Teilnahmevoraussetzungen akzeptieren');return false}"  />
+            </form>
+            <div class="modal" id="modal-terms">
+              <div class="modal-background"></div>
+              <div class="modal-content has-background-white">
+                <div class="card-content">
+                  <h3 class="is-size-4">Bedingungen</h3>
+                    <p>Das Angebot zur Nutzung von BetterDoc richtet sich ausschliesslich an Personen, die bei Assura im alternativen Grundversicherungsmodell QualiMed versichert sind.</p>
+                    <p>Datenschutz: Es werden die gesetzlichen Anforderungen an den Datenschutz erfüllt. Gesundheitsdaten verbleiben bei BetterDoc und werden an keine Drittpartei übermittelt.</p>
+                    <p>Ausnahme: Sofern BetterDoc durch Versicherte mit der Terminvereinbarung bei einem Spezialisten (Praxis oder Spital) beauftragt wird, ist BetterDoc ermächtigt, den Arztbericht des Hausarztes an diesen Spezialisten weiterzuleiten.</p>
+                    <p>Dieses Angebot gilt bis auf Widerruf.</p>
+                </div>
+              </div>
+              <button class="modal-close is-large" aria-label="close"></button>
+            </div>
+          </p>
+          <p class="is-size-5">Oder rufen Sie uns direkt an</p>
+          <h3 class="is-size-2">021&nbsp;555&nbsp;10&nbsp;30</h3>
+          <p class="is-size-5">Mo-Fr von 8 bis 17 Uhr</p>
+        </div>
+        <div class="column">
+        </div>
+        <div class="column is-one-third">
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTN hero_landingpage END -->

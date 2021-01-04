@@ -1,0 +1,29 @@
+CTN: 1-2-1
+anchor: qualimed
+---
+<img src="/images/assura-logo.png" width="80%"> 
+<h2 class="is-size-2">QualiMed</h2>
+
+---
+<h5 class="is-size-5">Assura bietet QualiMed-Versicherten den Service von BetterDoc kostenlos an. Das Schweizer Team von BetterDoc besteht aus unabhängigen Experten, die für Sie und Ihren individuellen Fall die richtigen Spezialisten suchen.</h5>
+<br />
+<p class="">Als QualiMed-Versicherte erhalten Sie Zugang zu unseren Leistungen. Für Erkrankungen bei folgenden Bereichen ist das Einholen von Spezialistenempfehlungen über BetterDoc für Sie verpflichtend:</p>
+<br />
+<table class="table">
+  <tr>
+    <td style="white-space:nowrap">Kardiologie</td>
+    <td>Herz-Kreislauferkrankungen und Erkrankung der Gefässe</td>
+  </tr>
+  <tr>
+    <td>Orthopädie</td>
+    <td>Erkrankungen und Verletzungen des Bewegungsapparates: der Gelenke, Knochen, Sehnen, Bänder und Muskeln</td>
+  </tr>
+  <tr>
+    <td style="white-space:nowrap">Gastroenterologie</td>
+    <td>Erkrankungen von Magen, Darm und Bauchorganen</td>
+  </tr>
+  <tr>
+    <td>Urologie</td>
+    <td>Erkrankungen der Harnorgane und der männlichen Geschlechtsorgane</td>
+  </tr>
+</table>

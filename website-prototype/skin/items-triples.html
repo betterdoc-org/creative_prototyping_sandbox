@@ -1,0 +1,25 @@
+<!-- CTN items-triples START -->
+
+{{#anchor}}<a name="{{anchor}}"></a>{{/anchor}}
+
+<section class="section {{class}}">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-one-quarter-desktop is-0-tablet is-0-mobile">
+      </div>
+      <div class="column is-three-quarters-desktop is-full-tablet is-full-mobile">
+        <div class="columns is-multiline">
+          {{#items}}
+          <div class="column is-one-third">
+            <img src="{{icon}}" width="30%">
+            <h3 class="is-size-5"><b>{{{heading}}}</b></h3>
+            <p>{{{text}}}</p>
+          </div>
+          {{/items}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTN items-triples END -->

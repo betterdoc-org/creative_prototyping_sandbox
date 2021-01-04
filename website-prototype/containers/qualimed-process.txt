@@ -1,0 +1,24 @@
+CTN: items-triple
+title: Ablauf
+items:
+  -
+    heading: Situation
+    image: images/specialist_process_step1.png
+    text: "Sie kontaktieren uns und halten Ihre medizinischen Unterlagen bereit. Diese können Sie von Ihrem Hausarzt einfordern. In einem telefonischen Gespräch geben Sie uns Auskunft über Ihre Situation, bisherige Vorerkrankungen und Ihre Wünsche und Anforderungen für den gesuchten Spezialisten."
+  -
+    heading: Analyse
+    image: images/specialist_process_step2.png
+    text: "Unser medizinisches Team identifiziert die drei für Ihre Situation am besten geeigneten Spezialisten. Dabei stützten wir uns auf öffentlich verfügbare Qualitätsdaten und Informationen sowie Rückmeldungen anderer Patienten."
+  -
+    heading: Empfehlungen
+    image: images/specialist_process_step3.png
+    text: "Spätestens zwei Arbeitstage nach Vorliegen aller relevanten Informationen erhalten Sie die Spezialisten-Empfehlungen, aus denen Sie einen Spezialisten auswählen. Gerne helfen wir Ihnen bei der Terminvereinbarung. Nach Behandlungsabschluss erhalten Sie eine Einladung zu einer Zufriedenheitsbefragung von uns."
+
+---
+
+CTN: 1-2-1
+---
+&nbsp;
+
+---
+<h3 class="is-size-5">Wünschen Sie mehr Details zum Prozess? Die Detailbeschreibung finden Sie in diesem <a href="https://passuraassets01.blob.core.windows.net/blue/cockpit-assets/2020/10/19/5f8dc6ca4d325Assura_BetterDoc_A4_2020_DE_BD.pdf">Dokument zum Download</a>.</h3>
