@@ -4,29 +4,38 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>BetterDoc Email Template</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <style>
-      a {color: #007046; font-weight: bold; font-size: 1.21em;}
+  <style type="text/css">
+      @media screen {
+        @font-face {
+          font-family: 'Lato';
+          font-style: normal;
+          font-weight: 400;
+          src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+        }
+      a, .action {color: #007046;
+      }
+      .action {font-size: 1.2em;
+        font-weight: bolder;}
       body { margin: 0; padding: 1em; font-family: "Lato", sans-serif; background-color: white; color: #282F35}
-      p {font-size: 1.2em;
-      	line-height: 1.65em;
+      p {font-size: 1em;
+      	line-height: 1.7em;
 	  	  -moz-osx-font-smoothing: grayscale;
 		    -webkit-font-smoothing: antialiased !important;
 		    -moz-font-smoothing: antialiased !important;
 		    text-rendering: optimizelegibility !important;
+
 		    letter-spacing: .02em;
         margin-top: 1em;
         margin-bottom: 1em;
       }
-      li {font-size: 1.2em; 
-        line-height: 1.4em}
-      i {font-style: italic;}
+      li {font-size: 1em; 
+        line-height: 2em}
       b {font-weight: bold;}
-      h1 {font-size: 1.4em; font-weight: bold;}
-      h2 {font-size: 1.3em; font-weight: bold}
       blockquote {
         margin-top: 1.5em;
         margin-bottom: 1.5em;
-        margin-left: 4em
+        margin-left: 4em;
+        line-height: 1.7em;
       }
       hr{max-width: 90%}
       footer p {
@@ -44,22 +53,16 @@
       footer p a {
         line-height: 1.4em;
       }
-      @import url("https://use.typekit.net/cbq4qpa.css");
-/*      @media screen and (min-width: 600px)  {
-        .mobile-break { display: none; }
-    	}*/
-
-      
   </style>
 </head>
 <body>
-    <p><b>{{patient.salutation}},</b><p>
+    <b>{{patient.salutation}},</b>
     <p>
-    vielen Dank für Ihre Anfrage. Anbei die <b>Ergebnisse der Arzt-Suche:</b></p>
+    vielen Dank für Ihre Anfrage. <i>Anbei</i> die <b>Ergebnisse der Arzt-Suche:</b></p>
     <p>{{results.pms.allrounder}}</p>
+    <a class="action" href="https://www.betterdoc.org/">Ihr Gesundheitsfragebogen</a>
     <p>Sollten Sie weiteren Unterstützungsbedarf bei der Suche nach einem geeigneten Arzt oder einer qualifizierten Klinik haben, wenden Sie sich gerne erneut an uns. Wir finden für Sie den besten Arzt für eine wirkungsvolle Behandlung, eine erfolgreiche Operation oder eine unabhängige Zweitmeinung. Für alle Fachbereiche und Diagnosen.</p>
     <hr>
-    <h2>Headline 2 goes here</h2>
     <ul>
       <li>Lorem ipsum dolor sit amet</li>
       <li>Lorem ipsum dolor sit amet</li>
@@ -71,7 +74,7 @@
       <li>Lorem ipsum dolor sit amet</li>
     </ol>
     <blockquote>
-    For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+    For 50 years, <a href="https://www.betterdoc.org/">WWF</a> has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
     </blockquote>
     <hr>
     <p>Sie erreichen uns gebührenfrei unter der Telefonnummer <br><a href="tel:+4908004446999">0800 – 444 6 999</a><br> oder per E-Mail unter <br><a href="mailto:aerzte-team@betterdoc.de?subject=Re:%20Ergebnisse%20der%20Arztsuche%20{{case.id}}">aerzte-team@betterdoc.de</a></p>
@@ -82,18 +85,6 @@
       Patient Care/Patientenbetreuung <br>
       Kaiser-Wilhelm-Ring 30-32 / 4. und 5. Stock <br>
       D-50672 Köln</p>
-      <p>
-      <a href="mailto:aerzte-team@betterdoc.de">aerzte-team@betterdoc.org</a><br>
-      <a href="https://www.betterdoc.org/">www.betterdoc.org</a>
-      </p>
-      <p>
-      Tel. (D): +49 (0) 800 444 6 999 (gebührenfrei)<br>
-      Fax (D): +49 (0) 221 17 73 26 55
-      </p>
-      <p>
-      Tel. (CH): +41 (0) 21 552 35 70<br>
-      Fax (CH): +41 (0) 21 552 35 75<br>
-      </p>
       <p>
       Geschäftsführende Gesellschafter: Christoph A. v. Dellingshausen, Dr. med. Donata v. Dellingshausen, Nils v. Dellingshausen <br>
       Handelsregister Köln HRB 76813
