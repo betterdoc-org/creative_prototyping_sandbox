@@ -1,0 +1,40 @@
+<!-- CTN hero-bottom START -->
+
+<style>
+    section.hero.bg-image-bottom {
+    background-image: url({{image}});
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-size: cover;
+    background-color: #fff;
+  }
+</style>
+
+
+<section class="hero is-medium bg-image-bottom">
+<div class="hero-body">
+  <div class="container">
+    <div class="columns is-multiline">
+      <div class="column is-one-third-desktop is-half-tablet box is-offset-8-desktop">
+      <p>
+        <form method="GET" action="https://call-request.betterdoc.org/call_requests/new?country_code=ch#call-request">
+        <input type="hidden" name="cms_voucher" value="ASSR-QM01">
+        <p class="tos"><input type="checkbox" name="checkbox" value="check" class="checkbox tos" /> Ich akzeptiere die <a href="#" class="modal-button" data-target="modal-terms">Bedingungen</a></p>
+        <br />
+        <input type="submit" class="button is-primary is-large" name="email_submit" value="Rückruf vereinbaren" onclick="if(!this.form.checkbox.checked){alert('Sie müssen zuerst die Teilnahmevoraussetzungen akzeptieren');return false}"  />
+        </form>
+      </p>
+      <p class="is-size-5">Oder rufen Sie uns direkt an</p>
+      <h3 class="is-size-2">021&nbsp;555&nbsp;10&nbsp;30</h3>
+      <p class="is-size-5">Mo-Fr von 8 bis 17 Uhr</p>
+      </div>
+      <div class="column">
+      </div>
+      <div class="column is-one-third">
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- CTN hero-bottom END -->
